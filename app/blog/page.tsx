@@ -9,12 +9,12 @@ export const metadata: Metadata = {
 };
 
 const posts = [
-  { title: "How to Download Instagram Reels (Complete 2025 Guide)", href: "/blog/how-to-download-instagram-reels", date: "2025-09-01", category: "Guide", description: "Step-by-step guide to download any Instagram Reel for free in HD — works on iPhone, Android, and PC." },
-  { title: "How to Download Instagram Reels Without Watermark", href: "/blog/download-reels-without-watermark", date: "2025-09-05", category: "Guide", description: "Instagram adds watermarks to in-app saved Reels. Here's how to get clean, watermark-free downloads." },
-  { title: "Why Do Downloaded Instagram Reels Have No Sound? (Fixed!)", href: "/blog/fix-reels-no-sound", date: "2025-09-10", category: "Fix", description: "Downloaded Reels are muted or silent? Here's exactly why it happens and how to fix it permanently." },
-  { title: "How to Download Instagram Reels on iPhone (2025)", href: "/blog/download-reels-iphone", date: "2025-09-12", category: "iPhone", description: "Complete iPhone guide: save Instagram Reels directly to Camera Roll without any app install." },
-  { title: "Best SnapSave Alternative – No Ads, No Popups", href: "/blog/snapsave-alternative", date: "2025-09-15", category: "Alternative", description: "Tired of SnapSave's aggressive ads and popups? Here are the best SnapSave alternatives in 2025." },
-  { title: "Best FDown Alternative – When FDown.net Isn't Working", href: "/blog/fdown-alternative", date: "2025-09-18", category: "Alternative", description: "FDown not working? Here are the best FDown alternatives that always work, even when FB changes APIs." },
+  { title: "How to Download Instagram Reels (Complete Guide)", href: "/blog/how-to-download-instagram-reels", category: "Guide", description: "Step-by-step guide to download any Instagram Reel for free in HD — works on iPhone, Android, and PC." },
+  { title: "How to Download Instagram Reels Without Watermark", href: "/blog/download-reels-without-watermark", category: "Guide", description: "Instagram adds watermarks to in-app saved Reels. Here's how to get clean, watermark-free downloads." },
+  { title: "Why Do Downloaded Instagram Reels Have No Sound? (Fixed!)", href: "/blog/fix-reels-no-sound", category: "Fix", description: "Downloaded Reels are muted or silent? Here's exactly why it happens and how to fix it permanently." },
+  { title: "How to Download Instagram Reels on iPhone", href: "/blog/download-reels-iphone", category: "iPhone", description: "Complete iPhone guide: save Instagram Reels directly to Camera Roll without any app install." },
+  { title: "Best SnapSave Alternative – No Ads, No Popups", href: "/blog/snapsave-alternative", category: "Alternative", description: "Tired of SnapSave's aggressive ads and popups? Here are the best SnapSave alternatives." },
+  { title: "Best FDown Alternative – When FDown.net Isn't Working", href: "/blog/fdown-alternative", category: "Alternative", description: "FDown not working? Here are the best FDown alternatives that always work, even when FB changes APIs." },
 ];
 
 const categoryColors: Record<string, string> = {
@@ -46,7 +46,6 @@ export default function BlogPage() {
                 <span className={`px-2.5 py-1 rounded-full text-xs font-medium ${categoryColors[post.category]}`}>
                   {post.category}
                 </span>
-                <time className="text-xs text-slate-500">{post.date}</time>
               </div>
               <h2 className="text-lg font-bold text-white mb-2 group-hover:text-indigo-400">{post.title}</h2>
               <p className="text-slate-400 text-sm leading-relaxed">{post.description}</p>

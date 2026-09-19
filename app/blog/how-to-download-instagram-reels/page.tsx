@@ -5,7 +5,7 @@ import { SITE_CONFIG } from "@/lib/siteConfig";
 import { faqSchema, howToSchema, breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "How to Download Instagram Reels – Complete Free Guide 2025",
+  title: "How to Download Instagram Reels – Complete Free Guide",
   description: "Step-by-step guide: how to download Instagram Reels for free in HD on iPhone, Android, and PC. No app, no login, with audio and without watermark.",
   keywords: ["how to download instagram reels", "download instagram reels free", "save instagram reels", "instagram reel download guide"],
   alternates: { canonical: `${SITE_CONFIG.url}/blog/how-to-download-instagram-reels` },
@@ -44,11 +44,10 @@ export default function HowToDownloadInstagramReelsPage() {
 
         <div className="mb-3 flex items-center gap-3">
           <span className="px-2.5 py-1 rounded-full bg-indigo-500/15 text-indigo-300 text-xs font-medium">Guide</span>
-          <time className="text-xs text-slate-500">September 2025</time>
         </div>
 
         <h1 className="text-3xl sm:text-4xl font-extrabold text-white mb-4 leading-tight">
-          How to Download Instagram Reels Free – Complete Guide 2025
+          How to Download Instagram Reels Free – Complete Guide
         </h1>
         <p className="text-slate-300 text-base leading-relaxed mb-10">
           Want to save Instagram Reels to your phone or PC? This step-by-step guide shows you exactly how

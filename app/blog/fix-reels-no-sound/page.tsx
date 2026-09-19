@@ -4,7 +4,7 @@ import { SITE_CONFIG } from "@/lib/siteConfig";
 import { faqSchema, breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Why Downloaded Instagram Reels Have No Sound? Fix 2025",
+  title: "Why Downloaded Instagram Reels Have No Sound? Fix & Solutions",
   description: "Downloaded Instagram Reel is muted or has no sound? Here's exactly why it happens and 3 proven fixes to download Reels with original audio and music.",
   keywords: ["why do instagram reels download without sound", "downloaded reels no sound", "instagram reel no audio after download", "fix reels download no sound", "download instagram reels with audio"],
   alternates: { canonical: `${SITE_CONFIG.url}/blog/fix-reels-no-sound` },

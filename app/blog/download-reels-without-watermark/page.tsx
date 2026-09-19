@@ -4,7 +4,7 @@ import { SITE_CONFIG } from "@/lib/siteConfig";
 import { faqSchema, breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Download Instagram Reels Without Watermark (2025 Fix)",
+  title: "Download Instagram Reels Without Watermark",
   description: "How to download Instagram Reels without watermark in HD. Instagram adds watermarks to shared videos — here's how to get the clean original file free.",
   keywords: ["download instagram reels without watermark", "instagram reels no watermark", "save reels without watermark", "instagram reel download no watermark"],
   alternates: { canonical: `${SITE_CONFIG.url}/blog/download-reels-without-watermark` },

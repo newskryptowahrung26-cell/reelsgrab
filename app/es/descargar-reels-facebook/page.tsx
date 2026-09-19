@@ -6,7 +6,7 @@ import { SITE_CONFIG } from "@/lib/siteConfig";
 import { faqSchema, howToSchema, softwareSchema, breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Descargar Reels de Facebook Gratis HD Sin Marca de Agua 2025",
+  title: "Descargar Reels de Facebook Gratis HD Sin Marca de Agua",
   description:
     "Descarga Reels de Facebook gratis en HD 1080p sin marca de agua. Descargador de Reels de Facebook online — sin login, rápido, con audio original.",
   keywords: [

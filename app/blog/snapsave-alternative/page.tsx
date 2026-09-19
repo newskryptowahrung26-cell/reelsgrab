@@ -4,7 +4,7 @@ import { breadcrumbSchema, faqSchema } from "@/lib/schema";
 import FaqSection from "@/components/FaqSection";
 
 export const metadata: Metadata = {
-  title: "Best SnapSave Alternative 2025 – No Ads, No Popups, Clean UI",
+  title: "Best SnapSave Alternative – No Ads, No Popups, Clean UI",
   description: "Looking for a SnapSave alternative? ReelsGrab is the best SnapSave alternative — no popunder ads, no fake download buttons, HD quality, Instagram & Facebook Reels.",
   keywords: ["snapsave alternative", "snapsave alternative without ads", "best alternative to snapsave", "snapsave not working alternative", "snapinsta alternative"],
   alternates: { canonical: `${SITE_CONFIG.url}/blog/snapsave-alternative` },
@@ -44,7 +44,7 @@ export default function SnapSaveAlternativePage() {
         </nav>
         <span className="px-2.5 py-1 rounded-full bg-yellow-500/15 text-yellow-300 text-xs font-medium">Alternative</span>
         <h1 className="text-3xl sm:text-4xl font-extrabold text-white mt-3 mb-4 leading-tight">
-          Best <span className="gradient-text">SnapSave Alternative</span> 2025 – No Ads, No Popups
+          Best <span className="gradient-text">SnapSave Alternative</span> – No Ads, No Popups
         </h1>
         <p className="text-slate-300 text-base leading-relaxed mb-10">
           SnapSave is a popular Instagram &amp; Facebook Reels downloader, but it&apos;s infamous for its{" "}

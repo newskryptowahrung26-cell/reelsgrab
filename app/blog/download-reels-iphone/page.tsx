@@ -5,7 +5,7 @@ import FaqSection from "@/components/FaqSection";
 import HowToSteps from "@/components/HowToSteps";
 
 export const metadata: Metadata = {
-  title: "How to Download Instagram Reels on iPhone (Save to Camera Roll 2025)",
+  title: "How to Download Instagram Reels on iPhone (Save to Camera Roll)",
   description: "How to download Instagram Reels on iPhone and save to Camera Roll — no app needed. Works on iOS 16, 17, 18. Step-by-step Safari guide with screenshots.",
   keywords: ["download instagram reels on iphone", "save instagram reels to camera roll iphone", "download ig reels iphone ios", "how to download reels on iphone"],
   alternates: { canonical: `${SITE_CONFIG.url}/blog/download-reels-iphone` },

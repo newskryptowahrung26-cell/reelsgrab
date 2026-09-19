@@ -12,7 +12,7 @@ export default function TermsOfUsePage() {
     <div className="max-w-4xl mx-auto px-4 sm:px-6 py-16">
       <h1 className="text-3xl sm:text-4xl font-extrabold text-white mb-6">Terms of Use</h1>
       <div className="prose prose-invert max-w-none text-slate-300 text-sm leading-relaxed space-y-6">
-        <p>Last updated: September 2025</p>
+        <p>Last updated: Recently</p>
         <p>
           By accessing and using {SITE_CONFIG.name}, you agree to be bound by these Terms of Use.
           If you do not agree with any part of these terms, please discontinue use of our site.

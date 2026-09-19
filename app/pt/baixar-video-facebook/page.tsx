@@ -6,7 +6,7 @@ import { SITE_CONFIG } from "@/lib/siteConfig";
 import { faqSchema, howToSchema, softwareSchema, breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Baixar Video do Facebook Grátis HD 2025 | Sem Programa",
+  title: "Baixar Video do Facebook Grátis HD | Sem Programa",
   description:
     "Baixe vídeos do Facebook grátis em HD 1080p sem instalar programas. O melhor baixador de vídeos do Facebook online — rápido, seguro, sem marca d'água.",
   keywords: [

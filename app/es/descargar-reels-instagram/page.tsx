@@ -6,7 +6,7 @@ import { SITE_CONFIG } from "@/lib/siteConfig";
 import { faqSchema, howToSchema, softwareSchema, breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Descargar Reels de Instagram Gratis Sin Marca de Agua 2025",
+  title: "Descargar Reels de Instagram Gratis Sin Marca de Agua",
   description:
     "Descarga Reels de Instagram gratis en HD sin marca de agua y con audio original. Descargador de Reels de Instagram online — sin login, funciona en iPhone y Android.",
   keywords: [

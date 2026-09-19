@@ -4,7 +4,7 @@ import { breadcrumbSchema, faqSchema } from "@/lib/schema";
 import FaqSection from "@/components/FaqSection";
 
 export const metadata: Metadata = {
-  title: "Best FDown Alternative 2025 – When FDown.net Isn't Working",
+  title: "Best FDown Alternative – When FDown.net Isn't Working",
   description: "FDown.net not working? Here are the best FDown alternatives for downloading Facebook videos and Reels in HD — always online, no ads, with audio.",
   keywords: ["fdown alternative", "fdown not working", "fdown.net alternative", "fdown alternative site", "alternative to fdown", "facebook video downloader alternative to fdown"],
   alternates: { canonical: `${SITE_CONFIG.url}/blog/fdown-alternative` },
@@ -40,7 +40,7 @@ export default function FDownAlternativePage() {
         </nav>
         <span className="px-2.5 py-1 rounded-full bg-yellow-500/15 text-yellow-300 text-xs font-medium">Alternative</span>
         <h1 className="text-3xl sm:text-4xl font-extrabold text-white mt-3 mb-4 leading-tight">
-          Best <span className="gradient-text">FDown Alternative</span> 2025 – When FDown.net Isn&apos;t Working
+          Best <span className="gradient-text">FDown Alternative</span> – When FDown.net Isn&apos;t Working
         </h1>
         <p className="text-slate-300 text-base leading-relaxed mb-10">
           FDown.net is one of the biggest Facebook video downloaders with 80M+ monthly visits.

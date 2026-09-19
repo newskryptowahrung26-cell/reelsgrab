@@ -12,7 +12,7 @@ export default function PrivacyPolicyPage() {
     <div className="max-w-4xl mx-auto px-4 sm:px-6 py-16">
       <h1 className="text-3xl sm:text-4xl font-extrabold text-white mb-6">Privacy Policy</h1>
       <div className="prose prose-invert max-w-none text-slate-300 text-sm leading-relaxed space-y-6">
-        <p>Last updated: September 2025</p>
+        <p>Last updated: Recently</p>
         <p>
           At {SITE_CONFIG.name} (&quot;we&quot;, &quot;our&quot;, or &quot;us&quot;), we take your privacy seriously.
           This Privacy Policy outlines how we treat information when you use our website and video download services.
