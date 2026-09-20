@@ -1,16 +1,6 @@
 import type { Metadata } from "next";
-import Script from "next/script";
-import { Inter } from "next/font/google";
-import "./globals.css";
 import { SITE_CONFIG } from "@/lib/siteConfig";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
-  display: "swap",
-});
+import BaseLayout from "@/components/BaseLayout";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_CONFIG.url),
@@ -60,32 +50,5 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return (
-    <html lang="en" className={inter.variable}>
-      <head>
-        {/* Google AdSense: replace publisher ID */}
-        {/* <script async src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${SITE_CONFIG.adsenseId}`} crossOrigin="anonymous" /> */}
-      </head>
-      <body className="bg-slate-950 text-slate-100 antialiased min-h-screen flex flex-col">
-        <Header />
-        <main className="flex-1">{children}</main>
-        <Footer />
-        {/* Google Analytics 4 */}
-        <Script
-          src={`https://www.googletagmanager.com/gtag/js?id=${SITE_CONFIG.gaId}`}
-          strategy="afterInteractive"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${SITE_CONFIG.gaId}', {
-              page_path: window.location.pathname,
-            });
-          `}
-        </Script>
-      </body>
-    </html>
-  );
+  return <BaseLayout lang="en">{children}</BaseLayout>;
 }
