@@ -9,6 +9,14 @@ export const metadata: Metadata = {
   description: "Step-by-step guide: how to download Instagram Reels for free in HD on iPhone, Android, and PC. No app, no login, with audio and without watermark.",
   keywords: ["how to download instagram reels", "download instagram reels free", "save instagram reels", "instagram reel download guide"],
   alternates: { canonical: `${SITE_CONFIG.url}/blog/how-to-download-instagram-reels` },
+  openGraph: {
+    title: "How to Download Instagram Reels | ReelsGrab",
+    description:
+      "Step-by-step guide: how to download Instagram Reels for free in HD on iPhone, Android, and PC. No app, no login, with audio and without watermark.",
+    url: `${SITE_CONFIG.url}/blog/how-to-download-instagram-reels`,
+    type: "article",
+    images: [{ url: "/og-default.png", width: 1200, height: 630 }],
+  },
 };
 
 const steps = [

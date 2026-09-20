@@ -27,7 +27,7 @@ import {
 export const metadata: Metadata = {
   title: "Facebook Video Download HD Online",
   description:
-    "Download Facebook videos in HD 1080p and 4K for free online. Best FB video downloader: download Facebook videos by link without watermark, with original audio. Works on iPhone, Android & PC.",
+    "Download Facebook videos in HD 1080p and 4K online for free. Save FB videos by link without watermarks and with full audio on iPhone, Android and PC.",
   keywords: [
     "facebook video download",
     "facebook video downloader",
@@ -72,10 +72,12 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Facebook Video Download | HD 1080p & 4K Free Online | FB Downloader",
+    title: "Facebook Video Download HD Online | ReelsGrab",
     description:
-      "Download Facebook videos in HD 1080p and 4K for free online. Best FB video downloader: download Facebook videos by link without watermark, with audio.",
+      "Download Facebook videos in HD 1080p and 4K online for free. Save FB videos by link without watermarks and with full audio on iPhone, Android and PC.",
     url: `${SITE_CONFIG.url}/facebook-video-download`,
+    type: "website",
+    images: [{ url: "/og-default.png", width: 1200, height: 630 }],
   },
 };
 

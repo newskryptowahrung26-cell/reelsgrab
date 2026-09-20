@@ -21,7 +21,8 @@ import {
 
 export const metadata: Metadata = {
   title: "About Us",
-  description: `Learn about ${SITE_CONFIG.name}, our engineering mission, and our suite of free online tools for Instagram Reels, Facebook Videos, and YouTube to MP3 & MP4. The trusted, clean alternative to SnapInsta, FDown, and YTMP3.`,
+  description:
+    "Learn about ReelsGrab, our mission, and our clean, watermark-free download tools for Instagram Reels, Facebook Videos, and YouTube to MP3 and MP4.",
   keywords: [
     "about reelsgrab",
     "reelsgrab",
@@ -46,8 +47,11 @@ export const metadata: Metadata = {
   alternates: { canonical: `${SITE_CONFIG.url}/about` },
   openGraph: {
     title: "About ReelsGrab | Free Media Downloader",
-    description: `Discover how ${SITE_CONFIG.name} is redefining social media downloading with zero popunder ads, full audio preservation, and true 1080p HD quality.`,
+    description:
+      "Learn about ReelsGrab, our mission, and our clean, watermark-free download tools for Instagram Reels, Facebook Videos, and YouTube to MP3 and MP4.",
     url: `${SITE_CONFIG.url}/about`,
+    type: "website",
+    images: [{ url: "/og-default.png", width: 1200, height: 630 }],
   },
 };
 

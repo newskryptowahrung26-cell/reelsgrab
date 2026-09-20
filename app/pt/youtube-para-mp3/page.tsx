@@ -22,7 +22,7 @@ import {
 export const metadata: Metadata = {
   title: "Conversor de YouTube para MP3",
   description:
-    "Converta e baixe vídeos do YouTube para MP3 em alta qualidade 320kbps, 256kbps e 128kbps. O conversor de YouTube para MP3 online mais rápido e seguro: funciona no iPhone, Android, Mac e PC sem anúncios invasivos nem programas.",
+    "Converta vídeos do YouTube para MP3 em alta qualidade 320kbps grátis. O conversor online mais rápido e seguro para iPhone, Android, Mac e PC sem anúncios.",
   keywords: [
     "youtube para mp3",
     "conversor youtube para mp3",
@@ -46,10 +46,13 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Conversor do YouTube para MP3 | Áudio em Alta Qualidade 320kbps Grátis",
+    title: "Conversor YouTube para MP3 320kbps | ReelsGrab",
     description:
-      "Converta e baixe vídeos do YouTube para MP3 em alta qualidade 320kbps, 256kbps e 128kbps sem programas.",
+      "Converta vídeos do YouTube para MP3 em alta qualidade 320kbps grátis. O conversor online mais rápido e seguro para iPhone, Android, Mac e PC sem anúncios.",
     url: `${SITE_CONFIG.url}/pt/youtube-para-mp3`,
+    type: "website",
+    locale: "pt_BR",
+    images: [{ url: "/og-default.png", width: 1200, height: 630 }],
   },
 };
 
@@ -196,6 +199,7 @@ const relatedTools = [
 export default function YouTubeParaMp3Page() {
   return (
     <>
+      <script dangerouslySetInnerHTML={{ __html: "document.documentElement.lang = 'pt';" }} />
       {/* JSON-LD Schemas */}
       <script
         type="application/ld+json"

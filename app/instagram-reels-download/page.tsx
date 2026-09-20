@@ -29,7 +29,7 @@ import {
 export const metadata: Metadata = {
   title: "Instagram Reels Download Free in HD",
   description:
-    "Download Instagram Reels in HD 1080p without watermark, with original audio and music. Free online IG Reels downloader: no login, no app. Works on iPhone, Android & PC.",
+    "Download Instagram Reels in HD 1080p without watermark and with original audio. Free online IG Reels downloader: no login, works on iPhone, Android and PC.",
   keywords: [
     "instagram reels download",
     "ig reels download",
@@ -75,8 +75,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Instagram Reels Download Free in HD | ReelsGrab",
     description:
-      "Download Instagram Reels in HD 1080p without watermark, with original audio and music. Free online IG Reels downloader with no app or registration required.",
+      "Download Instagram Reels in HD 1080p without watermark and with original audio. Free online IG Reels downloader: no login, works on iPhone, Android and PC.",
     url: `${SITE_CONFIG.url}/instagram-reels-download`,
+    type: "website",
+    images: [{ url: "/og-default.png", width: 1200, height: 630 }],
   },
 };
 

@@ -5,9 +5,18 @@ import FaqSection from "@/components/FaqSection";
 
 export const metadata: Metadata = {
   title: "Best SnapSave Alternative Online",
-  description: "Looking for a SnapSave alternative? ReelsGrab is the best SnapSave alternative: no popunder ads, no fake download buttons, HD quality for Instagram & Facebook Reels.",
+  description:
+    "Looking for a SnapSave alternative? ReelsGrab offers clean, ad-free downloads in HD 1080p for Instagram and Facebook Reels with zero popunders or apps.",
   keywords: ["snapsave alternative", "snapsave alternative without ads", "best alternative to snapsave", "snapsave not working alternative", "snapinsta alternative"],
   alternates: { canonical: `${SITE_CONFIG.url}/blog/snapsave-alternative` },
+  openGraph: {
+    title: "Best SnapSave Alternative Online | ReelsGrab",
+    description:
+      "Looking for a SnapSave alternative? ReelsGrab offers clean, ad-free downloads in HD 1080p for Instagram and Facebook Reels with zero popunders or apps.",
+    url: `${SITE_CONFIG.url}/blog/snapsave-alternative`,
+    type: "article",
+    images: [{ url: "/og-default.png", width: 1200, height: 630 }],
+  },
 };
 
 const faqs = [

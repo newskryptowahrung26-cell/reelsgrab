@@ -8,6 +8,14 @@ export const metadata: Metadata = {
   description: "Downloaded Instagram Reel is muted or has no sound? Here's exactly why it happens and 3 proven fixes to download Reels with original audio and music.",
   keywords: ["why do instagram reels download without sound", "downloaded reels no sound", "instagram reel no audio after download", "fix reels download no sound", "download instagram reels with audio"],
   alternates: { canonical: `${SITE_CONFIG.url}/blog/fix-reels-no-sound` },
+  openGraph: {
+    title: "Why Downloaded Reels Have No Sound | ReelsGrab",
+    description:
+      "Downloaded Instagram Reel is muted or has no sound? Here's exactly why it happens and 3 proven fixes to download Reels with original audio and music.",
+    url: `${SITE_CONFIG.url}/blog/fix-reels-no-sound`,
+    type: "article",
+    images: [{ url: "/og-default.png", width: 1200, height: 630 }],
+  },
 };
 
 const faqs = [

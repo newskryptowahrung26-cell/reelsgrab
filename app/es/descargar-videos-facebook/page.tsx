@@ -27,7 +27,7 @@ import {
 export const metadata: Metadata = {
   title: "Descargar Videos de Facebook Gratis",
   description:
-    "Descarga videos de Facebook gratis en HD 1080p y 4K sin programas ni aplicaciones. El mejor descargador de videos de Facebook online: rápido, seguro, sin marca de agua y con audio original. Compatible con iPhone, Android y PC.",
+    "Descarga videos de Facebook gratis en HD 1080p y 4K sin programas ni anuncios. Descargador online rápido, seguro y con audio original para PC y móvil.",
   keywords: [
     "descargar videos de facebook",
     "descargar video de facebook",
@@ -57,10 +57,13 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Descargar Videos de Facebook Gratis HD 1080p y 4K | Sin Programas",
+    title: "Descargar Videos de Facebook Gratis en HD | ReelsGrab",
     description:
-      "Descarga videos de Facebook gratis en HD 1080p y 4K sin programas ni aplicaciones. Rápido, seguro y con audio original.",
+      "Descarga videos de Facebook gratis en HD 1080p y 4K sin programas ni anuncios. Descargador online rápido, seguro y con audio original para PC y móvil.",
     url: `${SITE_CONFIG.url}/es/descargar-videos-facebook`,
+    type: "website",
+    locale: "es_ES",
+    images: [{ url: "/og-default.png", width: 1200, height: 630 }],
   },
 };
 
@@ -298,6 +301,7 @@ const relatedTools = [
 export default function DescargarVideosFacebookPage() {
   return (
     <>
+      <script dangerouslySetInnerHTML={{ __html: "document.documentElement.lang = 'es';" }} />
       {/* JSON-LD Schemas */}
       <script
         type="application/ld+json"

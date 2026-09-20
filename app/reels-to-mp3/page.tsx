@@ -28,7 +28,7 @@ import {
 export const metadata: Metadata = {
   title: "Reels to MP3 Audio Downloader",
   description:
-    "Convert Instagram and Facebook Reels to MP3 audio online for free. Extract high quality 320kbps audio, songs, and viral sounds from any Reel in seconds: no app, no login required. Works on iPhone, Android & PC.",
+    "Convert Instagram and Facebook Reels to MP3 audio online for free. Extract studio 320kbps audio and sounds in seconds: no login, works on all devices.",
   keywords: [
     "reels to mp3",
     "instagram reel to mp3",
@@ -62,10 +62,12 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: `${SITE_CONFIG.url}/reels-to-mp3` },
   openGraph: {
-    title: "Reels to MP3 | Download Instagram & Facebook Reels Audio Free (320kbps)",
+    title: "Reels to MP3 Audio Downloader 320kbps | ReelsGrab",
     description:
-      "Convert Instagram and Facebook Reels to MP3 audio online for free. Extract high quality 320kbps audio, songs, and viral sounds from any Reel in seconds.",
+      "Convert Instagram and Facebook Reels to MP3 audio online for free. Extract studio 320kbps audio and sounds in seconds: no login, works on all devices.",
     url: `${SITE_CONFIG.url}/reels-to-mp3`,
+    type: "website",
+    images: [{ url: "/og-default.png", width: 1200, height: 630 }],
   },
 };
 

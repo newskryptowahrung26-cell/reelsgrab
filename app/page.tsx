@@ -126,6 +126,7 @@ export const metadata: Metadata = {
       "Download YouTube videos, Shorts, MP3 audio, Instagram Reels, and Facebook Videos in HD 1080p, 4K and 320kbps, no watermark, 100% free.",
     url: SITE_CONFIG.url,
     type: "website",
+    images: [{ url: "/og-default.png", width: 1200, height: 630 }],
   },
 };
 

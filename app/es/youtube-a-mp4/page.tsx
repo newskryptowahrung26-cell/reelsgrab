@@ -21,7 +21,7 @@ import {
 export const metadata: Metadata = {
   title: "Descargador YouTube a MP4 Gratis",
   description:
-    "Descarga videos de YouTube en formato MP4 en calidad HD 1080p, 720p y 4K con audio sincronizado. El descargador de YouTube a MP4 online más rápido y seguro: compatible con iPhone, Android, Mac y PC sin publicidad invasiva ni programas.",
+    "Descarga videos de YouTube a MP4 en calidad Full HD 1080p y 4K con audio sincronizado. Rápido, gratis y seguro para iPhone, Android, Mac y PC sin software.",
   keywords: [
     "youtube a mp4",
     "descargar videos de youtube",
@@ -45,10 +45,13 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Descargador de YouTube a MP4 | Videos en HD 1080p y 4K Gratis",
+    title: "Descargador YouTube a MP4 HD 1080p | ReelsGrab",
     description:
-      "Descarga videos de YouTube en formato MP4 en calidad HD 1080p, 720p y 4K con audio sincronizado gratis.",
+      "Descarga videos de YouTube a MP4 en calidad Full HD 1080p y 4K con audio sincronizado. Rápido, gratis y seguro para iPhone, Android, Mac y PC sin software.",
     url: `${SITE_CONFIG.url}/es/youtube-a-mp4`,
+    type: "website",
+    locale: "es_ES",
+    images: [{ url: "/og-default.png", width: 1200, height: 630 }],
   },
 };
 
@@ -183,6 +186,7 @@ const relatedTools = [
 export default function YouTubeAMp4Page() {
   return (
     <>
+      <script dangerouslySetInnerHTML={{ __html: "document.documentElement.lang = 'es';" }} />
       {/* JSON-LD Schemas */}
       <script
         type="application/ld+json"

@@ -20,6 +20,14 @@ export const metadata: Metadata = {
     "save private facebook video",
   ],
   alternates: { canonical: `${SITE_CONFIG.url}/facebook-private-video-download` },
+  openGraph: {
+    title: "Private Facebook Video Downloader | ReelsGrab",
+    description:
+      "Download private Facebook videos and reels online for free. Step-by-step guide to save private FB videos without losing quality. No login, no app required.",
+    url: `${SITE_CONFIG.url}/facebook-private-video-download`,
+    type: "website",
+    images: [{ url: "/og-default.png", width: 1200, height: 630 }],
+  },
 };
 
 const features = [

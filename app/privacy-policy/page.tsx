@@ -3,8 +3,17 @@ import { SITE_CONFIG } from "@/lib/siteConfig";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
-  description: `Privacy policy for ${SITE_CONFIG.name}. Learn how we protect your privacy and handle data.`,
+  description:
+    "Read the ReelsGrab Privacy Policy. Learn about our zero-log architecture, data handling practices, cookie policies, and user confidentiality standards.",
   alternates: { canonical: `${SITE_CONFIG.url}/privacy-policy` },
+  openGraph: {
+    title: "Privacy Policy | ReelsGrab",
+    description:
+      "Read the ReelsGrab Privacy Policy. Learn about our zero-log architecture, data handling practices, cookie policies, and user confidentiality standards.",
+    url: `${SITE_CONFIG.url}/privacy-policy`,
+    type: "website",
+    images: [{ url: "/og-default.png", width: 1200, height: 630 }],
+  },
 };
 
 export default function PrivacyPolicyPage() {

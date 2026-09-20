@@ -8,6 +8,14 @@ export const metadata: Metadata = {
   description: "FDown.net not working? Here are the best FDown alternatives for downloading Facebook videos and Reels in HD: always online, no ads, with audio.",
   keywords: ["fdown alternative", "fdown not working", "fdown.net alternative", "fdown alternative site", "alternative to fdown", "facebook video downloader alternative to fdown"],
   alternates: { canonical: `${SITE_CONFIG.url}/blog/fdown-alternative` },
+  openGraph: {
+    title: "Best FDown Alternative Downloader | ReelsGrab",
+    description:
+      "FDown.net not working? Here are the best FDown alternatives for downloading Facebook videos and Reels in HD: always online, no ads, with audio.",
+    url: `${SITE_CONFIG.url}/blog/fdown-alternative`,
+    type: "article",
+    images: [{ url: "/og-default.png", width: 1200, height: 630 }],
+  },
 };
 
 const faqs = [

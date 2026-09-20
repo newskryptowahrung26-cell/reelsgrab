@@ -29,7 +29,7 @@ import {
 export const metadata: Metadata = {
   title: "YouTube to MP4 Converter in 1080p HD",
   description:
-    "Convert and download YouTube videos to MP4 in 1080p Full HD, 2K, and 4K quality with crystal-clear audio. Fast, free, online YouTube video downloader for PC, iPhone, Android, and Mac.",
+    "Convert and download YouTube videos to MP4 in 1080p Full HD and 4K with crystal-clear audio. Fast, free online video downloader for PC, iPhone and Android.",
   keywords: [
     "youtube to mp4",
     "youtube video download",
@@ -64,9 +64,17 @@ export const metadata: Metadata = {
   openGraph: {
     title: "YouTube to MP4 Converter in 1080p HD | ReelsGrab",
     description:
-      "Convert and download YouTube videos to MP4 in 1080p Full HD, 2K, and 4K quality with crystal-clear audio. Fast, free, online YouTube video downloader for PC, iPhone, Android, and Mac.",
+      "Convert and download YouTube videos to MP4 in 1080p Full HD and 4K with crystal-clear audio. Fast, free online video downloader for PC, iPhone and Android.",
     url: `${SITE_CONFIG.url}/youtube-to-mp4`,
     type: "website",
+    images: [
+      {
+        url: "/og-default.png",
+        width: 1200,
+        height: 630,
+        alt: "ReelsGrab - YouTube to MP4 Converter",
+      },
+    ],
   },
 };
 

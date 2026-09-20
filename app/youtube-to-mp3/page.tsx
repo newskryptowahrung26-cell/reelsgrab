@@ -11,7 +11,7 @@ import { Music, Zap, Shield, Smartphone, Headphones, FileAudio, CheckCircle2, Al
 export const metadata: Metadata = {
   title: "YouTube to MP3 Converter 320kbps",
   description:
-    "Convert and download YouTube videos to MP3 in high quality 320kbps, 256kbps, and 128kbps audio. The fastest, safe online YouTube MP3 converter, compatible with iPhone, Android, Mac & PC without ads or software.",
+    "Convert YouTube videos to MP3 audio in 320kbps high quality for free. Fast, clean, safe online YouTube MP3 converter for iPhone, Android, Mac and PC.",
   keywords: [
     "youtube to mp3",
     "youtube mp3 converter",
@@ -40,8 +40,17 @@ export const metadata: Metadata = {
   openGraph: {
     title: "YouTube to MP3 Converter 320kbps | ReelsGrab",
     description:
-      "Convert and download YouTube videos to MP3 in high quality 320kbps, 256kbps, and 128kbps audio. Free online YouTube MP3 converter with no popups.",
+      "Convert YouTube videos to MP3 audio in 320kbps high quality for free. Fast, clean, safe online YouTube MP3 converter for iPhone, Android, Mac and PC.",
     url: `${SITE_CONFIG.url}/youtube-to-mp3`,
+    type: "website",
+    images: [
+      {
+        url: "/og-default.png",
+        width: 1200,
+        height: 630,
+        alt: "ReelsGrab - YouTube to MP3 Converter",
+      },
+    ],
   },
 };
 

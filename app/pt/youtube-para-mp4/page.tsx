@@ -21,7 +21,7 @@ import {
 export const metadata: Metadata = {
   title: "Baixar Vídeos YouTube em MP4",
   description:
-    "Baixe vídeos do YouTube em formato MP4 em qualidade HD 1080p, 720p e 4K com áudio sincronizado. O baixador de YouTube para MP4 online mais rápido e seguro: funciona no iPhone, Android, Mac e PC sem anúncios invasivos nem programas.",
+    "Baixe vídeos do YouTube em MP4 com qualidade HD 1080p e 4K com áudio sincronizado. Baixador online rápido e seguro para iPhone, Android, Mac e PC grátis.",
   keywords: [
     "youtube para mp4",
     "baixar videos do youtube",
@@ -45,10 +45,13 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Baixar Vídeos do YouTube em MP4 | HD 1080p e 4K Grátis Online",
+    title: "Baixar Vídeos YouTube em MP4 HD 1080p | ReelsGrab",
     description:
-      "Baixe vídeos do YouTube em formato MP4 em qualidade HD 1080p, 720p e 4K com áudio sincronizado grátis.",
+      "Baixe vídeos do YouTube em MP4 com qualidade HD 1080p e 4K com áudio sincronizado. Baixador online rápido e seguro para iPhone, Android, Mac e PC grátis.",
     url: `${SITE_CONFIG.url}/pt/youtube-para-mp4`,
+    type: "website",
+    locale: "pt_BR",
+    images: [{ url: "/og-default.png", width: 1200, height: 630 }],
   },
 };
 
@@ -183,6 +186,7 @@ const relatedTools = [
 export default function YouTubeParaMp4Page() {
   return (
     <>
+      <script dangerouslySetInnerHTML={{ __html: "document.documentElement.lang = 'pt';" }} />
       {/* JSON-LD Schemas */}
       <script
         type="application/ld+json"

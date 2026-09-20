@@ -4,8 +4,17 @@ import { Mail, MessageSquare, ShieldCheck } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Contact Support & Feedback",
-  description: `Get in touch with the ${SITE_CONFIG.name} support and feedback team.`,
+  description:
+    "Contact the ReelsGrab team for technical support, feature feedback, partnership inquiries, and copyright assistance. We respond within 24 to 48 hours.",
   alternates: { canonical: `${SITE_CONFIG.url}/contact` },
+  openGraph: {
+    title: "Contact Support & Feedback | ReelsGrab",
+    description:
+      "Contact the ReelsGrab team for technical support, feature feedback, partnership inquiries, and copyright assistance. We respond within 24 to 48 hours.",
+    url: `${SITE_CONFIG.url}/contact`,
+    type: "website",
+    images: [{ url: "/og-default.png", width: 1200, height: 630 }],
+  },
 };
 
 export default function ContactPage() {

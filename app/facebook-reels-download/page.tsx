@@ -29,7 +29,7 @@ import {
 export const metadata: Metadata = {
   title: "Facebook Reels Download Free in HD",
   description:
-    "Download Facebook Reels in HD 1080p without watermark, with original audio and music. Free online FB Reels downloader: no login, no app. Works on iPhone, Android & PC.",
+    "Download Facebook Reels in HD 1080p without watermark and with original audio. Free online FB Reels downloader: no login, works on iPhone, Android and PC.",
   keywords: [
     "facebook reels download",
     "facebook reels downloader",
@@ -76,10 +76,12 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Facebook Reels Download | Free HD 1080p No Watermark (With Audio)",
+    title: "Facebook Reels Download Free in HD | ReelsGrab",
     description:
-      "Download Facebook Reels in HD 1080p without watermark, with original audio and music. Free online FB Reels downloader with no app or registration required.",
+      "Download Facebook Reels in HD 1080p without watermark and with original audio. Free online FB Reels downloader: no login, works on iPhone, Android and PC.",
     url: `${SITE_CONFIG.url}/facebook-reels-download`,
+    type: "website",
+    images: [{ url: "/og-default.png", width: 1200, height: 630 }],
   },
 };
 

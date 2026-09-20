@@ -8,6 +8,14 @@ export const metadata: Metadata = {
   description: "How to download Instagram Reels without watermark in HD. Instagram adds watermarks to shared videos, but here's how to get the clean original file free.",
   keywords: ["download instagram reels without watermark", "instagram reels no watermark", "save reels without watermark", "instagram reel download no watermark"],
   alternates: { canonical: `${SITE_CONFIG.url}/blog/download-reels-without-watermark` },
+  openGraph: {
+    title: "Download Instagram Reels Without Watermark | ReelsGrab",
+    description:
+      "How to download Instagram Reels without watermark in HD. Instagram adds watermarks to shared videos, but here's how to get the clean original file free.",
+    url: `${SITE_CONFIG.url}/blog/download-reels-without-watermark`,
+    type: "article",
+    images: [{ url: "/og-default.png", width: 1200, height: 630 }],
+  },
 };
 
 const faqs = [

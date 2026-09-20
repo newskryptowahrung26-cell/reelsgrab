@@ -20,6 +20,14 @@ export const metadata: Metadata = {
     "download all facebook reels", "batch download instagram reels",
   ],
   alternates: { canonical: `${SITE_CONFIG.url}/bulk-reels-downloader` },
+  openGraph: {
+    title: "Bulk Reels Downloader for Instagram | ReelsGrab",
+    description:
+      "Bulk download all Instagram Reels from a profile or username. Download multiple Facebook and Instagram Reels at once: free, no login, saves as ZIP.",
+    url: `${SITE_CONFIG.url}/bulk-reels-downloader`,
+    type: "website",
+    images: [{ url: "/og-default.png", width: 1200, height: 630 }],
+  },
 };
 
 const features = [

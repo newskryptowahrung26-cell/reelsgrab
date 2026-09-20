@@ -4,8 +4,17 @@ import { SITE_CONFIG } from "@/lib/siteConfig";
 
 export const metadata: Metadata = {
   title: "Download Guides & Tutorials",
-  description: "Expert guides on how to download Instagram Reels, fix no-sound issues, download without watermark, iPhone tips, and find the best alternative tools.",
+  description:
+    "Expert guides on how to download Instagram Reels, fix no-sound issues, download without watermark, iPhone tips, and find the best alternative tools.",
   alternates: { canonical: `${SITE_CONFIG.url}/blog` },
+  openGraph: {
+    title: "Download Guides & Tutorials | ReelsGrab",
+    description:
+      "Expert guides on how to download Instagram Reels, fix no-sound issues, download without watermark, iPhone tips, and find the best alternative tools.",
+    url: `${SITE_CONFIG.url}/blog`,
+    type: "website",
+    images: [{ url: "/og-default.png", width: 1200, height: 630 }],
+  },
 };
 
 const posts = [

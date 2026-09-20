@@ -23,6 +23,15 @@ export const metadata: Metadata = {
       "x-default": `${SITE_CONFIG.url}/facebook-reels-download`,
     },
   },
+  openGraph: {
+    title: "Descargar Reels de Facebook Gratis | ReelsGrab",
+    description:
+      "Descarga Reels de Facebook gratis en HD 1080p sin marca de agua. Descargador de Reels de Facebook online: sin login, rápido, con audio original.",
+    url: `${SITE_CONFIG.url}/es/descargar-reels-facebook`,
+    type: "website",
+    locale: "es_ES",
+    images: [{ url: "/og-default.png", width: 1200, height: 630 }],
+  },
 };
 
 const pasos = [
@@ -43,6 +52,7 @@ const preguntas = [
 export default function DescargarReelsFacebookPage() {
   return (
     <>
+      <script dangerouslySetInnerHTML={{ __html: "document.documentElement.lang = 'es';" }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={breadcrumbSchema([{ name: "Inicio", url: "/" }, { name: "Descargar Reels de Facebook", url: "/es/descargar-reels-facebook" }])} />
       <script type="application/ld+json" dangerouslySetInnerHTML={softwareSchema("Descargador de Reels de Facebook", "Descarga Reels de Facebook gratis en HD sin marca de agua.", `${SITE_CONFIG.url}/es/descargar-reels-facebook`)} />
       <script type="application/ld+json" dangerouslySetInnerHTML={faqSchema(preguntas)} />

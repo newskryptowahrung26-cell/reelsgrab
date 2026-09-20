@@ -3,8 +3,17 @@ import { SITE_CONFIG } from "@/lib/siteConfig";
 
 export const metadata: Metadata = {
   title: "DMCA Copyright Policy",
-  description: `DMCA and Copyright compliance information for ${SITE_CONFIG.name}.`,
+  description:
+    "Review the DMCA Copyright Policy for ReelsGrab. Learn how to submit takedown notices, counter-notifications, and understand our copyright compliance.",
   alternates: { canonical: `${SITE_CONFIG.url}/dmca` },
+  openGraph: {
+    title: "DMCA Copyright Policy | ReelsGrab",
+    description:
+      "Review the DMCA Copyright Policy for ReelsGrab. Learn how to submit takedown notices, counter-notifications, and understand our copyright compliance.",
+    url: `${SITE_CONFIG.url}/dmca`,
+    type: "website",
+    images: [{ url: "/og-default.png", width: 1200, height: 630 }],
+  },
 };
 
 export default function DmcaPage() {

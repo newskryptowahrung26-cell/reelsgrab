@@ -25,7 +25,7 @@ import {
 export const metadata: Metadata = {
   title: "Descargar Reels de Instagram Gratis",
   description:
-    "Descarga Reels de Instagram gratis en HD 1080p sin marca de agua y con audio original y música. El mejor descargador de Reels de Instagram online: sin aplicaciones, sin iniciar sesión. Compatible con iPhone, Android y PC.",
+    "Descarga Reels de Instagram gratis en HD 1080p sin marca de agua y con audio original. El mejor descargador online para iPhone, Android y PC sin login.",
   keywords: [
     "descargar reels de instagram",
     "descargar reels instagram",
@@ -56,10 +56,13 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Descargar Reels de Instagram Gratis Sin Marca de Agua en HD (Con Audio)",
+    title: "Descargar Reels de Instagram Gratis en HD | ReelsGrab",
     description:
-      "Descarga Reels de Instagram gratis en HD 1080p sin marca de agua y con audio original. Sin aplicaciones ni registro.",
+      "Descarga Reels de Instagram gratis en HD 1080p sin marca de agua y con audio original. El mejor descargador online para iPhone, Android y PC sin login.",
     url: `${SITE_CONFIG.url}/es/descargar-reels-instagram`,
+    type: "website",
+    locale: "es_ES",
+    images: [{ url: "/og-default.png", width: 1200, height: 630 }],
   },
 };
 
@@ -290,6 +293,7 @@ const relatedTools = [
 export default function DescargarReelsInstagramPage() {
   return (
     <>
+      <script dangerouslySetInnerHTML={{ __html: "document.documentElement.lang = 'es';" }} />
       {/* JSON-LD Schemas */}
       <script
         type="application/ld+json"

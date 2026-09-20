@@ -3,8 +3,17 @@ import { SITE_CONFIG } from "@/lib/siteConfig";
 
 export const metadata: Metadata = {
   title: "Terms of Use",
-  description: `Terms and conditions for using ${SITE_CONFIG.name}.`,
+  description:
+    "Read the Terms of Use for ReelsGrab. Understand acceptable use, intellectual property policies, fair usage guidelines, and service conditions.",
   alternates: { canonical: `${SITE_CONFIG.url}/terms-of-use` },
+  openGraph: {
+    title: "Terms of Use | ReelsGrab",
+    description:
+      "Read the Terms of Use for ReelsGrab. Understand acceptable use, intellectual property policies, fair usage guidelines, and service conditions.",
+    url: `${SITE_CONFIG.url}/terms-of-use`,
+    type: "website",
+    images: [{ url: "/og-default.png", width: 1200, height: 630 }],
+  },
 };
 
 export default function TermsOfUsePage() {
