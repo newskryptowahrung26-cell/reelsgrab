@@ -23,7 +23,7 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Baixar Reels do Instagram Grátis Sem Marca d'Água HD (Com Áudio)",
+  title: "Baixar Reels do Instagram Grátis",
   description:
     "Baixe Reels do Instagram grátis em HD 1080p sem marca d'água e com áudio original e música. O melhor baixador de Reels do Instagram online: sem aplicativo, sem login. Funciona no iPhone, Android e PC.",
   keywords: [

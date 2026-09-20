@@ -5,7 +5,7 @@ import FaqSection from "@/components/FaqSection";
 import HowToSteps from "@/components/HowToSteps";
 
 export const metadata: Metadata = {
-  title: "How to Download Instagram Reels on iPhone (Save to Camera Roll)",
+  title: "How to Download Reels on iPhone",
   description: "How to download Instagram Reels on iPhone and save to Camera Roll without an app. Works on iOS 16, 17, 18. Step-by-step Safari guide with screenshots.",
   keywords: ["download instagram reels on iphone", "save instagram reels to camera roll iphone", "download ig reels iphone ios", "how to download reels on iphone"],
   alternates: { canonical: `${SITE_CONFIG.url}/blog/download-reels-iphone` },
@@ -69,6 +69,29 @@ export default function DownloadReelsIphonePage() {
         <div className="mb-10">
           <h2 className="text-xl font-bold text-white mb-6">FAQ</h2>
           <FaqSection faqs={faqs} />
+        </div>
+
+        {/* Related Guides Section */}
+        <div className="mb-10 border-t border-slate-800 pt-8">
+          <h2 className="text-xl font-bold text-white mb-4">Related Instagram Guides &amp; Download Tools</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
+            <a href="/blog/how-to-download-instagram-reels" className="p-4 rounded-xl bg-slate-900 border border-slate-800 hover:border-indigo-500 transition-colors block">
+              <p className="font-semibold text-white mb-1">How to Download Instagram Reels</p>
+              <p className="text-xs text-slate-400">Complete guide for iPhone, Android, and PC.</p>
+            </a>
+            <a href="/blog/download-reels-without-watermark" className="p-4 rounded-xl bg-slate-900 border border-slate-800 hover:border-indigo-500 transition-colors block">
+              <p className="font-semibold text-white mb-1">Download Reels Without Watermark</p>
+              <p className="text-xs text-slate-400">Save original HD video without creator tags.</p>
+            </a>
+            <a href="/blog/fix-reels-no-sound" className="p-4 rounded-xl bg-slate-900 border border-slate-800 hover:border-indigo-500 transition-colors block">
+              <p className="font-semibold text-white mb-1">Fix Reels Download No Sound</p>
+              <p className="text-xs text-slate-400">Why downloaded Reels are muted and how to fix them.</p>
+            </a>
+            <a href="/bulk-reels-downloader" className="p-4 rounded-xl bg-slate-900 border border-slate-800 hover:border-indigo-500 transition-colors block">
+              <p className="font-semibold text-white mb-1">Bulk Reels Downloader</p>
+              <p className="text-xs text-slate-400">Download multiple Reels from any public profile.</p>
+            </a>
+          </div>
         </div>
 
         <div className="p-5 rounded-xl bg-indigo-600/10 border border-indigo-500/30 text-center">

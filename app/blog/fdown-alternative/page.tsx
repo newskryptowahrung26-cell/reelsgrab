@@ -4,7 +4,7 @@ import { breadcrumbSchema, faqSchema } from "@/lib/schema";
 import FaqSection from "@/components/FaqSection";
 
 export const metadata: Metadata = {
-  title: "Best FDown Alternative | When FDown.net Isn't Working",
+  title: "Best FDown Alternative Downloader",
   description: "FDown.net not working? Here are the best FDown alternatives for downloading Facebook videos and Reels in HD: always online, no ads, with audio.",
   keywords: ["fdown alternative", "fdown not working", "fdown.net alternative", "fdown alternative site", "alternative to fdown", "facebook video downloader alternative to fdown"],
   alternates: { canonical: `${SITE_CONFIG.url}/blog/fdown-alternative` },
@@ -87,6 +87,29 @@ export default function FDownAlternativePage() {
         <div className="mb-10">
           <h2 className="text-xl font-bold text-white mb-6">FAQ</h2>
           <FaqSection faqs={faqs} />
+        </div>
+
+        {/* Related Guides Section */}
+        <div className="mb-10 border-t border-slate-800 pt-8">
+          <h2 className="text-xl font-bold text-white mb-4">Related Facebook Download Guides &amp; Tools</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
+            <a href="/blog/snapsave-alternative" className="p-4 rounded-xl bg-slate-900 border border-slate-800 hover:border-indigo-500 transition-colors block">
+              <p className="font-semibold text-white mb-1">Best SnapSave Alternative</p>
+              <p className="text-xs text-slate-400">Ad-free downloader comparison for Instagram and FB.</p>
+            </a>
+            <a href="/facebook-video-download" className="p-4 rounded-xl bg-slate-900 border border-slate-800 hover:border-indigo-500 transition-colors block">
+              <p className="font-semibold text-white mb-1">Facebook Video Downloader</p>
+              <p className="text-xs text-slate-400">Download public FB videos in HD 1080p and 4K.</p>
+            </a>
+            <a href="/facebook-reels-download" className="p-4 rounded-xl bg-slate-900 border border-slate-800 hover:border-indigo-500 transition-colors block">
+              <p className="font-semibold text-white mb-1">Facebook Reels Downloader</p>
+              <p className="text-xs text-slate-400">Save Facebook Reels without watermark with original music.</p>
+            </a>
+            <a href="/facebook-private-video-download" className="p-4 rounded-xl bg-slate-900 border border-slate-800 hover:border-indigo-500 transition-colors block">
+              <p className="font-semibold text-white mb-1">Private Facebook Video Downloader</p>
+              <p className="text-xs text-slate-400">Save private group and personal videos securely.</p>
+            </a>
+          </div>
         </div>
 
         <div className="p-5 rounded-xl bg-indigo-600/10 border border-indigo-500/30 text-center">

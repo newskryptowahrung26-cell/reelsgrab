@@ -5,7 +5,7 @@ import { SITE_CONFIG } from "@/lib/siteConfig";
 import { faqSchema, howToSchema, breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "How to Download Instagram Reels: Complete Free Guide",
+  title: "How to Download Instagram Reels",
   description: "Step-by-step guide: how to download Instagram Reels for free in HD on iPhone, Android, and PC. No app, no login, with audio and without watermark.",
   keywords: ["how to download instagram reels", "download instagram reels free", "save instagram reels", "instagram reel download guide"],
   alternates: { canonical: `${SITE_CONFIG.url}/blog/how-to-download-instagram-reels` },
@@ -93,6 +93,29 @@ export default function HowToDownloadInstagramReelsPage() {
         <div className="mb-10">
           <h2 className="text-xl font-bold text-white mb-6">FAQ</h2>
           <FaqSection faqs={faqs} />
+        </div>
+
+        {/* Related Guides Section */}
+        <div className="mb-10 border-t border-slate-800 pt-8">
+          <h2 className="text-xl font-bold text-white mb-4">Related Guides &amp; Download Tools</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
+            <a href="/blog/fix-reels-no-sound" className="p-4 rounded-xl bg-slate-900 border border-slate-800 hover:border-indigo-500 transition-colors block">
+              <p className="font-semibold text-white mb-1">Fix Reels Download No Sound</p>
+              <p className="text-xs text-slate-400">Why downloaded Reels are muted and how to fix them.</p>
+            </a>
+            <a href="/blog/snapsave-alternative" className="p-4 rounded-xl bg-slate-900 border border-slate-800 hover:border-indigo-500 transition-colors block">
+              <p className="font-semibold text-white mb-1">Best SnapSave Alternative</p>
+              <p className="text-xs text-slate-400">Clean, ad-free downloader comparison.</p>
+            </a>
+            <a href="/reels-to-mp3" className="p-4 rounded-xl bg-slate-900 border border-slate-800 hover:border-indigo-500 transition-colors block">
+              <p className="font-semibold text-white mb-1">Reels to MP3 Extractor</p>
+              <p className="text-xs text-slate-400">Extract audio directly at 320kbps.</p>
+            </a>
+            <a href="/bulk-reels-downloader" className="p-4 rounded-xl bg-slate-900 border border-slate-800 hover:border-indigo-500 transition-colors block">
+              <p className="font-semibold text-white mb-1">Bulk Reels Downloader</p>
+              <p className="text-xs text-slate-400">Download multiple Reels from any public profile.</p>
+            </a>
+          </div>
         </div>
 
         <div className="p-5 rounded-xl bg-indigo-600/10 border border-indigo-500/30 text-center">

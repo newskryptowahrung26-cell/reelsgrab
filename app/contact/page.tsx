@@ -3,7 +3,7 @@ import { SITE_CONFIG } from "@/lib/siteConfig";
 import { Mail, MessageSquare, ShieldCheck } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: `Contact Us | ${SITE_CONFIG.name}`,
+  title: "Contact Support & Feedback",
   description: `Get in touch with the ${SITE_CONFIG.name} support and feedback team.`,
   alternates: { canonical: `${SITE_CONFIG.url}/contact` },
 };
@@ -49,6 +49,54 @@ export default function ContactPage() {
           <a href={`mailto:contact@${SITE_CONFIG.domain}`} className="text-sm font-medium text-indigo-400 hover:underline">
             contact@{SITE_CONFIG.domain}
           </a>
+        </div>
+      </div>
+
+      {/* Support Details & FAQ */}
+      <div className="border-t border-slate-800 pt-12 space-y-8">
+        <div>
+          <h2 className="text-2xl font-bold text-white mb-4">Support Guidelines &amp; Response Times</h2>
+          <p className="text-slate-300 text-sm leading-relaxed mb-4">
+            Our engineering and support team reviews every inquiry submitted through our contact channels.
+            We strive to respond to all technical support and user feedback requests within 24 to 48 business hours.
+            When reporting a broken download or issue with a specific video, please provide the exact social media URL,
+            your device type (iPhone, Android, Windows, or Mac), and browser (Chrome, Safari, Firefox, Edge).
+          </p>
+          <p className="text-slate-300 text-sm leading-relaxed">
+            For urgent copyright notices or intellectual property inquiries, please refer directly to our{" "}
+            <a href="/dmca" className="text-indigo-400 hover:underline">DMCA Policy</a> and email our designated
+            copyright agent with the necessary documentation for expedited processing.
+          </p>
+        </div>
+
+        <div>
+          <h2 className="text-2xl font-bold text-white mb-4">Frequently Asked Questions</h2>
+          <div className="space-y-4 text-sm text-slate-300">
+            <div className="p-5 rounded-xl bg-slate-900/60 border border-slate-800">
+              <h3 className="font-semibold text-white mb-2">Why did my video download fail or return an error?</h3>
+              <p className="leading-relaxed">
+                Download failures usually occur because the source video is set to private, has geographic restrictions,
+                or the account owner deleted the post. Ensure the video is public and accessible in an incognito window.
+                If the video is public and still fails, social platforms occasionally update their video delivery protocols;
+                our servers automatically adapt to these changes within minutes.
+              </p>
+            </div>
+            <div className="p-5 rounded-xl bg-slate-900/60 border border-slate-800">
+              <h3 className="font-semibold text-white mb-2">Is there any fee or subscription required to use ReelsGrab?</h3>
+              <p className="leading-relaxed">
+                No, ReelsGrab is 100% free with unlimited downloads. You do not need to register an account, enter payment details,
+                or install any third-party browser extensions or mobile applications.
+              </p>
+            </div>
+            <div className="p-5 rounded-xl bg-slate-900/60 border border-slate-800">
+              <h3 className="font-semibold text-white mb-2">How can I download audio or MP3 from a video?</h3>
+              <p className="leading-relaxed">
+                You can extract original audio directly using our dedicated{" "}
+                <a href="/youtube-to-mp3" className="text-indigo-400 hover:underline">YouTube to MP3</a> converter or our{" "}
+                <a href="/reels-to-mp3" className="text-indigo-400 hover:underline">Reels to MP3</a> tool. Both extract clean audio up to 320kbps.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>

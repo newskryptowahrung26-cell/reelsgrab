@@ -6,7 +6,7 @@ import { SITE_CONFIG } from "@/lib/siteConfig";
 import { faqSchema, howToSchema, softwareSchema, breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Descargar Reels de Facebook Gratis HD Sin Marca de Agua",
+  title: "Descargar Reels de Facebook Gratis",
   description:
     "Descarga Reels de Facebook gratis en HD 1080p sin marca de agua. Descargador de Reels de Facebook online: sin login, rápido, con audio original.",
   keywords: [
@@ -83,6 +83,33 @@ export default function DescargarReelsFacebookPage() {
           <h2 className="text-2xl font-bold text-white text-center mb-3">Cómo Descargar Reels de Facebook</h2>
           <p className="text-center text-slate-400 text-sm mb-10">4 pasos rápidos: listo en segundos</p>
           <HowToSteps steps={pasos} />
+        </div>
+      </section>
+
+      <section className="max-w-4xl mx-auto px-4 sm:px-6 py-14">
+        <h2 className="text-2xl font-bold text-white text-center mb-4">Ventajas de Usar ReelsGrab para Facebook</h2>
+        <p className="text-center text-slate-400 text-sm mb-10 max-w-2xl mx-auto">
+          Disfruta de la mejor experiencia para guardar videos cortos de Facebook con máxima fidelidad visual y sonora.
+        </p>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm">
+          <div className="p-5 rounded-xl bg-slate-900 border border-slate-800">
+            <h3 className="font-semibold text-white mb-2">Sin Marcas de Agua</h3>
+            <p className="text-xs text-slate-400 leading-relaxed">
+              Obtén el archivo MP4 original directamente desde los servidores de Facebook, limpio y sin logotipos superpuestos.
+            </p>
+          </div>
+          <div className="p-5 rounded-xl bg-slate-900 border border-slate-800">
+            <h3 className="font-semibold text-white mb-2">Audio Original Completo</h3>
+            <p className="text-xs text-slate-400 leading-relaxed">
+              Nuestra herramienta combina las pistas de video y audio para garantizar que nunca descargues un Reel en silencio.
+            </p>
+          </div>
+          <div className="p-5 rounded-xl bg-slate-900 border border-slate-800">
+            <h3 className="font-semibold text-white mb-2">100% Gratis y Seguro</h3>
+            <p className="text-xs text-slate-400 leading-relaxed">
+              Sin registros, sin contraseñas y sin necesidad de instalar aplicaciones o extensiones sospechosas en tu navegador.
+            </p>
+          </div>
         </div>
       </section>
 

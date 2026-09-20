@@ -9,7 +9,7 @@ import { faqSchema, howToSchema, softwareSchema, breadcrumbSchema } from "@/lib/
 import { Music, Zap, Shield, Smartphone, Headphones, FileAudio, CheckCircle2, AlertTriangle } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "YouTube to MP3 Converter | Free High Quality 320kbps Audio Downloader",
+  title: "YouTube to MP3 Converter 320kbps",
   description:
     "Convert and download YouTube videos to MP3 in high quality 320kbps, 256kbps, and 128kbps audio. The fastest, safe online YouTube MP3 converter, compatible with iPhone, Android, Mac & PC without ads or software.",
   keywords: [

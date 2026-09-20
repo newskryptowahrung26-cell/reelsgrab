@@ -19,7 +19,7 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Baixar Vídeos do YouTube em MP4 | HD 1080p e 4K Grátis Online",
+  title: "Baixar Vídeos YouTube em MP4",
   description:
     "Baixe vídeos do YouTube em formato MP4 em qualidade HD 1080p, 720p e 4K com áudio sincronizado. O baixador de YouTube para MP4 online mais rápido e seguro: funciona no iPhone, Android, Mac e PC sem anúncios invasivos nem programas.",
   keywords: [

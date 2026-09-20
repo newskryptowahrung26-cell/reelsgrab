@@ -1,0 +1,50 @@
+# ReelsGrab
+> Free online video and audio downloader for YouTube, Instagram Reels, and Facebook Videos.
+
+ReelsGrab is a free web-based utility that enables users to download public videos and audio from Instagram, Facebook, and YouTube in high definition (1080p, 2K, 4K) and high-bitrate MP3 (up to 320kbps). No software installation or account registration is required.
+
+## Key Features
+- Instagram Reels Downloader: Download public Instagram Reels in original MP4 HD quality without watermark.
+- Facebook Video Downloader: Save Facebook public and group videos in 720p, 1080p, and 4K resolutions.
+- Facebook Reels Downloader: Download short-form Facebook Reels with original audio and music.
+- YouTube to MP3 Converter: Extract high-fidelity audio up to 320kbps from YouTube videos and Shorts.
+- YouTube to MP4 Downloader: Download YouTube videos in Full HD 1080p and 4K formats.
+- Reels to MP3 Converter: Extract background audio and music tracks from Instagram and Facebook Reels.
+- Bulk Reels Downloader: Batch-download multiple public Reels at once.
+- Multilingual Support: Available in English, Spanish (Español), and Portuguese (Português).
+
+## Core URLs
+- Homepage: https://www.reelsgrab.net/
+- Instagram Reels Downloader: https://www.reelsgrab.net/instagram-reels-download
+- Facebook Reels Downloader: https://www.reelsgrab.net/facebook-reels-download
+- Facebook Video Downloader: https://www.reelsgrab.net/facebook-video-download
+- YouTube to MP3: https://www.reelsgrab.net/youtube-to-mp3
+- YouTube to MP4: https://www.reelsgrab.net/youtube-to-mp4
+- Reels to MP3: https://www.reelsgrab.net/reels-to-mp3
+- Bulk Reels Downloader: https://www.reelsgrab.net/bulk-reels-downloader
+- Blog & Guides: https://www.reelsgrab.net/blog
+- About Us: https://www.reelsgrab.net/about
+- Contact: https://www.reelsgrab.net/contact
+- Privacy Policy: https://www.reelsgrab.net/privacy-policy
+- Terms of Use: https://www.reelsgrab.net/terms-of-use
+- DMCA Copyright Policy: https://www.reelsgrab.net/dmca
+
+## Spanish Pages (Español)
+- Descargar Reels Instagram: https://www.reelsgrab.net/es/descargar-reels-instagram
+- Descargar Reels Facebook: https://www.reelsgrab.net/es/descargar-reels-facebook
+- Descargar Videos Facebook: https://www.reelsgrab.net/es/descargar-videos-facebook
+- YouTube a MP3: https://www.reelsgrab.net/es/youtube-a-mp3
+- YouTube a MP4: https://www.reelsgrab.net/es/youtube-a-mp4
+
+## Portuguese Pages (Português)
+- Baixar Reels Instagram: https://www.reelsgrab.net/pt/baixar-reels-instagram
+- Baixar Vídeos Facebook: https://www.reelsgrab.net/pt/baixar-video-facebook
+- YouTube para MP3: https://www.reelsgrab.net/pt/youtube-para-mp3
+- YouTube para MP4: https://www.reelsgrab.net/pt/youtube-para-mp4
+
+## API Specification
+- Endpoint: `/api/download`
+- Method: POST
+- Content-Type: `application/json`
+- Request Payload: `{"url": "https://..."}`
+- Response: JSON containing download streams, resolutions, bitrates, audio tracks, and direct download links.

@@ -20,7 +20,7 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Convertidor de YouTube a MP3 | Audio en Alta Calidad 320kbps Gratis",
+  title: "Convertidor YouTube a MP3 Gratis",
   description:
     "Convierte y descarga videos de YouTube a MP3 en alta calidad 320kbps, 256kbps y 128kbps. El convertidor de YouTube a MP3 online más rápido y seguro: compatible con iPhone, Android, Mac y PC sin publicidad invasiva ni programas.",
   keywords: [

@@ -27,7 +27,7 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Instagram Reels Download | Free HD 1080p No Watermark (With Audio)",
+  title: "Instagram Reels Download Free in HD",
   description:
     "Download Instagram Reels in HD 1080p without watermark, with original audio and music. Free online IG Reels downloader: no login, no app. Works on iPhone, Android & PC.",
   keywords: [

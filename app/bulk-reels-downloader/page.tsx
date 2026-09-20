@@ -9,7 +9,7 @@ import { SITE_CONFIG } from "@/lib/siteConfig";
 import { faqSchema, howToSchema, softwareSchema, breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Bulk Reels Downloader | Download All Reels from Instagram Profile Free",
+  title: "Bulk Reels Downloader for Instagram",
   description:
     "Bulk download all Instagram Reels from a profile or username. Download multiple Facebook and Instagram Reels at once: free, no login, saves as ZIP.",
   keywords: [

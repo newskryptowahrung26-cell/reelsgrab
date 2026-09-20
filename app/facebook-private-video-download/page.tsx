@@ -9,7 +9,7 @@ import { SITE_CONFIG } from "@/lib/siteConfig";
 import { faqSchema, howToSchema, softwareSchema, breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Download Private Facebook Videos & Reels Online Free",
+  title: "Private Facebook Video Downloader",
   description:
     "Download private Facebook videos and reels online for free. Step-by-step guide to save private FB videos without losing quality. No login, no app required.",
   keywords: [

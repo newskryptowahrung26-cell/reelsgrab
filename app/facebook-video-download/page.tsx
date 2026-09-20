@@ -25,7 +25,7 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Facebook Video Download | HD 1080p & 4K Free Online | FB Downloader",
+  title: "Facebook Video Download HD Online",
   description:
     "Download Facebook videos in HD 1080p and 4K for free online. Best FB video downloader: download Facebook videos by link without watermark, with original audio. Works on iPhone, Android & PC.",
   keywords: [

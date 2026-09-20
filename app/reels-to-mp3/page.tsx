@@ -26,7 +26,7 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Reels to MP3 | Download Instagram & Facebook Reels Audio Free (320kbps)",
+  title: "Reels to MP3 Audio Downloader",
   description:
     "Convert Instagram and Facebook Reels to MP3 audio online for free. Extract high quality 320kbps audio, songs, and viral sounds from any Reel in seconds: no app, no login required. Works on iPhone, Android & PC.",
   keywords: [

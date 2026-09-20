@@ -44,9 +44,38 @@ export default function PrivacyPolicyPage() {
           to our website or other websites. You may opt out of personalized advertising by visiting Google Ads Settings.
         </p>
 
-        <h2 className="text-xl font-bold text-white mt-8 mb-4">5. Contact Us</h2>
+        <h2 className="text-xl font-bold text-white mt-8 mb-4">5. GDPR Compliance &amp; European Privacy Rights</h2>
         <p>
-          If you have any questions or suggestions regarding our Privacy Policy, please contact us via our{" "}
+          If you are a resident of the European Economic Area (EEA), you have certain data protection rights under the General Data Protection Regulation (GDPR).
+          Because {SITE_CONFIG.name} does not collect, store, or process personally identifiable information (PII) or require account registration,
+          we do not maintain user profiles, personal databases, or identifiable tracking records.
+          To the extent that any technical telemetry is collected via cookies or web servers, you have the right to request access, rectification,
+          or deletion of any associated data by contacting our team.
+        </p>
+
+        <h2 className="text-xl font-bold text-white mt-8 mb-4">6. California Consumer Privacy Act (CCPA)</h2>
+        <p>
+          Under the California Consumer Privacy Act (CCPA), California residents have specific rights regarding their personal information.
+          We do not sell, rent, or trade personal data to third parties. We do not monetize personal user data or collect sensitive personal information.
+        </p>
+
+        <h2 className="text-xl font-bold text-white mt-8 mb-4">7. Children&apos;s Online Privacy (COPPA)</h2>
+        <p>
+          Our services are not directed to individuals under the age of 13. We do not knowingly collect or solicit personal information
+          from children under 13. If we discover that personal information from a child under 13 has been collected,
+          we will promptly take steps to delete that information from our servers.
+        </p>
+
+        <h2 className="text-xl font-bold text-white mt-8 mb-4">8. Data Security &amp; Encryption</h2>
+        <p>
+          All communications between your web browser and our servers are encrypted using modern Transport Layer Security (TLS 1.3).
+          We implement standard security protocols to safeguard against unauthorized access, alteration, disclosure, or destruction of technical data.
+        </p>
+
+        <h2 className="text-xl font-bold text-white mt-8 mb-4">9. Contact &amp; Questions</h2>
+        <p>
+          If you have questions regarding this Privacy Policy or our data handling practices, please review our{" "}
+          <a href="/terms-of-use" className="text-indigo-400 hover:underline">Terms of Use</a> or reach out through our{" "}
           <a href="/contact" className="text-indigo-400 hover:underline">Contact page</a>.
         </p>
       </div>

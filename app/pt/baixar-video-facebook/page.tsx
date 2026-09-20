@@ -25,7 +25,7 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Baixar Vídeos do Facebook Grátis HD 1080p e 4K | Sem Programas",
+  title: "Baixar Vídeos do Facebook Grátis",
   description:
     "Baixe vídeos do Facebook grátis em HD 1080p e 4K sem instalar programas. O melhor baixador de vídeos do Facebook online: rápido, seguro, sem marca d'água e com áudio original. Funciona no iPhone, Android e PC.",
   keywords: [
