@@ -17,10 +17,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: "/reels-to-mp3", priority: 0.90, changeFrequency: "weekly" as const },
     { url: "/bulk-reels-downloader", priority: 0.85, changeFrequency: "weekly" as const },
     // Spanish
+    { url: "/es/youtube-a-mp3", priority: 0.90, changeFrequency: "weekly" as const },
+    { url: "/es/youtube-a-mp4", priority: 0.90, changeFrequency: "weekly" as const },
     { url: "/es/descargar-videos-facebook", priority: 0.90, changeFrequency: "weekly" as const },
     { url: "/es/descargar-reels-instagram", priority: 0.90, changeFrequency: "weekly" as const },
     { url: "/es/descargar-reels-facebook", priority: 0.85, changeFrequency: "weekly" as const },
     // Portuguese
+    { url: "/pt/youtube-para-mp3", priority: 0.90, changeFrequency: "weekly" as const },
+    { url: "/pt/youtube-para-mp4", priority: 0.90, changeFrequency: "weekly" as const },
     { url: "/pt/baixar-video-facebook", priority: 0.90, changeFrequency: "weekly" as const },
     { url: "/pt/baixar-reels-instagram", priority: 0.90, changeFrequency: "weekly" as const },
     // Blog

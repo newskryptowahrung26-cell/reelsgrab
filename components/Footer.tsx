@@ -13,8 +13,12 @@ const tools = [
 ];
 
 const languages = [
+  { label: "YouTube a MP3 (ES)", href: "/es/youtube-a-mp3" },
+  { label: "YouTube a MP4 (ES)", href: "/es/youtube-a-mp4" },
   { label: "Descargar Videos Facebook (ES)", href: "/es/descargar-videos-facebook" },
   { label: "Descargar Reels Instagram (ES)", href: "/es/descargar-reels-instagram" },
+  { label: "YouTube para MP3 (PT)", href: "/pt/youtube-para-mp3" },
+  { label: "YouTube para MP4 (PT)", href: "/pt/youtube-para-mp4" },
   { label: "Baixar Reels Instagram (PT)", href: "/pt/baixar-reels-instagram" },
   { label: "Baixar Video Facebook (PT)", href: "/pt/baixar-video-facebook" },
 ];
