@@ -43,7 +43,10 @@ export const metadata: Metadata = {
     creator: SITE_CONFIG.twitterHandle,
   },
   icons: {
-    icon: "/favicon.ico",
+    icon: [
+      { url: "/favicon.ico" },
+      { url: "/icon.svg", type: "image/svg+xml" },
+    ],
     apple: "/apple-touch-icon.png",
   },
   verification: {
