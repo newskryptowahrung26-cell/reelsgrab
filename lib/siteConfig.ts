@@ -10,7 +10,7 @@ export const SITE_CONFIG = {
     "Download YouTube videos, Shorts, MP3 audio, Instagram Reels, and Facebook Videos in HD 1080p, 4K & 320kbps, no watermark, 100% free, no login required.",
   twitterHandle: "@reelsgrab",
   themeColor: "#6366f1",
-  gaId: "G-XXXXXXXXXX", // Replace with real GA4 ID
+  gaId: "G-NWKRBYG7Y4", // Google Analytics 4 ID
   adsenseId: "ca-pub-XXXXXXXXXX", // Replace with real AdSense publisher ID
 };
 
