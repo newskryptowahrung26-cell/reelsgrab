@@ -5,9 +5,9 @@ export const SITE_CONFIG = {
   name: "ReelsGrab",
   domain: "reelsgrab.com",
   url: "https://reelsgrab.com",
-  tagline: "Free Instagram & Facebook Reels Downloader",
+  tagline: "Free YouTube, Instagram & Facebook Video & Audio Downloader",
   description:
-    "Download YouTube MP3, YouTube MP4, Instagram Reels, Facebook Reels & Videos in HD 1080p — no watermark, with audio, completely free. No login required.",
+    "Download YouTube videos, Shorts, MP3 audio, Instagram Reels, and Facebook Videos in HD 1080p, 4K & 320kbps — no watermark, 100% free, no login required.",
   twitterHandle: "@reelsgrab",
   themeColor: "#6366f1",
   gaId: "G-XXXXXXXXXX", // Replace with real GA4 ID
