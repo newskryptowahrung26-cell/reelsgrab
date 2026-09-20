@@ -9,9 +9,9 @@ import { faqSchema, howToSchema, softwareSchema, breadcrumbSchema } from "@/lib/
 import { Music, Zap, Shield, Smartphone, Headphones, FileAudio, CheckCircle2, AlertTriangle } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "YouTube to MP3 Converter – Free High Quality 320kbps Audio Downloader",
+  title: "YouTube to MP3 Converter | Free High Quality 320kbps Audio Downloader",
   description:
-    "Convert and download YouTube videos to MP3 in high quality 320kbps, 256kbps, and 128kbps audio. The fastest, safe online YouTube MP3 converter — works on iPhone, Android, Mac & PC without ads or software.",
+    "Convert and download YouTube videos to MP3 in high quality 320kbps, 256kbps, and 128kbps audio. The fastest, safe online YouTube MP3 converter, compatible with iPhone, Android, Mac & PC without ads or software.",
   keywords: [
     "youtube to mp3",
     "youtube mp3 converter",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     canonical: `${SITE_CONFIG.url}/youtube-to-mp3`,
   },
   openGraph: {
-    title: "YouTube to MP3 Converter – Free High Quality 320kbps Audio Downloader",
+    title: "YouTube to MP3 Converter | Free High Quality 320kbps Audio Downloader",
     description:
       "Convert and download YouTube videos to MP3 in high quality 320kbps, 256kbps, and 128kbps audio. Free online YouTube MP3 converter with no popups.",
     url: `${SITE_CONFIG.url}/youtube-to-mp3`,
@@ -62,7 +62,7 @@ const features = [
     icon: Smartphone,
     title: "Universal Device Compatibility",
     description:
-      "Seamlessly convert YouTube to MP3 on iPhone (Safari), Android (Chrome), Mac, Windows, and Linux without installing any app.",
+      "Easily convert YouTube to MP3 on iPhone (Safari), Android (Chrome), Mac, Windows, and Linux without installing any app.",
   },
 ];
 
@@ -104,7 +104,7 @@ const faqs = [
   },
   {
     q: "How do I download YouTube MP3 on an iPhone or iPad?",
-    a: "Open Safari on your iPhone, paste the YouTube URL into ReelsGrab, and tap Download. Safari will show a download prompt — tap 'Download' to save it directly to your iOS Files app. From Files, you can play it or export it to other music apps.",
+    a: "Open Safari on your iPhone, paste the YouTube URL into ReelsGrab, and tap Download. Safari will show a download prompt: tap 'Download' to save it directly to your iOS Files app. From Files, you can play it or export it to other music apps.",
   },
   {
     q: "Why do competitor sites like yttmp3.com.co have so many popup ads?",
@@ -222,7 +222,7 @@ export default function YouTubeToMp3Page() {
           </nav>
 
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-purple-500/15 border border-purple-500/30 text-purple-300 text-xs font-medium mb-5">
-            <FileAudio size={14} /> Free YouTube to MP3 Converter – 320kbps High Quality
+            <FileAudio size={14} /> Free YouTube to MP3 Converter | 320kbps High Quality
           </div>
 
           <h1 className="text-4xl sm:text-5xl font-extrabold text-white mb-4 leading-tight">
@@ -618,7 +618,7 @@ export default function YouTubeToMp3Page() {
       {/* FAQ Section */}
       <section className="max-w-3xl mx-auto px-4 sm:px-6 py-14">
         <h2 className="text-2xl sm:text-3xl font-bold text-white text-center mb-10">
-          Frequently Asked Questions – YouTube to MP3
+          Frequently Asked Questions: YouTube to MP3
         </h2>
         <FaqSection faqs={faqs} />
       </section>

@@ -3,18 +3,18 @@ import Link from "next/link";
 import { SITE_CONFIG } from "@/lib/siteConfig";
 
 export const metadata: Metadata = {
-  title: "Blog – Instagram & Facebook Reels Download Guides & Tips",
+  title: "Blog | Instagram & Facebook Reels Download Guides & Tips",
   description: "Expert guides on how to download Instagram Reels, fix no-sound issues, download without watermark, iPhone tips, and find the best alternative tools.",
   alternates: { canonical: `${SITE_CONFIG.url}/blog` },
 };
 
 const posts = [
-  { title: "How to Download Instagram Reels (Complete Guide)", href: "/blog/how-to-download-instagram-reels", category: "Guide", description: "Step-by-step guide to download any Instagram Reel for free in HD — works on iPhone, Android, and PC." },
+  { title: "How to Download Instagram Reels (Complete Guide)", href: "/blog/how-to-download-instagram-reels", category: "Guide", description: "Step-by-step guide to download any Instagram Reel for free in HD. Works on iPhone, Android, and PC." },
   { title: "How to Download Instagram Reels Without Watermark", href: "/blog/download-reels-without-watermark", category: "Guide", description: "Instagram adds watermarks to in-app saved Reels. Here's how to get clean, watermark-free downloads." },
   { title: "Why Do Downloaded Instagram Reels Have No Sound? (Fixed!)", href: "/blog/fix-reels-no-sound", category: "Fix", description: "Downloaded Reels are muted or silent? Here's exactly why it happens and how to fix it permanently." },
   { title: "How to Download Instagram Reels on iPhone", href: "/blog/download-reels-iphone", category: "iPhone", description: "Complete iPhone guide: save Instagram Reels directly to Camera Roll without any app install." },
-  { title: "Best SnapSave Alternative – No Ads, No Popups", href: "/blog/snapsave-alternative", category: "Alternative", description: "Tired of SnapSave's aggressive ads and popups? Here are the best SnapSave alternatives." },
-  { title: "Best FDown Alternative – When FDown.net Isn't Working", href: "/blog/fdown-alternative", category: "Alternative", description: "FDown not working? Here are the best FDown alternatives that always work, even when FB changes APIs." },
+  { title: "Best SnapSave Alternative: No Ads, No Popups", href: "/blog/snapsave-alternative", category: "Alternative", description: "Tired of SnapSave's aggressive ads and popups? Here are the best SnapSave alternatives." },
+  { title: "Best FDown Alternative: When FDown.net Isn't Working", href: "/blog/fdown-alternative", category: "Alternative", description: "FDown not working? Here are the best FDown alternatives that always work, even when FB changes APIs." },
 ];
 
 const categoryColors: Record<string, string> = {
@@ -33,7 +33,7 @@ export default function BlogPage() {
             Blog &amp; <span className="gradient-text">Download Guides</span>
           </h1>
           <p className="text-slate-400 text-base">
-            Expert guides to download Instagram &amp; Facebook Reels — fix issues, compare tools, and get the most out of your downloads.
+            Expert guides to download Instagram &amp; Facebook Reels: fix issues, compare tools, and get the most out of your downloads.
           </p>
         </div>
       </section>

@@ -27,7 +27,7 @@ import {
 export const metadata: Metadata = {
   title: "Descargar Videos de Facebook Gratis HD 1080p y 4K | Sin Programas",
   description:
-    "Descarga videos de Facebook gratis en HD 1080p y 4K sin programas ni aplicaciones. El mejor descargador de videos de Facebook online — rápido, seguro, sin marca de agua y con audio original. Compatible con iPhone, Android y PC.",
+    "Descarga videos de Facebook gratis en HD 1080p y 4K sin programas ni aplicaciones. El mejor descargador de videos de Facebook online: rápido, seguro, sin marca de agua y con audio original. Compatible con iPhone, Android y PC.",
   keywords: [
     "descargar videos de facebook",
     "descargar video de facebook",
@@ -340,7 +340,7 @@ export default function DescargarVideosFacebookPage() {
           </nav>
 
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-500/15 border border-blue-500/30 text-blue-300 text-xs font-medium mb-5">
-            <Film size={14} /> Descargador de Videos de Facebook – HD 1080p y 4K Sin Marca de Agua
+            <Film size={14} /> Descargador de Videos de Facebook | HD 1080p y 4K Sin Marca de Agua
           </div>
 
           <h1 className="text-4xl sm:text-5xl font-extrabold text-white mb-4 leading-tight">
@@ -349,7 +349,7 @@ export default function DescargarVideosFacebookPage() {
           </h1>
 
           <p className="text-slate-300 text-lg max-w-2xl mx-auto mb-8 leading-relaxed">
-            Descarga cualquier video de Facebook en <strong className="text-white">HD 1080p y 4K</strong> gratis —
+            Descarga cualquier video de Facebook en <strong className="text-white">HD 1080p y 4K</strong> gratis:
             videos del muro, Facebook Watch, Reels y repeticiones de En Vivo. Sin programas, sin registro y con audio original completo.
           </p>
 
@@ -615,7 +615,7 @@ export default function DescargarVideosFacebookPage() {
       {/* FAQ SECTION */}
       <section className="max-w-3xl mx-auto px-4 sm:px-6 py-14">
         <h2 className="text-2xl font-bold text-white text-center mb-10">
-          Preguntas Frecuentes — Descargador de Videos de Facebook
+          Preguntas Frecuentes | Descargador de Videos de Facebook
         </h2>
         <FaqSection faqs={preguntas} />
       </section>

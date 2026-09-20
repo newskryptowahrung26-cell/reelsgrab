@@ -25,9 +25,9 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Facebook Video Download – HD 1080p & 4K Free Online | FB Downloader",
+  title: "Facebook Video Download | HD 1080p & 4K Free Online | FB Downloader",
   description:
-    "Download Facebook videos in HD 1080p and 4K for free online. Best FB video downloader — download Facebook videos by link without watermark, with original audio. Works on iPhone, Android & PC.",
+    "Download Facebook videos in HD 1080p and 4K for free online. Best FB video downloader: download Facebook videos by link without watermark, with original audio. Works on iPhone, Android & PC.",
   keywords: [
     "facebook video download",
     "facebook video downloader",
@@ -70,9 +70,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Facebook Video Download – HD 1080p & 4K Free Online | FB Downloader",
+    title: "Facebook Video Download | HD 1080p & 4K Free Online | FB Downloader",
     description:
-      "Download Facebook videos in HD 1080p and 4K for free online. Best FB video downloader — download Facebook videos by link without watermark, with audio.",
+      "Download Facebook videos in HD 1080p and 4K for free online. Best FB video downloader: download Facebook videos by link without watermark, with audio.",
     url: `${SITE_CONFIG.url}/facebook-video-download`,
   },
 };
@@ -112,7 +112,7 @@ const features = [
     icon: Smartphone,
     title: "Universal Device Compatibility",
     description:
-      "Engineered to work seamlessly across iOS Safari, Android Chrome, Windows, Mac, and Linux without installing third-party APKs or software.",
+      "Engineered to work smoothly across iOS Safari, Android Chrome, Windows, Mac, and Linux without installing third-party APKs or software.",
   },
   {
     icon: Zap,
@@ -373,7 +373,7 @@ export default function FacebookVideoDownloadPage() {
           </nav>
 
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-500/15 border border-blue-500/30 text-blue-300 text-xs font-medium mb-5">
-            <Film size={14} /> Free Facebook Video Downloader – HD 1080p &amp; 4K No Watermark
+            <Film size={14} /> Free Facebook Video Downloader | HD 1080p &amp; 4K No Watermark
           </div>
 
           <h1 className="text-4xl sm:text-5xl font-extrabold text-white mb-4 leading-tight">
@@ -382,7 +382,7 @@ export default function FacebookVideoDownloadPage() {
           </h1>
 
           <p className="text-slate-300 text-lg max-w-2xl mx-auto mb-8 leading-relaxed">
-            Download any <strong className="text-white">Facebook video</strong> in HD 1080p &amp; 4K — feed videos,
+            Download any <strong className="text-white">Facebook video</strong> in HD 1080p &amp; 4K: feed videos,
             Watch shows, Reels, and Live replays. Free, no login, instant cloud download with full audio.
           </p>
 
@@ -533,7 +533,7 @@ export default function FacebookVideoDownloadPage() {
             <p>
               When you view a video inside Facebook, the internal player streams both tracks simultaneously. However, most free
               downloaders on the internet only scrape the video URL. Because multiplexing (merging) large video and audio files requires
-              significant server CPU power, competitor sites take shortcuts and deliver an un-muxed video track — resulting in a silent
+              significant server CPU power, competitor sites take shortcuts and deliver an un-muxed video track, resulting in a silent
               video.
             </p>
             <div className="my-6 p-4 rounded-xl bg-indigo-950/40 border border-indigo-500/30 text-indigo-200 text-sm">
@@ -886,7 +886,7 @@ export default function FacebookVideoDownloadPage() {
               </h4>
               <ul className="list-disc pl-6 space-y-2 text-sm text-slate-300">
                 <li>
-                  <strong>Step 1:</strong> Publish your primary video on Facebook utilizing Facebook&apos;s native tools and distribution.
+                  <strong>Step 1:</strong> Publish your primary video on Facebook using Facebook&apos;s native tools and distribution.
                 </li>
                 <li>
                   <strong>Step 2:</strong> Copy the video URL and paste it into <strong>ReelsGrab</strong>.
@@ -939,7 +939,7 @@ export default function FacebookVideoDownloadPage() {
             </h3>
             <p>
               ReelsGrab delivers the cleanest, fastest, and most reliable Facebook video downloading experience on the internet.
-              No software installation, no spam popups, no account registration, and zero watermarks — just pure, high-definition
+              No software installation, no spam popups, no account registration, and zero watermarks: just pure, high-definition
               video with full original audio.
             </p>
             <p className="mt-4">
@@ -966,7 +966,7 @@ export default function FacebookVideoDownloadPage() {
       {/* FAQ SECTION */}
       <section className="max-w-3xl mx-auto px-4 sm:px-6 py-14">
         <h2 className="text-2xl font-bold text-white text-center mb-10">
-          Frequently Asked Questions – Facebook Video Downloader
+          Frequently Asked Questions | Facebook Video Downloader
         </h2>
         <FaqSection faqs={faqs} />
       </section>

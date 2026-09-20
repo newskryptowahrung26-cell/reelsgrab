@@ -9,9 +9,9 @@ import { SITE_CONFIG } from "@/lib/siteConfig";
 import { faqSchema, howToSchema, softwareSchema, breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Bulk Reels Downloader – Download All Reels from Instagram Profile Free",
+  title: "Bulk Reels Downloader | Download All Reels from Instagram Profile Free",
   description:
-    "Bulk download all Instagram Reels from a profile or username. Download multiple Facebook and Instagram Reels at once — free, no login, saves as ZIP.",
+    "Bulk download all Instagram Reels from a profile or username. Download multiple Facebook and Instagram Reels at once: free, no login, saves as ZIP.",
   keywords: [
     "bulk download instagram reels", "bulk instagram reels downloader",
     "download all reels from instagram profile", "download all reels from instagram username",
@@ -25,10 +25,10 @@ export const metadata: Metadata = {
 const features = [
   { icon: Package, title: "Profile-Wide Download", description: "Download all Reels from any public Instagram or Facebook profile in one click." },
   { icon: Archive, title: "ZIP Download", description: "All downloaded Reels are packaged into a single ZIP file for easy storage." },
-  { icon: Users, title: "Any Public Profile", description: "Works for any public Instagram or Facebook profile — brands, creators, influencers." },
+  { icon: Users, title: "Any Public Profile", description: "Works for any public Instagram or Facebook profile, including brands, creators, and influencers." },
   { icon: Zap, title: "Batch Processing", description: "Multiple Reels downloaded and processed simultaneously in the background." },
-  { icon: Download, title: "Original Quality", description: "All Reels downloaded in their original HD quality — no compression." },
-  { icon: CheckCircle, title: "100% Free", description: "Bulk download completely free — no limits on number of Reels." },
+  { icon: Download, title: "Original Quality", description: "All Reels downloaded in their original HD quality with no compression." },
+  { icon: CheckCircle, title: "100% Free", description: "Bulk download completely free with no limits on number of Reels." },
 ];
 
 const steps = [
@@ -61,7 +61,7 @@ export default function BulkReelsDownloaderPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Bulk Reels Downloader", url: "/bulk-reels-downloader" }])} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={softwareSchema("Bulk Reels Downloader", "Download all Instagram and Facebook Reels from a profile in bulk — free, ZIP download.", `${SITE_CONFIG.url}/bulk-reels-downloader`)} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={softwareSchema("Bulk Reels Downloader", "Download all Instagram and Facebook Reels from a profile in bulk: free, ZIP download.", `${SITE_CONFIG.url}/bulk-reels-downloader`)} />
       <script type="application/ld+json" dangerouslySetInnerHTML={faqSchema(faqs)} />
       <script type="application/ld+json" dangerouslySetInnerHTML={howToSchema("How to Bulk Download Instagram Reels from a Profile", "Download all Reels from any public Instagram profile at once", steps)} />
 
@@ -82,7 +82,7 @@ export default function BulkReelsDownloaderPage() {
           </h1>
           <p className="text-slate-300 text-lg max-w-2xl mx-auto mb-8 leading-relaxed">
             Download <strong className="text-white">all Instagram Reels</strong> from any public profile at once.
-            Enter a username, select all Reels, and download as ZIP — completely free.
+            Enter a username, select all Reels, and download as ZIP, completely free.
           </p>
           <div className="w-full max-w-2xl mx-auto">
             <div className="flex flex-col sm:flex-row gap-3">
@@ -127,7 +127,7 @@ export default function BulkReelsDownloaderPage() {
       <div className="max-w-4xl mx-auto px-4 mb-6"><div className="h-24 bg-slate-900 border border-dashed border-slate-700 rounded-xl flex items-center justify-center text-slate-600 text-xs">Advertisement</div></div>
 
       <section className="max-w-3xl mx-auto px-4 sm:px-6 py-14">
-        <h2 className="text-2xl font-bold text-white text-center mb-10">FAQ – Bulk Reels Downloader</h2>
+        <h2 className="text-2xl font-bold text-white text-center mb-10">FAQ: Bulk Reels Downloader</h2>
         <FaqSection faqs={faqs} />
       </section>
     </>

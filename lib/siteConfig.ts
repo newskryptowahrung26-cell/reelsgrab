@@ -1,5 +1,5 @@
 // ============================================================
-// SITE CONFIG — Change domain here once, updates everywhere
+// SITE CONFIG: Change domain here once, updates everywhere
 // ============================================================
 export const SITE_CONFIG = {
   name: "ReelsGrab",
@@ -7,7 +7,7 @@ export const SITE_CONFIG = {
   url: "https://reelsgrab.com",
   tagline: "Free YouTube, Instagram & Facebook Video & Audio Downloader",
   description:
-    "Download YouTube videos, Shorts, MP3 audio, Instagram Reels, and Facebook Videos in HD 1080p, 4K & 320kbps — no watermark, 100% free, no login required.",
+    "Download YouTube videos, Shorts, MP3 audio, Instagram Reels, and Facebook Videos in HD 1080p, 4K & 320kbps, no watermark, 100% free, no login required.",
   twitterHandle: "@reelsgrab",
   themeColor: "#6366f1",
   gaId: "G-XXXXXXXXXX", // Replace with real GA4 ID

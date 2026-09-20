@@ -14,7 +14,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_CONFIG.url),
   title: {
-    default: `${SITE_CONFIG.name} – Free Instagram & Facebook Reels Downloader`,
+    default: `${SITE_CONFIG.name} | Free Instagram & Facebook Reels Downloader`,
     template: `%s | ${SITE_CONFIG.name}`,
   },
   description: SITE_CONFIG.description,
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: SITE_CONFIG.url,
     siteName: SITE_CONFIG.name,
-    title: `${SITE_CONFIG.name} – Free Instagram & Facebook Reels Downloader`,
+    title: `${SITE_CONFIG.name} | Free Instagram & Facebook Reels Downloader`,
     description: SITE_CONFIG.description,
     images: [{ url: "/og-default.png", width: 1200, height: 630 }],
   },
@@ -56,14 +56,14 @@ export default function RootLayout({
   return (
     <html lang="en" className={inter.variable}>
       <head>
-        {/* Google AdSense — replace publisher ID */}
+        {/* Google AdSense: replace publisher ID */}
         {/* <script async src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${SITE_CONFIG.adsenseId}`} crossOrigin="anonymous" /> */}
       </head>
       <body className="bg-slate-950 text-slate-100 antialiased min-h-screen flex flex-col">
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
-        {/* Google Analytics 4 — replace GA_ID */}
+        {/* Google Analytics 4: replace GA_ID */}
         {/* <script async src={`https://www.googletagmanager.com/gtag/js?id=${SITE_CONFIG.gaId}`} />
         <script dangerouslySetInnerHTML={{ __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','${SITE_CONFIG.gaId}');` }} /> */}
       </body>

@@ -5,15 +5,15 @@ import { faqSchema, breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Download Instagram Reels Without Watermark",
-  description: "How to download Instagram Reels without watermark in HD. Instagram adds watermarks to shared videos — here's how to get the clean original file free.",
+  description: "How to download Instagram Reels without watermark in HD. Instagram adds watermarks to shared videos, but here's how to get the clean original file free.",
   keywords: ["download instagram reels without watermark", "instagram reels no watermark", "save reels without watermark", "instagram reel download no watermark"],
   alternates: { canonical: `${SITE_CONFIG.url}/blog/download-reels-without-watermark` },
 };
 
 const faqs = [
   { q: "Does Instagram add watermarks to downloaded Reels?", a: "Instagram's in-app share/send feature adds a watermark (username + Instagram logo) to Reels. However, using a third-party tool like ReelsGrab, you can download the original file without any watermark." },
-  { q: "Is it legal to remove the Instagram watermark from a Reel?", a: "For your own Reels, yes — you can download them without watermark freely. For other people's Reels, you should only download for personal use and should not remove watermarks that the creator intentionally added." },
-  { q: "What's the best way to download Instagram Reels without watermark in HD?", a: "ReelsGrab is the best free option — paste the Instagram Reel URL and get HD 1080p without watermark instantly. No login required." },
+  { q: "Is it legal to remove the Instagram watermark from a Reel?", a: "For your own Reels, yes: you can download them without watermark freely. For other people's Reels, you should only download for personal use and should not remove watermarks that the creator intentionally added." },
+  { q: "What's the best way to download Instagram Reels without watermark in HD?", a: "ReelsGrab is the best free option: paste the Instagram Reel URL and get HD 1080p without watermark instantly. No login required." },
 ];
 
 export default function DownloadWithoutWatermarkPage() {
@@ -44,10 +44,10 @@ export default function DownloadWithoutWatermarkPage() {
           <p>
             Instagram adds watermarks to Reels when you use the <em>&quot;Send to&quot;</em> or <em>&quot;Share to&quot;</em> options inside the app.
             This is done to promote the platform and the original creator. However, the raw video file on Instagram&apos;s CDN
-            servers does NOT have a watermark — it&apos;s added digitally during the share process.
+            servers does NOT have a watermark; it&apos;s added digitally during the share process.
           </p>
 
-          <h2 className="text-xl font-bold text-white">Method 1: Use ReelsGrab (Best — Instant &amp; Free)</h2>
+          <h2 className="text-xl font-bold text-white">Method 1: Use ReelsGrab (Best, Instant &amp; Free)</h2>
           <ol className="list-decimal list-inside space-y-2 text-slate-400">
             <li>Open Instagram and find the Reel you want.</li>
             <li>Tap the three-dot (···) menu → <strong className="text-white">Copy Link</strong>.</li>
@@ -56,14 +56,14 @@ export default function DownloadWithoutWatermarkPage() {
             <li>Select <strong className="text-white">HD 1080p (No Watermark)</strong>.</li>
           </ol>
           <p>
-            ReelsGrab fetches the original video file directly from Instagram&apos;s CDN — <strong className="text-white">no watermark, full HD, original audio</strong>.
+            ReelsGrab fetches the original video file directly from Instagram&apos;s CDN with <strong className="text-white">no watermark, full HD, and original audio</strong>.
           </p>
 
           <h2 className="text-xl font-bold text-white">Method 2: Screen Recording (Low Quality)</h2>
           <p>
             You can screen record a Reel playing in full screen, but this produces lower quality video,
             may include UI elements or notifications, and still captures any on-screen watermarks from the player.
-            Not recommended — use ReelsGrab instead.
+            Not recommended: use ReelsGrab instead.
           </p>
 
           <h2 className="text-xl font-bold text-white">How to Download YOUR OWN Instagram Reels Without Watermark</h2>
@@ -80,7 +80,7 @@ export default function DownloadWithoutWatermarkPage() {
         </div>
 
         <div className="p-5 rounded-xl bg-indigo-600/10 border border-indigo-500/30 text-center">
-          <p className="text-white font-semibold mb-3">Download Reels Without Watermark Now — Free</p>
+          <p className="text-white font-semibold mb-3">Download Reels Without Watermark Now (Free)</p>
           <a href="/instagram-reels-download" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-semibold text-sm transition-all">
             Download Without Watermark →
           </a>

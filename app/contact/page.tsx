@@ -3,7 +3,7 @@ import { SITE_CONFIG } from "@/lib/siteConfig";
 import { Mail, MessageSquare, ShieldCheck } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: `Contact Us – ${SITE_CONFIG.name}`,
+  title: `Contact Us | ${SITE_CONFIG.name}`,
   description: `Get in touch with the ${SITE_CONFIG.name} support and feedback team.`,
   alternates: { canonical: `${SITE_CONFIG.url}/contact` },
 };

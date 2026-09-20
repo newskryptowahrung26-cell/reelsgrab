@@ -6,7 +6,7 @@ import HowToSteps from "@/components/HowToSteps";
 
 export const metadata: Metadata = {
   title: "How to Download Instagram Reels on iPhone (Save to Camera Roll)",
-  description: "How to download Instagram Reels on iPhone and save to Camera Roll — no app needed. Works on iOS 16, 17, 18. Step-by-step Safari guide with screenshots.",
+  description: "How to download Instagram Reels on iPhone and save to Camera Roll without an app. Works on iOS 16, 17, 18. Step-by-step Safari guide with screenshots.",
   keywords: ["download instagram reels on iphone", "save instagram reels to camera roll iphone", "download ig reels iphone ios", "how to download reels on iphone"],
   alternates: { canonical: `${SITE_CONFIG.url}/blog/download-reels-iphone` },
 };
@@ -14,9 +14,9 @@ export const metadata: Metadata = {
 const steps = [
   { title: "Open the Instagram Reel on your iPhone", description: "Open Instagram on your iPhone, find the Reel you want to download, and tap the three-dot (···) menu on the Reel." },
   { title: "Copy the Reel link", description: "Tap 'Copy Link'. The Instagram Reel URL is now in your iPhone clipboard." },
-  { title: "Open Safari and go to ReelsGrab.com", description: "Open Safari (not Chrome) on your iPhone — Safari gives the best download experience on iOS." },
+  { title: "Open Safari and go to ReelsGrab.com", description: "Open Safari (not Chrome) on your iPhone: Safari gives the best download experience on iOS." },
   { title: "Paste the URL and tap Download HD", description: "Paste the Reel URL and tap 'Download Now'. Select 'HD 1080p (No Watermark)'." },
-  { title: "Save to Files", description: "Safari will ask where to save — select 'Files' or 'Downloads'. The video saves to your iPhone's Files app." },
+  { title: "Save to Files", description: "Safari will ask where to save: select 'Files' or 'Downloads'. The video saves to your iPhone's Files app." },
   { title: "Move to Camera Roll (optional)", description: "Open the Files app, find the downloaded MP4, tap and hold → Share → Save Video. It now appears in your Photos/Camera Roll." },
 ];
 
@@ -48,7 +48,7 @@ export default function DownloadReelsIphonePage() {
         </h1>
         <p className="text-slate-300 text-base leading-relaxed mb-10">
           iPhone users often struggle to download Instagram Reels because iOS restricts direct video downloads.
-          Here&apos;s the easiest method that works on all iPhones (iOS 16, 17, 18) — no App Store app needed.
+          Here&apos;s the easiest method that works on all iPhones (iOS 16, 17, 18) with no App Store app needed.
         </p>
 
         <div className="mb-12">
@@ -59,7 +59,7 @@ export default function DownloadReelsIphonePage() {
         <div className="prose prose-invert max-w-none text-slate-400 text-sm leading-relaxed space-y-4 mb-12">
           <h2 className="text-xl font-bold text-white">Tips for Best Results on iPhone</h2>
           <ul className="list-disc list-inside space-y-2">
-            <li><strong className="text-white">Always use Safari</strong> — not Chrome or Firefox — for the smoothest download experience on iOS.</li>
+            <li><strong className="text-white">Always use Safari</strong> (not Chrome or Firefox) for the smoothest download experience on iOS.</li>
             <li>If Safari asks to open the file instead of downloading, long-press the Download button and select <em>&quot;Download Linked File&quot;</em>.</li>
             <li>Downloaded files appear in <strong className="text-white">Files → Downloads</strong> folder.</li>
             <li>To move to Photos: Open Files app → find the video → tap Share icon → <strong className="text-white">Save Video</strong>.</li>
@@ -72,7 +72,7 @@ export default function DownloadReelsIphonePage() {
         </div>
 
         <div className="p-5 rounded-xl bg-indigo-600/10 border border-indigo-500/30 text-center">
-          <p className="text-white font-semibold mb-3">Download Instagram Reels on iPhone Now — Free</p>
+          <p className="text-white font-semibold mb-3">Download Instagram Reels on iPhone Now (Free)</p>
           <a href="/instagram-reels-download" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-semibold text-sm transition-all">
             Open Instagram Reels Downloader →
           </a>

@@ -8,7 +8,7 @@ import { faqSchema, howToSchema, softwareSchema, breadcrumbSchema } from "@/lib/
 export const metadata: Metadata = {
   title: "Descargar Reels de Facebook Gratis HD Sin Marca de Agua",
   description:
-    "Descarga Reels de Facebook gratis en HD 1080p sin marca de agua. Descargador de Reels de Facebook online — sin login, rápido, con audio original.",
+    "Descarga Reels de Facebook gratis en HD 1080p sin marca de agua. Descargador de Reels de Facebook online: sin login, rápido, con audio original.",
   keywords: [
     "descargar reels de facebook", "bajar reels de facebook",
     "descargador de reels de facebook", "descargar reel facebook",
@@ -32,7 +32,7 @@ const pasos = [
 ];
 
 const preguntas = [
-  { q: "¿Cómo descargar Reels de Facebook gratis?", a: "Copia el enlace del Reel de Facebook, pégalo en la herramienta de arriba y haz clic en Descargar. Selecciona HD 1080p — es completamente gratis sin necesidad de login." },
+  { q: "¿Cómo descargar Reels de Facebook gratis?", a: "Copia el enlace del Reel de Facebook, pégalo en la herramienta de arriba y haz clic en Descargar. Selecciona HD 1080p: es completamente gratis sin necesidad de login." },
   { q: "¿Puedo descargar Reels de Facebook sin marca de agua?", a: "Sí. ReelsGrab descarga los Reels de Facebook en su calidad original sin añadir ninguna marca de agua. El archivo de video está limpio y listo para compartir." },
   { q: "¿Cómo descargar Reels de Facebook en el iPhone?", a: "Copia el enlace del Reel desde Facebook, pégalo aquí y toca Descargar HD. En Safari, el video se guarda en tu app Archivos. Desde ahí puedes moverlo a la fototeca." },
   { q: "¿Puedo extraer el audio de un Reel de Facebook como MP3?", a: "Sí. Después de pegar el enlace, haz clic en Descargar y selecciona 'Audio MP3' para descargar solo el audio del Reel de Facebook." },
@@ -64,7 +64,7 @@ export default function DescargarReelsFacebookPage() {
           </h1>
           <p className="text-slate-300 text-lg max-w-2xl mx-auto mb-8 leading-relaxed">
             Descarga Reels de Facebook en <strong className="text-white">HD 1080p</strong> sin marca de agua
-            y con audio original — gratis, sin login, funciona en todos los dispositivos.
+            y con audio original: gratis, sin login, funciona en todos los dispositivos.
           </p>
           <DownloadTool platform="facebook" placeholder="Pega el enlace del Reel de Facebook aquí..." buttonLabel="Descargar Reel" />
           <div className="mt-6 flex flex-wrap justify-center gap-3 text-xs">
@@ -80,7 +80,7 @@ export default function DescargarReelsFacebookPage() {
       <section className="bg-slate-900/40 py-14">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <h2 className="text-2xl font-bold text-white text-center mb-3">Cómo Descargar Reels de Facebook</h2>
-          <p className="text-center text-slate-400 text-sm mb-10">4 pasos rápidos — listo en segundos</p>
+          <p className="text-center text-slate-400 text-sm mb-10">4 pasos rápidos: listo en segundos</p>
           <HowToSteps steps={pasos} />
         </div>
       </section>

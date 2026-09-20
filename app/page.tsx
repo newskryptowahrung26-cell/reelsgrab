@@ -29,9 +29,9 @@ import {
 } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: `${SITE_CONFIG.name} – Free YouTube, Instagram & Facebook Video & Audio Downloader`,
+  title: `${SITE_CONFIG.name} | Free YouTube, Instagram & Facebook Video & Audio Downloader`,
   description:
-    "Download YouTube videos, Shorts, MP3 audio, Instagram Reels, and Facebook Videos in HD 1080p, 4K & 320kbps — no watermark, 100% free, no login required.",
+    "Download YouTube videos, Shorts, MP3 audio, Instagram Reels, and Facebook Videos in HD 1080p, 4K & 320kbps, no watermark, 100% free, no login required.",
   keywords: [
     // YouTube to MP4 & Video Downloader
     "youtube to mp4",
@@ -123,9 +123,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: `${SITE_CONFIG.name} – Free YouTube, Instagram & Facebook Video & Audio Downloader`,
+    title: `${SITE_CONFIG.name} | Free YouTube, Instagram & Facebook Video & Audio Downloader`,
     description:
-      "Download YouTube videos, Shorts, MP3 audio, Instagram Reels, and Facebook Videos in HD 1080p, 4K & 320kbps — no watermark, 100% free.",
+      "Download YouTube videos, Shorts, MP3 audio, Instagram Reels, and Facebook Videos in HD 1080p, 4K & 320kbps, no watermark, 100% free.",
     url: SITE_CONFIG.url,
     type: "website",
   },
@@ -136,13 +136,13 @@ const features = [
     icon: Shield,
     title: "No Watermark Guarantee",
     description:
-      "Download clean HD videos without any watermark, overlay logo, or branding — original visual clarity preserved.",
+      "Download clean HD videos without any watermark, overlay logo, or branding, original visual clarity preserved.",
   },
   {
     icon: Music,
     title: "Pristine Audio & 320kbps MP3",
     description:
-      "Extract studio-grade 320kbps MP3 audio or download Full HD video with synchronized original sound — no muted files.",
+      "Extract studio-grade 320kbps MP3 audio or download Full HD video with synchronized original sound, no muted files.",
   },
   {
     icon: Zap,
@@ -154,7 +154,7 @@ const features = [
     icon: Lock,
     title: "Zero Registration or Login",
     description:
-      "Simply paste any public video URL and download immediately — no passwords, no email signup, and no accounts needed.",
+      "Simply paste any public video URL and download immediately: no passwords, no email signup, and no accounts needed.",
   },
   {
     icon: Video,
@@ -332,7 +332,7 @@ export default function HomePage() {
 
           <p className="text-base sm:text-lg text-slate-300 max-w-2xl mx-auto mb-10 leading-relaxed">
             Download YouTube Videos, Shorts, MP3 Audio, Instagram Reels &amp; Facebook Videos in HD
-            1080p, 4K MP4, or 320kbps MP3 audio — completely free with no watermark and no sign-up.
+            1080p, 4K MP4, or 320kbps MP3 audio, completely free with no watermark and no sign-up.
           </p>
 
           {/* Download Tool */}
@@ -385,7 +385,7 @@ export default function HomePage() {
             Why Choose {SITE_CONFIG.name}?
           </h2>
           <p className="text-slate-400 max-w-xl mx-auto text-sm sm:text-base">
-            The fastest, cleanest, and most dependable media downloader on the web — zero popunders,
+            The fastest, cleanest, and most dependable media downloader on the web, with zero popunders,
             zero adware, and zero quality loss.
           </p>
         </div>
@@ -400,7 +400,7 @@ export default function HomePage() {
               How to Download Videos &amp; Audio in 4 Simple Steps
             </h2>
             <p className="text-slate-400 text-sm sm:text-base">
-              Fast, intuitive, and hassle-free — save any social media video in seconds
+              Fast, intuitive, and hassle-free: save any social media video in seconds
             </p>
           </div>
           <HowToSteps steps={steps} />

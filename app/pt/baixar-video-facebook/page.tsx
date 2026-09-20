@@ -27,7 +27,7 @@ import {
 export const metadata: Metadata = {
   title: "Baixar Vídeos do Facebook Grátis HD 1080p e 4K | Sem Programas",
   description:
-    "Baixe vídeos do Facebook grátis em HD 1080p e 4K sem instalar programas. O melhor baixador de vídeos do Facebook online — rápido, seguro, sem marca d'água e com áudio original. Funciona no iPhone, Android e PC.",
+    "Baixe vídeos do Facebook grátis em HD 1080p e 4K sem instalar programas. O melhor baixador de vídeos do Facebook online: rápido, seguro, sem marca d'água e com áudio original. Funciona no iPhone, Android e PC.",
   keywords: [
     "baixar video do facebook",
     "baixar video facebook",
@@ -338,7 +338,7 @@ export default function BaixarVideoFacebookPage() {
           </nav>
 
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-500/15 border border-blue-500/30 text-blue-300 text-xs font-medium mb-5">
-            <Film size={14} /> Baixar Vídeo do Facebook – HD 1080p e 4K Sem Marca d&apos;Água
+            <Film size={14} /> Baixar Vídeo do Facebook | HD 1080p e 4K Sem Marca d&apos;Água
           </div>
 
           <h1 className="text-4xl sm:text-5xl font-extrabold text-white mb-4 leading-tight">
@@ -347,7 +347,7 @@ export default function BaixarVideoFacebookPage() {
           </h1>
 
           <p className="text-slate-300 text-lg max-w-2xl mx-auto mb-8 leading-relaxed">
-            Baixe qualquer vídeo do Facebook em <strong className="text-white">HD 1080p e 4K</strong> grátis —
+            Baixe qualquer vídeo do Facebook em <strong className="text-white">HD 1080p e 4K</strong> grátis:
             vídeos do feed, Facebook Watch, Reels e reprises de transmissões ao vivo. Sem programas, sem login e com áudio original completo.
           </p>
 
@@ -609,7 +609,7 @@ export default function BaixarVideoFacebookPage() {
       {/* FAQ SECTION */}
       <section className="max-w-3xl mx-auto px-4 sm:px-6 py-14">
         <h2 className="text-2xl font-bold text-white text-center mb-10">
-          Perguntas Frequentes — Baixar Vídeo do Facebook
+          Perguntas Frequentes | Baixar Vídeo do Facebook
         </h2>
         <FaqSection faqs={perguntas} />
       </section>

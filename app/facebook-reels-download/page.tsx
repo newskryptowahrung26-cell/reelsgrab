@@ -27,9 +27,9 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Facebook Reels Download – Free HD 1080p No Watermark (With Audio)",
+  title: "Facebook Reels Download | Free HD 1080p No Watermark (With Audio)",
   description:
-    "Download Facebook Reels in HD 1080p without watermark, with original audio and music. Free online FB Reels downloader — no login, no app. Works on iPhone, Android & PC.",
+    "Download Facebook Reels in HD 1080p without watermark, with original audio and music. Free online FB Reels downloader: no login, no app. Works on iPhone, Android & PC.",
   keywords: [
     "facebook reels download",
     "facebook reels downloader",
@@ -75,7 +75,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Facebook Reels Download – Free HD 1080p No Watermark (With Audio)",
+    title: "Facebook Reels Download | Free HD 1080p No Watermark (With Audio)",
     description:
       "Download Facebook Reels in HD 1080p without watermark, with original audio and music. Free online FB Reels downloader with no app or registration required.",
     url: `${SITE_CONFIG.url}/facebook-reels-download`,
@@ -111,7 +111,7 @@ const features = [
     icon: Smartphone,
     title: "iPhone, Android & Desktop",
     description:
-      "Engineered to work seamlessly across iOS Safari, Android Chrome, Windows, Mac, and Linux without installing third-party APKs or software.",
+      "Engineered to work smoothly across iOS Safari, Android Chrome, Windows, Mac, and Linux without installing third-party APKs or software.",
   },
   {
     icon: Zap,
@@ -371,7 +371,7 @@ export default function FacebookReelsDownloadPage() {
           </nav>
 
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-500/15 border border-blue-500/30 text-blue-300 text-xs font-medium mb-5">
-            <Film size={14} /> Free Facebook Reels Downloader – HD 1080p No Watermark
+            <Film size={14} /> Free Facebook Reels Downloader | HD 1080p No Watermark
           </div>
 
           <h1 className="text-4xl sm:text-5xl font-extrabold text-white mb-4 leading-tight">
@@ -490,7 +490,7 @@ export default function FacebookReelsDownloadPage() {
               </li>
             </ul>
             <p>
-              <strong>ReelsGrab</strong> solves all of these challenges. Built with cutting-edge cloud infrastructure, ReelsGrab
+              <strong>ReelsGrab</strong> solves all of these challenges. Built with high-speed cloud infrastructure, ReelsGrab
               enables you to download any public Facebook Reel in stunning <strong>1080p Full HD resolution</strong>, completely{" "}
               <strong>free of watermarks</strong>, with <strong>100% full original audio and music</strong> preserved. Whether
               you are a content creator cross-posting to TikTok and YouTube Shorts, a researcher saving archival footage, or an
@@ -738,7 +738,7 @@ export default function FacebookReelsDownloadPage() {
             </div>
 
             <p>
-              <strong>Why Full HD 1080p is Crucial:</strong> When repurposing Facebook Reels to TikTok, YouTube Shorts, or
+              <strong>Why Full HD 1080p Matters:</strong> When repurposing Facebook Reels to TikTok, YouTube Shorts, or
               Instagram Reels, uploading low-resolution (360p or 480p) videos triggers algorithmic penalties. Short-form video
               algorithms favor crisp, high-definition content with clear visuals and sharp sound. ReelsGrab always extracts the
               highest available quality from Facebook&apos;s CDN.
@@ -751,7 +751,7 @@ export default function FacebookReelsDownloadPage() {
               All Facebook Video &amp; Media Formats Supported
             </h3>
             <p>
-              ReelsGrab is more than just a Reels downloader — our cloud engine handles a wide spectrum of Facebook media formats:
+              ReelsGrab is more than just a Reels downloader: our cloud engine handles a wide spectrum of Facebook media formats:
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
               <div className="p-5 rounded-xl bg-slate-900/50 border border-slate-800">
@@ -876,7 +876,7 @@ export default function FacebookReelsDownloadPage() {
               </h4>
               <ul className="list-disc pl-6 space-y-2 text-sm text-slate-300">
                 <li>
-                  <strong>Step 1:</strong> Publish your primary Reel on Facebook utilizing Facebook&apos;s built-in creation tools.
+                  <strong>Step 1:</strong> Publish your primary Reel on Facebook using Facebook&apos;s built-in creation tools.
                 </li>
                 <li>
                   <strong>Step 2:</strong> Copy the Reel URL and paste it into <strong>ReelsGrab</strong>.
@@ -929,7 +929,7 @@ export default function FacebookReelsDownloadPage() {
             </h3>
             <p>
               ReelsGrab delivers the cleanest, fastest, and most reliable Facebook Reels downloading experience on the internet.
-              No software installation, no spam popups, no account registration, and zero watermarks — just pure, high-definition
+              No software installation, no spam popups, no account registration, and zero watermarks: just pure, high-definition
               video with full original audio.
             </p>
             <p className="mt-4">
@@ -956,7 +956,7 @@ export default function FacebookReelsDownloadPage() {
       {/* FAQ SECTION */}
       <section className="max-w-3xl mx-auto px-4 sm:px-6 py-14">
         <h2 className="text-2xl font-bold text-white text-center mb-10">
-          Frequently Asked Questions – Facebook Reels Downloader
+          Frequently Asked Questions | Facebook Reels Downloader
         </h2>
         <FaqSection faqs={faqs} />
       </section>

@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 
 const faqs = [
   { q: "Why does my downloaded Instagram Reel have no sound?", a: "Instagram uses DASH (Dynamic Adaptive Streaming over HTTP) which delivers video and audio as separate streams. Many simple downloaders only grab the video stream, leaving you with a silent file. Proper tools like ReelsGrab merge both streams." },
-  { q: "How to download Instagram Reels with sound?", a: "Use ReelsGrab — our tool properly merges the video and audio DASH streams so your download always includes the original sound and music." },
+  { q: "How to download Instagram Reels with sound?", a: "Use ReelsGrab: our tool properly merges the video and audio DASH streams so your download always includes the original sound and music." },
   { q: "Does this affect all Instagram Reels or only some?", a: "It mainly affects Reels with licensed music tracks. Original audio Reels (voice recordings, original sounds) are less affected. But DASH streaming affects all Reels to some degree." },
 ];
 
@@ -33,10 +33,10 @@ export default function FixReelsNoSoundPage() {
         <span className="px-2.5 py-1 rounded-full bg-red-500/15 text-red-300 text-xs font-medium">Fix</span>
         <h1 className="text-3xl sm:text-4xl font-extrabold text-white mt-3 mb-4 leading-tight">
           Why Downloaded Instagram Reels Have{" "}
-          <span className="gradient-text">No Sound</span> — Fixed!
+          <span className="gradient-text">No Sound</span> (Fixed!)
         </h1>
         <p className="text-slate-300 text-base leading-relaxed mb-10">
-          You downloaded an Instagram Reel and it plays perfectly on Instagram — but when you open the downloaded file, there&apos;s no sound.
+          You downloaded an Instagram Reel and it plays perfectly on Instagram, but when you open the downloaded file, there&apos;s no sound.
           You&apos;re not alone. This is one of the most common complaints about Instagram video downloaders. Here&apos;s exactly why it happens and how to fix it.
         </p>
 
@@ -49,7 +49,7 @@ export default function FixReelsNoSoundPage() {
           </p>
           <p>
             When you watch a Reel on Instagram, the player automatically downloads and merges both streams in real-time.
-            But most simple downloader tools only grab the video stream URL — which has <strong className="text-white">no audio</strong>.
+            But most simple downloader tools only grab the video stream URL, which has <strong className="text-white">no audio</strong>.
             Result: silent, muted Reel.
           </p>
 
@@ -71,7 +71,7 @@ export default function FixReelsNoSoundPage() {
           <p>
             If you only need the audio/music from the Reel, use our{" "}
             <a href="/reels-to-mp3" className="text-indigo-400 hover:underline">Reels to MP3 converter</a>{" "}
-            to extract just the audio track as an MP3 file — perfect for ringtones or saving the music.
+            to extract just the audio track as an MP3 file, perfect for ringtones or saving the music.
           </p>
 
           <h2 className="text-xl font-bold text-white">Fix 3: Check Your Video Player</h2>
@@ -87,7 +87,7 @@ export default function FixReelsNoSoundPage() {
         </div>
 
         <div className="p-5 rounded-xl bg-indigo-600/10 border border-indigo-500/30 text-center">
-          <p className="text-white font-semibold mb-3">Download Instagram Reels With Full Audio — Free</p>
+          <p className="text-white font-semibold mb-3">Download Instagram Reels With Full Audio (Free)</p>
           <a href="/instagram-reels-download" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-semibold text-sm transition-all">
             Download With Audio Now →
           </a>

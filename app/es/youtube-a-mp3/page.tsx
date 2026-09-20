@@ -20,9 +20,9 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Convertidor de YouTube a MP3 – Audio en Alta Calidad 320kbps Gratis",
+  title: "Convertidor de YouTube a MP3 | Audio en Alta Calidad 320kbps Gratis",
   description:
-    "Convierte y descarga videos de YouTube a MP3 en alta calidad 320kbps, 256kbps y 128kbps. El convertidor de YouTube a MP3 online más rápido y seguro — compatible con iPhone, Android, Mac y PC sin publicidad invasiva ni programas.",
+    "Convierte y descarga videos de YouTube a MP3 en alta calidad 320kbps, 256kbps y 128kbps. El convertidor de YouTube a MP3 online más rápido y seguro: compatible con iPhone, Android, Mac y PC sin publicidad invasiva ni programas.",
   keywords: [
     "youtube a mp3",
     "convertidor youtube a mp3",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Convertidor de YouTube a MP3 – Audio en Alta Calidad 320kbps Gratis",
+    title: "Convertidor de YouTube a MP3 | Audio en Alta Calidad 320kbps Gratis",
     description:
       "Convierte y descarga videos de YouTube a MP3 en alta calidad 320kbps, 256kbps y 128kbps sin programas.",
     url: `${SITE_CONFIG.url}/es/youtube-a-mp3`,
@@ -238,7 +238,7 @@ export default function YouTubeAMp3Page() {
           </nav>
 
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-purple-500/15 border border-purple-500/30 text-purple-300 text-xs font-medium mb-5">
-            <FileAudio size={14} /> Convertidor Gratis de YouTube a MP3 – 320kbps Alta Calidad
+            <FileAudio size={14} /> Convertidor Gratis de YouTube a MP3 | 320kbps Alta Calidad
           </div>
 
           <h1 className="text-4xl sm:text-5xl font-extrabold text-white mb-4 leading-tight">
@@ -481,7 +481,7 @@ export default function YouTubeAMp3Page() {
       {/* FAQ SECTION */}
       <section className="max-w-3xl mx-auto px-4 sm:px-6 py-14">
         <h2 className="text-2xl font-bold text-white text-center mb-10">
-          Preguntas Frecuentes — Convertidor de YouTube a MP3
+          Preguntas Frecuentes | Convertidor de YouTube a MP3
         </h2>
         <FaqSection faqs={preguntas} />
       </section>

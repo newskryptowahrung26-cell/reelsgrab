@@ -19,9 +19,9 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Baixar Vídeos do YouTube em MP4 – HD 1080p e 4K Grátis Online",
+  title: "Baixar Vídeos do YouTube em MP4 | HD 1080p e 4K Grátis Online",
   description:
-    "Baixe vídeos do YouTube em formato MP4 em qualidade HD 1080p, 720p e 4K com áudio sincronizado. O baixador de YouTube para MP4 online mais rápido e seguro — funciona no iPhone, Android, Mac e PC sem anúncios invasivos nem programas.",
+    "Baixe vídeos do YouTube em formato MP4 em qualidade HD 1080p, 720p e 4K com áudio sincronizado. O baixador de YouTube para MP4 online mais rápido e seguro: funciona no iPhone, Android, Mac e PC sem anúncios invasivos nem programas.",
   keywords: [
     "youtube para mp4",
     "baixar videos do youtube",
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Baixar Vídeos do YouTube em MP4 – HD 1080p e 4K Grátis Online",
+    title: "Baixar Vídeos do YouTube em MP4 | HD 1080p e 4K Grátis Online",
     description:
       "Baixe vídeos do YouTube em formato MP4 em qualidade HD 1080p, 720p e 4K com áudio sincronizado grátis.",
     url: `${SITE_CONFIG.url}/pt/youtube-para-mp4`,
@@ -225,7 +225,7 @@ export default function YouTubeParaMp4Page() {
           </nav>
 
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-red-500/15 border border-red-500/30 text-red-300 text-xs font-medium mb-5">
-            <Film size={14} /> Baixador Grátis do YouTube para MP4 – HD 1080p e 4K
+            <Film size={14} /> Baixador Grátis do YouTube para MP4 | HD 1080p e 4K
           </div>
 
           <h1 className="text-4xl sm:text-5xl font-extrabold text-white mb-4 leading-tight">
@@ -467,7 +467,7 @@ export default function YouTubeParaMp4Page() {
       {/* FAQ SECTION */}
       <section className="max-w-3xl mx-auto px-4 sm:px-6 py-14">
         <h2 className="text-2xl font-bold text-white text-center mb-10">
-          Perguntas Frequentes — Baixador de YouTube para MP4
+          Perguntas Frequentes | Baixador de YouTube para MP4
         </h2>
         <FaqSection faqs={perguntas} />
       </section>

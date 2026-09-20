@@ -25,7 +25,7 @@ import {
 export const metadata: Metadata = {
   title: "Descargar Reels de Instagram Gratis Sin Marca de Agua en HD (Con Audio)",
   description:
-    "Descarga Reels de Instagram gratis en HD 1080p sin marca de agua y con audio original y música. El mejor descargador de Reels de Instagram online — sin aplicaciones, sin iniciar sesión. Compatible con iPhone, Android y PC.",
+    "Descarga Reels de Instagram gratis en HD 1080p sin marca de agua y con audio original y música. El mejor descargador de Reels de Instagram online: sin aplicaciones, sin iniciar sesión. Compatible con iPhone, Android y PC.",
   keywords: [
     "descargar reels de instagram",
     "descargar reels instagram",
@@ -332,7 +332,7 @@ export default function DescargarReelsInstagramPage() {
           </nav>
 
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-pink-500/15 border border-pink-500/30 text-pink-300 text-xs font-medium mb-5">
-            <Film size={14} /> Descargador de Reels de Instagram – HD 1080p Sin Marca de Agua
+            <Film size={14} /> Descargador de Reels de Instagram | HD 1080p Sin Marca de Agua
           </div>
 
           <h1 className="text-4xl sm:text-5xl font-extrabold text-white mb-4 leading-tight">
@@ -628,7 +628,7 @@ export default function DescargarReelsInstagramPage() {
       {/* FAQ SECTION */}
       <section className="max-w-3xl mx-auto px-4 sm:px-6 py-14">
         <h2 className="text-2xl font-bold text-white text-center mb-10">
-          Preguntas Frecuentes — Descargar Reels de Instagram
+          Preguntas Frecuentes | Descargar Reels de Instagram
         </h2>
         <FaqSection faqs={preguntas} />
       </section>

@@ -27,7 +27,7 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "YouTube to MP4 Converter – Download YouTube Videos in 1080p, 2K & 4K HD Free",
+  title: "YouTube to MP4 Converter | Download YouTube Videos in 1080p, 2K & 4K HD Free",
   description:
     "Convert and download YouTube videos to MP4 in 1080p Full HD, 2K, and 4K quality with crystal-clear audio. Fast, free, online YouTube video downloader for PC, iPhone, Android, and Mac.",
   keywords: [
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     canonical: `${SITE_CONFIG.url}/youtube-to-mp4`,
   },
   openGraph: {
-    title: "YouTube to MP4 Converter – Download YouTube Videos in 1080p, 2K & 4K HD Free",
+    title: "YouTube to MP4 Converter | Download YouTube Videos in 1080p, 2K & 4K HD Free",
     description:
       "Convert and download YouTube videos to MP4 in 1080p Full HD, 2K, and 4K quality with crystal-clear audio. Fast, free, online YouTube video downloader for PC, iPhone, Android, and Mac.",
     url: `${SITE_CONFIG.url}/youtube-to-mp4`,
@@ -149,7 +149,7 @@ const faqs = [
   },
   {
     q: "Can I convert YouTube videos to MP4 on Windows PC and Mac?",
-    a: "Absolutely. ReelsGrab works seamlessly in Google Chrome, Microsoft Edge, Mozilla Firefox, Safari, and Opera on both Windows and macOS. No third-party software or command-line utilities are needed.",
+    a: "Absolutely. ReelsGrab works reliably in Google Chrome, Microsoft Edge, Mozilla Firefox, Safari, and Opera on both Windows and macOS. No third-party software or command-line utilities are needed.",
   },
   {
     q: "Can I download YouTube Live Streams?",
@@ -217,7 +217,7 @@ export default function YouTubeToMp4Page() {
           </div>
 
           <h1 className="text-3xl sm:text-5xl font-extrabold text-white mb-4 tracking-tight leading-tight">
-            YouTube to MP4 Converter – Download HD Videos Free
+            YouTube to MP4 Converter | Download HD Videos Free
           </h1>
           <p className="text-base sm:text-lg text-slate-300 max-w-2xl mx-auto mb-8 leading-relaxed">
             Convert and download your favorite YouTube videos and Shorts into high-quality MP4 files.
@@ -229,7 +229,7 @@ export default function YouTubeToMp4Page() {
             platform="youtube"
             mode="video"
             placeholder="Paste YouTube video or Shorts link here..."
-            buttonLabel="Download MP4"
+            buttonLabel="Convert to MP4"
           />
         </div>
       </section>
@@ -247,11 +247,11 @@ export default function YouTubeToMp4Page() {
           </div>
           <div className="flex flex-col items-center justify-center p-3">
             <span className="text-2xl sm:text-3xl font-bold text-indigo-400">0 Ads</span>
-            <span className="text-xs text-slate-400 mt-1">Zero Popunders</span>
+            <span className="text-xs text-slate-400 mt-1">No Popups or Traps</span>
           </div>
           <div className="flex flex-col items-center justify-center p-3">
-            <span className="text-2xl sm:text-3xl font-bold text-indigo-400">100% Free</span>
-            <span className="text-xs text-slate-400 mt-1">No Software Needed</span>
+            <span className="text-2xl sm:text-3xl font-bold text-indigo-400">Universal</span>
+            <span className="text-xs text-slate-400 mt-1">PC, Mac, iOS & Android</span>
           </div>
         </div>
       </section>
@@ -260,25 +260,24 @@ export default function YouTubeToMp4Page() {
       <section className="py-16 px-4 max-w-6xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-3">
-            Why ReelsGrab is the #1 YouTube to MP4 Converter
+            Engineered for Flawless YouTube to MP4 Downloads
           </h2>
           <p className="text-slate-400 max-w-xl mx-auto text-sm sm:text-base">
-            Engineered with cloud transcoding infrastructure to deliver pristine video quality,
-            universal MP4 playback, and an uncompromising, clean user experience.
+            Every feature is designed to give you the highest quality video with zero friction.
           </p>
         </div>
-        <FeaturesGrid features={features} />
+        <FeaturesGrid features={features} columns={4} />
       </section>
 
-      {/* How It Works Steps */}
-      <section className="py-16 px-4 bg-slate-900/30 border-t border-slate-800">
-        <div className="max-w-6xl mx-auto">
+      {/* How It Works */}
+      <section className="py-16 px-4 bg-slate-900/50 border-t border-slate-800">
+        <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-2xl sm:text-3xl font-bold text-white mb-3">
-              How to Convert & Download YouTube Videos to MP4 in 4 Easy Steps
+              How to Convert YouTube Videos to MP4
             </h2>
             <p className="text-slate-400 max-w-xl mx-auto text-sm sm:text-base">
-              Save any YouTube video or Short to your computer, tablet, or smartphone in under 10 seconds.
+              Follow these simple steps to download any YouTube video or Shorts clip in seconds.
             </p>
           </div>
           <HowToSteps steps={steps} />
@@ -301,9 +300,9 @@ export default function YouTubeToMp4Page() {
           <p className="text-base sm:text-lg text-slate-300">
             YouTube has evolved into the world's most comprehensive repository of human knowledge, visual entertainment,
             academic lectures, musical performances, and professional tutorials. With more than 500 hours of video uploaded
-            every minute, the platform contains an invaluable archive of media. However, YouTube is fundamentally engineered
-            as a streaming-first ecosystem. It demands continuous, stable high-speed broadband, consumes substantial mobile data
-            allowances, and subjects viewers to an ever-increasing barrage of unskippable pre-roll and mid-roll advertisements.
+            every minute, the platform contains an invaluable archive of media. However, the platform's native offline
+            functionality is strictly confined to paid YouTube Premium subscribers and locked within the proprietary mobile application,
+            preventing users from saving standalone MP4 video files directly to their personal hard drives, USB media, or camera rolls.
           </p>
           <p className="text-slate-300">
             Converting YouTube videos to local MP4 files bridges the critical gap between cloud streaming and offline independence.
@@ -316,7 +315,7 @@ export default function YouTubeToMp4Page() {
             online video downloaders for over a decade. While legacy converter websites bombard users with intrusive popunder advertisements,
             deceptive clickbait buttons, and fake malware warnings, ReelsGrab offers a clean, lightning-fast, and secure web interface.
             Powered by high-performance cloud media engines, ReelsGrab handles everything from standard definition 360p mobile clips
-            to breathtaking 1080p Full HD, 1440p 2K, and 2160p 4K Ultra HD video streams—all packaged in the universally compatible MP4 container.
+            to breathtaking 1080p Full HD, 1440p 2K, and 2160p 4K Ultra HD video streams, all packaged in the universally compatible MP4 container.
           </p>
         </section>
 
@@ -399,42 +398,42 @@ export default function YouTubeToMp4Page() {
                   <td className="p-3 sm:p-4 font-bold text-purple-400">4K Ultra HD (2160p)</td>
                   <td className="p-3 sm:p-4">3840 × 2160</td>
                   <td className="p-3 sm:p-4">16:9 Widescreen</td>
-                  <td className="p-3 sm:p-4">20,000 – 45,000 kbps</td>
+                  <td className="p-3 sm:p-4">20,000 to 45,000 kbps</td>
                   <td className="p-3 sm:p-4">4K Monitors, OLED TVs, Pro Editing</td>
                 </tr>
                 <tr className="hover:bg-slate-900/40">
                   <td className="p-3 sm:p-4 font-bold text-purple-300">2K QHD (1440p)</td>
                   <td className="p-3 sm:p-4">2560 × 1440</td>
                   <td className="p-3 sm:p-4">16:9 Widescreen</td>
-                  <td className="p-3 sm:p-4">10,000 – 16,000 kbps</td>
+                  <td className="p-3 sm:p-4">10,000 to 16,000 kbps</td>
                   <td className="p-3 sm:p-4">1440p Gaming Displays, iMac, iPad Pro</td>
                 </tr>
                 <tr className="hover:bg-slate-900/40 bg-indigo-500/5">
                   <td className="p-3 sm:p-4 font-bold text-indigo-400">1080p Full HD</td>
                   <td className="p-3 sm:p-4">1920 × 1080</td>
                   <td className="p-3 sm:p-4">16:9 Widescreen</td>
-                  <td className="p-3 sm:p-4">4,000 – 8,000 kbps</td>
+                  <td className="p-3 sm:p-4">4,000 to 8,000 kbps</td>
                   <td className="p-3 sm:p-4">Laptops, Desktop PCs, Tablets, Smart TVs</td>
                 </tr>
                 <tr className="hover:bg-slate-900/40">
                   <td className="p-3 sm:p-4 font-bold text-emerald-400">720p HD</td>
                   <td className="p-3 sm:p-4">1280 × 720</td>
                   <td className="p-3 sm:p-4">16:9 Widescreen</td>
-                  <td className="p-3 sm:p-4">2,000 – 3,500 kbps</td>
+                  <td className="p-3 sm:p-4">2,000 to 3,500 kbps</td>
                   <td className="p-3 sm:p-4">Smartphones, Budget Tablets, Commuting</td>
                 </tr>
                 <tr className="hover:bg-slate-900/40">
                   <td className="p-3 sm:p-4 font-bold text-amber-400">480p SD</td>
                   <td className="p-3 sm:p-4">854 × 480</td>
                   <td className="p-3 sm:p-4">16:9 Widescreen</td>
-                  <td className="p-3 sm:p-4">1,000 – 1,500 kbps</td>
+                  <td className="p-3 sm:p-4">1,000 to 1,500 kbps</td>
                   <td className="p-3 sm:p-4">Entry-level phones, Limited Storage</td>
                 </tr>
                 <tr className="hover:bg-slate-900/40">
                   <td className="p-3 sm:p-4 font-bold text-slate-400">360p Low</td>
                   <td className="p-3 sm:p-4">640 × 360</td>
                   <td className="p-3 sm:p-4">16:9 Widescreen</td>
-                  <td className="p-3 sm:p-4">500 – 800 kbps</td>
+                  <td className="p-3 sm:p-4">500 to 800 kbps</td>
                   <td className="p-3 sm:p-4">Talks, Podcasts, Audio-focused files</td>
                 </tr>
               </tbody>
@@ -481,7 +480,7 @@ export default function YouTubeToMp4Page() {
           </div>
         </section>
 
-        {/* Section 4: Video Codecs Deep Dive */}
+        {/* Section 4: Video Codecs Technical Breakdown */}
         <section className="space-y-6">
           <h2 className="text-xl sm:text-3xl font-bold text-white flex items-center gap-3">
             <HardDrive className="w-6 h-6 text-indigo-400 flex-shrink-0" />
@@ -554,7 +553,7 @@ export default function YouTubeToMp4Page() {
                 Full 60fps Smooth Motion
               </h3>
               <p className="text-xs text-slate-400 leading-relaxed">
-                Many YouTube Shorts—particularly dance routines, gaming highlights, sports clips, and cinematic transitions—are recorded
+                Many YouTube Shorts, particularly dance routines, gaming highlights, sports clips, and cinematic transitions, are recorded
                 at 60 frames per second. ReelsGrab preserves the original 60fps frame rate during conversion, ensuring silky-smooth motion
                 without stutter or skipped frames.
               </p>
@@ -711,7 +710,7 @@ export default function YouTubeToMp4Page() {
                 <li>Copy the video link from Safari or Chrome using <kbd className="bg-slate-800 px-1 py-0.5 rounded text-xs">Cmd + C</kbd>.</li>
                 <li>Paste the URL on ReelsGrab and select your desired MP4 quality.</li>
                 <li>Click <strong>Download MP4</strong>. Safari will save the file to your <strong>Downloads</strong> folder.</li>
-                <li>Open the file with <strong>QuickTime Player</strong> or drag it into Apple TV / Photos for seamless AirPlay streaming.</li>
+                <li>Open the file with <strong>QuickTime Player</strong> or drag it into Apple TV / Photos for smooth AirPlay streaming.</li>
               </ol>
             </div>
           </div>
@@ -912,7 +911,7 @@ export default function YouTubeToMp4Page() {
             </p>
             <p className="text-sm text-slate-300 leading-relaxed">
               <strong>Prohibited Activities:</strong> ReelsGrab does not condone or support the unauthorized re-uploading, commercial distribution,
-              or monetization of copyrighted media. Always obtain explicit permission from copyright holders before utilizing downloaded content for
+              or monetization of copyrighted media. Always obtain explicit permission from copyright holders before using downloaded content for
               commercial purposes.
             </p>
           </div>

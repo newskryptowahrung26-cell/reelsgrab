@@ -26,9 +26,9 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Reels to MP3 – Download Instagram & Facebook Reels Audio Free (320kbps)",
+  title: "Reels to MP3 | Download Instagram & Facebook Reels Audio Free (320kbps)",
   description:
-    "Convert Instagram and Facebook Reels to MP3 audio online for free. Extract high quality 320kbps audio, songs, and viral sounds from any Reel in seconds — no app, no login required. Works on iPhone, Android & PC.",
+    "Convert Instagram and Facebook Reels to MP3 audio online for free. Extract high quality 320kbps audio, songs, and viral sounds from any Reel in seconds: no app, no login required. Works on iPhone, Android & PC.",
   keywords: [
     "reels to mp3",
     "instagram reel to mp3",
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: `${SITE_CONFIG.url}/reels-to-mp3` },
   openGraph: {
-    title: "Reels to MP3 – Download Instagram & Facebook Reels Audio Free (320kbps)",
+    title: "Reels to MP3 | Download Instagram & Facebook Reels Audio Free (320kbps)",
     description:
       "Convert Instagram and Facebook Reels to MP3 audio online for free. Extract high quality 320kbps audio, songs, and viral sounds from any Reel in seconds.",
     url: `${SITE_CONFIG.url}/reels-to-mp3`,
@@ -80,7 +80,7 @@ const features = [
     icon: Volume2,
     title: "100% Original Audio & Music",
     description:
-      "Preserve the exact audio from the Reel — including copyrighted background music, viral audio tracks, speech, and sound effects.",
+      "Preserve the exact audio from the Reel: including copyrighted background music, viral audio tracks, speech, and sound effects.",
   },
   {
     icon: Globe,
@@ -104,7 +104,7 @@ const features = [
     icon: Smartphone,
     title: "Universal Device Compatibility",
     description:
-      "Seamlessly convert Reels to MP3 on iPhone (Safari), Android (Chrome), Windows, Mac, and Linux without installing third-party apps.",
+      "Easily convert Reels to MP3 on iPhone (Safari), Android (Chrome), Windows, Mac, and Linux without installing third-party apps.",
   },
   {
     icon: FileAudio,
@@ -251,7 +251,7 @@ const bitrateComparison = [
 const faqs = [
   {
     q: "How to convert Instagram Reels to MP3 for free?",
-    a: "Copy the link of any public Instagram Reel, paste it into the input box above, and click 'Extract MP3 Audio'. Our cloud engine isolates the audio stream and converts it into a high-quality MP3 file that you can download immediately — 100% free with no account required.",
+    a: "Copy the link of any public Instagram Reel, paste it into the input box above, and click 'Extract MP3 Audio'. Our cloud engine isolates the audio stream and converts it into a high-quality MP3 file that you can download immediately: 100% free with no account required.",
   },
   {
     q: "Can I extract audio and music from Facebook Reels as well?",
@@ -365,7 +365,7 @@ export default function ReelsToMp3Page() {
           </nav>
 
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-purple-500/15 border border-purple-500/30 text-purple-300 text-xs font-medium mb-5">
-            <FileAudio size={14} /> Free Reels to MP3 Converter – 320kbps High Quality
+            <FileAudio size={14} /> Free Reels to MP3 Converter | 320kbps High Quality
           </div>
 
           <h1 className="text-4xl sm:text-5xl font-extrabold text-white mb-4 leading-tight">
@@ -375,7 +375,7 @@ export default function ReelsToMp3Page() {
 
           <p className="text-slate-300 text-lg max-w-2xl mx-auto mb-8 leading-relaxed">
             Extract and download audio from <strong className="text-white">Instagram Reels</strong> and{" "}
-            <strong className="text-white">Facebook Reels</strong> as high-fidelity 320kbps MP3 — free, instant, no login
+            <strong className="text-white">Facebook Reels</strong> as high-fidelity 320kbps MP3: free, instant, no login
             required. Perfect for ringtones, background music, DJ samples, and speech.
           </p>
 
@@ -449,7 +449,7 @@ export default function ReelsToMp3Page() {
               The Definitive Guide to Converting Instagram &amp; Facebook Reels to MP3
             </h2>
             <p>
-              Short-form video platforms like Instagram Reels and Facebook Reels have revolutionized music discovery and viral
+              Short-form video platforms like Instagram Reels and Facebook Reels have transformed music discovery and viral
               audio culture. Today, viral acoustic covers, Lo-Fi remixes, trending comedy sound bites, motivational speeches,
               and indie artist snippets often debut directly on Reels before ever hitting Spotify, Apple Music, or streaming
               services.
@@ -518,7 +518,7 @@ export default function ReelsToMp3Page() {
               </p>
               <p>
                 Standard web audio is often clamped at 128kbps, cutting off frequencies above 16kHz. By preserving bitrates up to
-                320kbps, ReelsGrab captures frequencies up to 20kHz — the full range of human hearing. Bass kicks remain punchy,
+                320kbps, ReelsGrab captures frequencies up to 20kHz, the full range of human hearing. Bass kicks remain punchy,
                 vocals stay crisp, and subtle background instruments remain distinct and clear.
               </p>
             </div>
@@ -880,7 +880,7 @@ export default function ReelsToMp3Page() {
       {/* FAQ SECTION */}
       <section className="max-w-3xl mx-auto px-4 sm:px-6 py-14">
         <h2 className="text-2xl font-bold text-white text-center mb-10">
-          Frequently Asked Questions – Reels to MP3 Converter
+          Frequently Asked Questions | Reels to MP3 Converter
         </h2>
         <FaqSection faqs={faqs} />
       </section>

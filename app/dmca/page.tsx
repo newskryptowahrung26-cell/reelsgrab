@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { SITE_CONFIG } from "@/lib/siteConfig";
 
 export const metadata: Metadata = {
-  title: `DMCA Copyright Policy – ${SITE_CONFIG.name}`,
+  title: `DMCA Copyright Policy | ${SITE_CONFIG.name}`,
   description: `DMCA and Copyright compliance information for ${SITE_CONFIG.name}.`,
   alternates: { canonical: `${SITE_CONFIG.url}/dmca` },
 };

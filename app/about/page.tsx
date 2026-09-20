@@ -20,7 +20,7 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: `About Us – ${SITE_CONFIG.name} | The Clean, Safe Media Downloader`,
+  title: `About Us | ${SITE_CONFIG.name} | The Clean, Safe Media Downloader`,
   description: `Learn about ${SITE_CONFIG.name}, our engineering mission, and our suite of free online tools for Instagram Reels, Facebook Videos, and YouTube to MP3 & MP4. The trusted, clean alternative to SnapInsta, FDown, and YTMP3.`,
   keywords: [
     "about reelsgrab",
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: `${SITE_CONFIG.url}/about` },
   openGraph: {
-    title: `About Us – ${SITE_CONFIG.name} | Safe & Watermark-Free Downloader`,
+    title: `About Us | ${SITE_CONFIG.name} | Safe & Watermark-Free Downloader`,
     description: `Discover how ${SITE_CONFIG.name} is redefining social media downloading with zero popunder ads, full audio preservation, and true 1080p HD quality.`,
     url: `${SITE_CONFIG.url}/about`,
   },
@@ -188,11 +188,11 @@ export default function AboutPage() {
         </h1>
 
         <p className="text-slate-300 text-base sm:text-lg leading-relaxed mb-12">
-          {SITE_CONFIG.name} was engineered to revolutionize how people save, archive, and enjoy multimedia from the
-          world&apos;s leading social networks. We provide a clean, lightning-fast, and 100% privacy-focused platform for
+          {SITE_CONFIG.name} was engineered to provide an easier, safer way for people to save, archive, and enjoy multimedia from the
+          world&apos;s leading social networks. We provide a clean, fast, and 100% privacy-focused platform for
           downloading <strong className="text-white">Instagram Reels</strong>,{" "}
           <strong className="text-white">Facebook Videos</strong>, and converting{" "}
-          <strong className="text-white">YouTube to MP3 &amp; MP4</strong> — completely free of watermarks, deceptive
+          <strong className="text-white">YouTube to MP3 &amp; MP4</strong>, completely free of watermarks, deceptive
           advertisements, and malware risks.
         </p>
 
@@ -287,7 +287,7 @@ export default function AboutPage() {
               <p className="text-slate-400 text-sm leading-relaxed">
                 Our custom cloud infrastructure uses automated FFmpeg stream multiplexing. When you submit a link, our
                 servers fetch the isolated 1080p/4K video track and the high-bitrate AAC audio track, combining them into a
-                seamless, synchronized MP4 container in under 3 seconds.
+                smooth, synchronized MP4 container in under 3 seconds.
               </p>
             </div>
 

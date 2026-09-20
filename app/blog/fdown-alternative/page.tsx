@@ -4,21 +4,21 @@ import { breadcrumbSchema, faqSchema } from "@/lib/schema";
 import FaqSection from "@/components/FaqSection";
 
 export const metadata: Metadata = {
-  title: "Best FDown Alternative – When FDown.net Isn't Working",
-  description: "FDown.net not working? Here are the best FDown alternatives for downloading Facebook videos and Reels in HD — always online, no ads, with audio.",
+  title: "Best FDown Alternative | When FDown.net Isn't Working",
+  description: "FDown.net not working? Here are the best FDown alternatives for downloading Facebook videos and Reels in HD: always online, no ads, with audio.",
   keywords: ["fdown alternative", "fdown not working", "fdown.net alternative", "fdown alternative site", "alternative to fdown", "facebook video downloader alternative to fdown"],
   alternates: { canonical: `${SITE_CONFIG.url}/blog/fdown-alternative` },
 };
 
 const faqs = [
   { q: "Why is FDown.net not working?", a: "FDown.net frequently goes down because Facebook regularly changes their video URL structure and token validation. When Facebook updates their API, FDown breaks until they patch it. ReelsGrab updates faster and has more redundancy." },
-  { q: "What's the best FDown alternative?", a: "ReelsGrab is the best FDown alternative — always online, HD 1080p downloads, full audio, no aggressive ads, and works for both Facebook videos and Instagram Reels." },
+  { q: "What's the best FDown alternative?", a: "ReelsGrab is the best FDown alternative, always online with HD 1080p downloads, full audio, no aggressive ads, and support for both Facebook videos and Instagram Reels." },
   { q: "Does FDown have a lot of ads?", a: "Yes, FDown.net (80M+ visits/month) has heavy popunder ad networks that open unwanted sites. ReelsGrab uses clean, non-intrusive display ads only." },
-  { q: "Does ReelsGrab work for all the same videos as FDown?", a: "Yes — ReelsGrab downloads Facebook videos, Facebook Reels, Facebook Watch videos, and Instagram Reels. Everything FDown does plus more features like MP3 extraction and private video downloads." },
+  { q: "Does ReelsGrab work for all the same videos as FDown?", a: "Yes, ReelsGrab downloads Facebook videos, Facebook Reels, Facebook Watch videos, and Instagram Reels. Everything FDown does plus more features like MP3 extraction and private video downloads." },
 ];
 
 const alternatives = [
-  { name: "ReelsGrab ✨", url: "/", pro: "✅ No ads spam, always online, HD+MP3, IG+FB both", con: "New site — building authority" },
+  { name: "ReelsGrab ✨", url: "/", pro: "✅ No ads spam, always online, HD+MP3, IG+FB both", con: "Newer platform expanding its community" },
   { name: "FDownloader.net", url: "#", pro: "✅ Established, large user base, multilingual", con: "❌ Heavy ad load, sometimes muted downloads" },
   { name: "SaveFrom.net", url: "#", pro: "✅ Very established, many mirrors (en1, en-5)", con: "❌ ISP blocked in some countries, popup ads" },
   { name: "ClipSave.net", url: "#", pro: "✅ Clean interface, multilingual", con: "⚠️ Fewer features, no MP3 tool" },
@@ -40,7 +40,7 @@ export default function FDownAlternativePage() {
         </nav>
         <span className="px-2.5 py-1 rounded-full bg-yellow-500/15 text-yellow-300 text-xs font-medium">Alternative</span>
         <h1 className="text-3xl sm:text-4xl font-extrabold text-white mt-3 mb-4 leading-tight">
-          Best <span className="gradient-text">FDown Alternative</span> – When FDown.net Isn&apos;t Working
+          Best <span className="gradient-text">FDown Alternative</span> | When FDown.net Isn&apos;t Working
         </h1>
         <p className="text-slate-300 text-base leading-relaxed mb-10">
           FDown.net is one of the biggest Facebook video downloaders with 80M+ monthly visits.
@@ -90,7 +90,7 @@ export default function FDownAlternativePage() {
         </div>
 
         <div className="p-5 rounded-xl bg-indigo-600/10 border border-indigo-500/30 text-center">
-          <p className="text-white font-semibold mb-1">Try the Best FDown Alternative — Always Online</p>
+          <p className="text-white font-semibold mb-1">Try the Best FDown Alternative (Always Online)</p>
           <p className="text-slate-400 text-xs mb-4">Facebook video + Reels + Instagram. HD + MP3. No popups.</p>
           <a href="/facebook-video-download" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-semibold text-sm transition-all">
             Download Facebook Video Free →

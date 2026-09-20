@@ -5,7 +5,7 @@ import { SITE_CONFIG } from "@/lib/siteConfig";
 import { faqSchema, howToSchema, breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "How to Download Instagram Reels – Complete Free Guide",
+  title: "How to Download Instagram Reels: Complete Free Guide",
   description: "Step-by-step guide: how to download Instagram Reels for free in HD on iPhone, Android, and PC. No app, no login, with audio and without watermark.",
   keywords: ["how to download instagram reels", "download instagram reels free", "save instagram reels", "instagram reel download guide"],
   alternates: { canonical: `${SITE_CONFIG.url}/blog/how-to-download-instagram-reels` },
@@ -47,11 +47,11 @@ export default function HowToDownloadInstagramReelsPage() {
         </div>
 
         <h1 className="text-3xl sm:text-4xl font-extrabold text-white mb-4 leading-tight">
-          How to Download Instagram Reels Free – Complete Guide
+          How to Download Instagram Reels Free: Complete Guide
         </h1>
         <p className="text-slate-300 text-base leading-relaxed mb-10">
           Want to save Instagram Reels to your phone or PC? This step-by-step guide shows you exactly how
-          to download any Instagram Reel for free in HD quality — on iPhone, Android, and desktop — without watermark and with original audio.
+          to download any Instagram Reel for free in HD quality on iPhone, Android, and desktop, without watermark and with original audio.
         </p>
 
         <div className="mb-12">
@@ -62,7 +62,7 @@ export default function HowToDownloadInstagramReelsPage() {
         <div className="prose prose-invert max-w-none text-slate-400 text-sm leading-relaxed space-y-6 mb-12">
           <h2 className="text-xl font-bold text-white">Method 1: Using ReelsGrab (Easiest, No App)</h2>
           <p>
-            The easiest way to download Instagram Reels is using <a href="/" className="text-indigo-400 hover:underline">ReelsGrab.com</a> — a free web-based tool that works on all devices.
+            The easiest way to download Instagram Reels is using <a href="/" className="text-indigo-400 hover:underline">ReelsGrab.com</a>, a free web-based tool that works on all devices.
             No installation needed. Just paste the Reel URL and download.
           </p>
           <p>
@@ -73,7 +73,7 @@ export default function HowToDownloadInstagramReelsPage() {
           <h2 className="text-xl font-bold text-white">Method 2: Instagram's Built-In Save (Watermark Added)</h2>
           <p>
             Instagram has a native "Save" feature (the bookmark icon), but it only saves the video to your{" "}
-            <em>Instagram Saved collection</em> — not to your phone's gallery. You can't share or view it offline.
+            <em>Instagram Saved collection</em>, not to your phone's gallery. You can't share or view it offline.
             The in-app "Send to" option adds a watermark.
           </p>
 

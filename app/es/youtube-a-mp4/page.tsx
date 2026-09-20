@@ -19,9 +19,9 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Descargador de YouTube a MP4 – Videos en HD 1080p y 4K Gratis",
+  title: "Descargador de YouTube a MP4 | Videos en HD 1080p y 4K Gratis",
   description:
-    "Descarga videos de YouTube en formato MP4 en calidad HD 1080p, 720p y 4K con audio sincronizado. El descargador de YouTube a MP4 online más rápido y seguro — compatible con iPhone, Android, Mac y PC sin publicidad invasiva ni programas.",
+    "Descarga videos de YouTube en formato MP4 en calidad HD 1080p, 720p y 4K con audio sincronizado. El descargador de YouTube a MP4 online más rápido y seguro: compatible con iPhone, Android, Mac y PC sin publicidad invasiva ni programas.",
   keywords: [
     "youtube a mp4",
     "descargar videos de youtube",
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Descargador de YouTube a MP4 – Videos en HD 1080p y 4K Gratis",
+    title: "Descargador de YouTube a MP4 | Videos en HD 1080p y 4K Gratis",
     description:
       "Descarga videos de YouTube en formato MP4 en calidad HD 1080p, 720p y 4K con audio sincronizado gratis.",
     url: `${SITE_CONFIG.url}/es/youtube-a-mp4`,
@@ -225,7 +225,7 @@ export default function YouTubeAMp4Page() {
           </nav>
 
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-red-500/15 border border-red-500/30 text-red-300 text-xs font-medium mb-5">
-            <Film size={14} /> Descargador Gratis de YouTube a MP4 – HD 1080p y 4K
+            <Film size={14} /> Descargador Gratis de YouTube a MP4 | HD 1080p y 4K
           </div>
 
           <h1 className="text-4xl sm:text-5xl font-extrabold text-white mb-4 leading-tight">
@@ -467,7 +467,7 @@ export default function YouTubeAMp4Page() {
       {/* FAQ SECTION */}
       <section className="max-w-3xl mx-auto px-4 sm:px-6 py-14">
         <h2 className="text-2xl font-bold text-white text-center mb-10">
-          Preguntas Frecuentes — Descargador de YouTube a MP4
+          Preguntas Frecuentes | Descargador de YouTube a MP4
         </h2>
         <FaqSection faqs={preguntas} />
       </section>

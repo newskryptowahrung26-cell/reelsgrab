@@ -44,7 +44,7 @@ const faqs = [
   { q: "How to download a video from a private Facebook group?", a: "Join the private Facebook group, open the video in your browser, copy the URL from the address bar, and paste it into our downloader above. This works as long as you are an approved member of the group." },
   { q: "Why is the private video download not working?", a: "Make sure: (1) you are logged into Facebook in your browser, (2) you copied the exact URL from the address bar (not a shared link), (3) you actually have access to view the video on Facebook, and (4) the video URL contains the video ID (numbers)." },
   { q: "Can I download private Instagram Reels?", a: "For private Instagram accounts, you need to be an approved follower. Copy the post URL while logged in and paste it into our Instagram Reels Downloader." },
-  { q: "Is it legal to download private Facebook videos?", a: "Only download videos you have the right to access and save — such as your own videos, videos shared with you specifically, or content from groups you're a member of. Always respect copyright and the content creator's wishes." },
+  { q: "Is it legal to download private Facebook videos?", a: "Only download videos you have the right to access and save, such as your own videos, videos shared with you specifically, or content from groups you're a member of. Always respect copyright and the content creator's wishes." },
   { q: "Can I download private Facebook Reels?", a: "Yes! The same method works for private Facebook Reels. Open the Reel while logged into Facebook, copy the URL from the address bar, and paste it into our tool above." },
 ];
 
@@ -61,7 +61,7 @@ export default function PrivateFacebookVideoPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Private Facebook Video Download", url: "/facebook-private-video-download" }])} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={softwareSchema("Private Facebook Video Downloader", "Download private Facebook videos and Reels safely — no password sharing.", `${SITE_CONFIG.url}/facebook-private-video-download`)} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={softwareSchema("Private Facebook Video Downloader", "Download private Facebook videos and Reels safely with no password sharing.", `${SITE_CONFIG.url}/facebook-private-video-download`)} />
       <script type="application/ld+json" dangerouslySetInnerHTML={faqSchema(faqs)} />
       <script type="application/ld+json" dangerouslySetInnerHTML={howToSchema("How to Download Private Facebook Videos", "Step-by-step guide to download private Facebook videos for free", steps)} />
 
@@ -82,7 +82,7 @@ export default function PrivateFacebookVideoPage() {
             &amp; Reels Free
           </h1>
           <p className="text-slate-300 text-lg max-w-2xl mx-auto mb-4 leading-relaxed">
-            Download private Facebook videos and Reels that you have access to — no password sharing,
+            Download private Facebook videos and Reels that you have access to with no password sharing,
             100% safe, completely free.
           </p>
           <div className="flex justify-center mb-8">
@@ -99,14 +99,14 @@ export default function PrivateFacebookVideoPage() {
 
       <section className="max-w-5xl mx-auto px-4 sm:px-6 py-14">
         <h2 className="text-2xl sm:text-3xl font-bold text-white text-center mb-3">Private Facebook Video Downloader Features</h2>
-        <p className="text-center text-slate-400 text-sm mb-10">Download private videos safely — no credential sharing, zero risk.</p>
+        <p className="text-center text-slate-400 text-sm mb-10">Download private videos safely: no credential sharing, zero risk.</p>
         <FeaturesGrid features={features} columns={3} />
       </section>
 
       <section className="bg-slate-900/40 py-14">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <h2 className="text-2xl sm:text-3xl font-bold text-white text-center mb-3">How to Download Private Facebook Videos</h2>
-          <p className="text-center text-slate-400 text-sm mb-10">Simple 4-step process — no technical skills needed</p>
+          <p className="text-center text-slate-400 text-sm mb-10">Simple 4-step process: no technical skills needed</p>
           <HowToSteps steps={steps} />
         </div>
       </section>
@@ -119,7 +119,7 @@ export default function PrivateFacebookVideoPage() {
       <div className="max-w-4xl mx-auto px-4 mb-6"><div className="h-24 bg-slate-900 border border-dashed border-slate-700 rounded-xl flex items-center justify-center text-slate-600 text-xs">Advertisement</div></div>
 
       <section className="max-w-3xl mx-auto px-4 sm:px-6 py-14">
-        <h2 className="text-2xl font-bold text-white text-center mb-10">FAQ – Private Facebook Video Downloader</h2>
+        <h2 className="text-2xl font-bold text-white text-center mb-10">FAQ: Private Facebook Video Downloader</h2>
         <FaqSection faqs={faqs} />
       </section>
     </>
