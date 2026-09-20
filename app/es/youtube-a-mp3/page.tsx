@@ -410,7 +410,7 @@ export default function YouTubeAMp3Page() {
               </div>
               <ol className="list-decimal pl-6 space-y-3 text-slate-300">
                 <li>Abre YouTube y copia el enlace del video deseado mediante el botón Compartir.</li>
-                <li>Abre Safari e ingresa a <code>reelsgrab.vercel.app/es/youtube-a-mp3</code>.</li>
+                <li>Abre Safari e ingresa a <code>www.reelsgrab.net/es/youtube-a-mp3</code>.</li>
                 <li>Pega el enlace en el campo de entrada y toca <strong>&quot;Convertir a MP3&quot;</strong>.</li>
                 <li>Toca <strong>&quot;Descargar MP3&quot;</strong> y confirma la descarga en Safari para guardarlo en la app Archivos.</li>
               </ol>

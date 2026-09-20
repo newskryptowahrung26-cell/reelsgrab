@@ -662,7 +662,7 @@ export default function YouTubeToMp4Page() {
               </div>
               <ol className="list-decimal list-inside text-xs sm:text-sm text-slate-300 space-y-2">
                 <li>Open the YouTube app, tap the <strong>Share</strong> button on any video, and select <strong>Copy Link</strong>.</li>
-                <li>Launch <strong>Safari</strong> and navigate to <code className="text-indigo-300">reelsgrab.vercel.app/youtube-to-mp4</code>.</li>
+                <li>Launch <strong>Safari</strong> and navigate to <code className="text-indigo-300">www.reelsgrab.net/youtube-to-mp4</code>.</li>
                 <li>Paste the URL into the input field and tap <strong>Download MP4</strong>.</li>
                 <li>When Safari displays the download prompt, tap <strong>Download</strong>.</li>
                 <li>Tap the small download circle icon in Safari's address bar to view the downloaded file.</li>

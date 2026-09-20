@@ -3,8 +3,8 @@
 // ============================================================
 export const SITE_CONFIG = {
   name: "ReelsGrab",
-  domain: "reelsgrab.com",
-  url: "https://reelsgrab.com",
+  domain: "reelsgrab.net",
+  url: "https://www.reelsgrab.net",
   tagline: "Free YouTube, Instagram & Facebook Video & Audio Downloader",
   description:
     "Download YouTube videos, Shorts, MP3 audio, Instagram Reels, and Facebook Videos in HD 1080p, 4K & 320kbps, no watermark, 100% free, no login required.",

@@ -618,7 +618,7 @@ export default function InstagramReelsDownloadPage() {
                 </li>
                 <li>
                   <strong>Launch Safari:</strong> Open your default Safari browser and visit{" "}
-                  <code>reelsgrab.vercel.app/instagram-reels-download</code>.
+                  <code>www.reelsgrab.net/instagram-reels-download</code>.
                 </li>
                 <li>
                   <strong>Paste and Convert:</strong> Tap and hold the input field, select <strong>&quot;Paste&quot;</strong>, and

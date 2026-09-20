@@ -629,7 +629,7 @@ export default function ReelsToMp3Page() {
                   (paper airplane) or the three dots (···), and select <strong>&quot;Copy Link&quot;</strong>.
                 </li>
                 <li>
-                  <strong>Open Safari:</strong> Navigate to <code>reelsgrab.vercel.app/reels-to-mp3</code> in Safari.
+                  <strong>Open Safari:</strong> Navigate to <code>www.reelsgrab.net/reels-to-mp3</code> in Safari.
                 </li>
                 <li>
                   <strong>Paste and Extract:</strong> Paste the copied link into the input box and tap{" "}

@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 const steps = [
   { title: "Open the Instagram Reel you want to download", description: "Go to Instagram (app or website) and find the Reel. Tap the three-dot (···) menu in the top-right corner of the Reel." },
   { title: "Tap 'Copy Link'", description: "From the popup menu, select 'Copy Link'. The Reel URL is now copied to your clipboard." },
-  { title: "Visit ReelsGrab.com", description: "Open a new browser tab and visit ReelsGrab.com (or use the tool on this page directly)." },
+  { title: "Visit ReelsGrab.net", description: "Open a new browser tab and visit ReelsGrab.net (or use the tool on this page directly)." },
   { title: "Paste the URL and click Download", description: "Paste the copied Reel URL into the input box and click 'Download Now'." },
   { title: "Choose your quality and save", description: "Select HD 1080p (no watermark), 720p, or MP3 audio. The file downloads instantly to your device." },
 ];
@@ -62,7 +62,7 @@ export default function HowToDownloadInstagramReelsPage() {
         <div className="prose prose-invert max-w-none text-slate-400 text-sm leading-relaxed space-y-6 mb-12">
           <h2 className="text-xl font-bold text-white">Method 1: Using ReelsGrab (Easiest, No App)</h2>
           <p>
-            The easiest way to download Instagram Reels is using <a href="/" className="text-indigo-400 hover:underline">ReelsGrab.com</a>, a free web-based tool that works on all devices.
+            The easiest way to download Instagram Reels is using <a href="/" className="text-indigo-400 hover:underline">ReelsGrab.net</a>, a free web-based tool that works on all devices.
             No installation needed. Just paste the Reel URL and download.
           </p>
           <p>

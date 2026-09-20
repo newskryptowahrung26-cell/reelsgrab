@@ -505,7 +505,7 @@ export default function BaixarVideoFacebookPage() {
               </div>
               <ol className="list-decimal pl-6 space-y-3 text-slate-300">
                 <li>No app do Facebook, localize o vídeo, toque em Compartilhar e escolha <strong>&quot;Copiar link&quot;</strong>.</li>
-                <li>Abra o Safari e acesse <code>reelsgrab.vercel.app/pt/baixar-video-facebook</code>.</li>
+                <li>Abra o Safari e acesse <code>www.reelsgrab.net/pt/baixar-video-facebook</code>.</li>
                 <li>Cole o link no campo de busca e toque em <strong>&quot;Baixar Vídeo&quot;</strong>.</li>
                 <li>Toque em <strong>&quot;Baixar Vídeo HD&quot;</strong> e confirme o download no Safari.</li>
                 <li>Toque na seta azul de downloads no Safari, abra o vídeo e selecione <strong>&quot;Salvar Vídeo&quot;</strong> para enviar para a Galeria/Fotos.</li>

@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 const steps = [
   { title: "Open the Instagram Reel on your iPhone", description: "Open Instagram on your iPhone, find the Reel you want to download, and tap the three-dot (···) menu on the Reel." },
   { title: "Copy the Reel link", description: "Tap 'Copy Link'. The Instagram Reel URL is now in your iPhone clipboard." },
-  { title: "Open Safari and go to ReelsGrab.com", description: "Open Safari (not Chrome) on your iPhone: Safari gives the best download experience on iOS." },
+  { title: "Open Safari and go to ReelsGrab.net", description: "Open Safari (not Chrome) on your iPhone: Safari gives the best download experience on iOS." },
   { title: "Paste the URL and tap Download HD", description: "Paste the Reel URL and tap 'Download Now'. Select 'HD 1080p (No Watermark)'." },
   { title: "Save to Files", description: "Safari will ask where to save: select 'Files' or 'Downloads'. The video saves to your iPhone's Files app." },
   { title: "Move to Camera Roll (optional)", description: "Open the Files app, find the downloaded MP4, tap and hold → Share → Save Video. It now appears in your Photos/Camera Roll." },

@@ -424,7 +424,7 @@ export default function YouTubeToMp3Page() {
                 <ol className="list-decimal list-inside space-y-1.5 text-slate-300 text-sm">
                   <li>Open the YouTube app or Safari and navigate to your desired video or Short.</li>
                   <li>Tap the <strong className="text-white">Share</strong> button and choose <strong className="text-white">Copy link</strong>.</li>
-                  <li>Open <strong className="text-white">Safari</strong> and visit <code className="text-indigo-300">reelsgrab.com/youtube-to-mp3</code>.</li>
+                  <li>Open <strong className="text-white">Safari</strong> and visit <code className="text-indigo-300">www.reelsgrab.net/youtube-to-mp3</code>.</li>
                   <li>Paste the link into the converter and tap <strong className="text-white">Convert to MP3</strong>.</li>
                   <li>Tap the download button. Safari will display a confirmation dialog: tap <strong className="text-white">Download</strong>.</li>
                   <li>Tap the blue arrow icon in Safari&apos;s address bar to access the downloaded MP3 in your <strong className="text-white">Files → Downloads</strong> folder.</li>

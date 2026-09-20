@@ -611,7 +611,7 @@ export default function FacebookReelsDownloadPage() {
                 </li>
                 <li>
                   <strong>Visit ReelsGrab:</strong> Open Safari and go to{" "}
-                  <code>reelsgrab.vercel.app/facebook-reels-download</code>.
+                  <code>www.reelsgrab.net/facebook-reels-download</code>.
                 </li>
                 <li>
                   <strong>Paste and Process:</strong> Paste the copied Facebook link into the input field and tap{" "}

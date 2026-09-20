@@ -396,7 +396,7 @@ export default function YouTubeParaMp4Page() {
               </div>
               <ol className="list-decimal pl-6 space-y-3 text-slate-300">
                 <li>Copie o link do vídeo do YouTube no app ou navegador.</li>
-                <li>Abra o Safari e acesse <code>reelsgrab.vercel.app/pt/youtube-para-mp4</code>.</li>
+                <li>Abra o Safari e acesse <code>www.reelsgrab.net/pt/youtube-para-mp4</code>.</li>
                 <li>Cole o link no campo de busca e toque em <strong>&quot;Baixar Vídeo&quot;</strong>.</li>
                 <li>Toque em <strong>&quot;Baixar Vídeo HD&quot;</strong> e confirme o download no Safari para salvar o arquivo no app Arquivos.</li>
               </ol>

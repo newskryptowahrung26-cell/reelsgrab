@@ -511,7 +511,7 @@ export default function DescargarVideosFacebookPage() {
               </div>
               <ol className="list-decimal pl-6 space-y-3 text-slate-300">
                 <li>En la app de Facebook, busca el video deseado, toca Compartir y pulsa <strong>&quot;Copiar enlace&quot;</strong>.</li>
-                <li>Abre Safari e ingresa a <code>reelsgrab.vercel.app/es/descargar-videos-facebook</code>.</li>
+                <li>Abre Safari e ingresa a <code>www.reelsgrab.net/es/descargar-videos-facebook</code>.</li>
                 <li>Pega el enlace en el campo de entrada y toca <strong>&quot;Descargar Video&quot;</strong>.</li>
                 <li>Toca <strong>&quot;Descargar Video HD&quot;</strong> y confirma la descarga en el aviso de Safari.</li>
                 <li>Toca la flecha azul de descargas en Safari, abre el video y selecciona <strong>&quot;Guardar video&quot;</strong> para que se guarde en tu Carrete/Fotos.</li>

@@ -508,7 +508,7 @@ export default function DescargarReelsInstagramPage() {
               </div>
               <ol className="list-decimal pl-6 space-y-3 text-slate-300">
                 <li>Abre la app de Instagram y dirígete al Reel que deseas guardar. Toca el botón Compartir y elige <strong>&quot;Copiar enlace&quot;</strong>.</li>
-                <li>Abre Safari e ingresa a <code>reelsgrab.vercel.app/es/descargar-reels-instagram</code>.</li>
+                <li>Abre Safari e ingresa a <code>www.reelsgrab.net/es/descargar-reels-instagram</code>.</li>
                 <li>Pega el enlace en el campo de entrada y toca <strong>&quot;Descargar Reel&quot;</strong>.</li>
                 <li>Toca <strong>&quot;Descargar Video HD&quot;</strong>. Safari mostrará un aviso de confirmación; pulsa <strong>Descargar</strong>.</li>
                 <li>Toca la flecha azul de descargas en la barra de direcciones de Safari, abre el video descargado, toca el botón de compartir de iOS y elige <strong>&quot;Guardar video&quot;</strong> para que se guarde en tu Carrete/Fotos.</li>
