@@ -30,6 +30,12 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical: `${SITE_CONFIG.url}/youtube-to-mp3`,
+    languages: {
+      en: `${SITE_CONFIG.url}/youtube-to-mp3`,
+      es: `${SITE_CONFIG.url}/es/youtube-a-mp3`,
+      pt: `${SITE_CONFIG.url}/pt/youtube-para-mp3`,
+      "x-default": `${SITE_CONFIG.url}/youtube-to-mp3`,
+    },
   },
   openGraph: {
     title: "YouTube to MP3 Converter | Free High Quality 320kbps Audio Downloader",

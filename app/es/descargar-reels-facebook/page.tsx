@@ -19,7 +19,8 @@ export const metadata: Metadata = {
     canonical: `${SITE_CONFIG.url}/es/descargar-reels-facebook`,
     languages: {
       en: `${SITE_CONFIG.url}/facebook-reels-download`,
-      pt: `${SITE_CONFIG.url}/pt/baixar-reels-instagram`,
+      es: `${SITE_CONFIG.url}/es/descargar-reels-facebook`,
+      "x-default": `${SITE_CONFIG.url}/facebook-reels-download`,
     },
   },
 };

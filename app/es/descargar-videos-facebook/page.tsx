@@ -51,7 +51,9 @@ export const metadata: Metadata = {
     canonical: `${SITE_CONFIG.url}/es/descargar-videos-facebook`,
     languages: {
       en: `${SITE_CONFIG.url}/facebook-video-download`,
+      es: `${SITE_CONFIG.url}/es/descargar-videos-facebook`,
       pt: `${SITE_CONFIG.url}/pt/baixar-video-facebook`,
+      "x-default": `${SITE_CONFIG.url}/facebook-video-download`,
     },
   },
   openGraph: {

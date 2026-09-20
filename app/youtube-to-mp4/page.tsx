@@ -54,6 +54,12 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical: `${SITE_CONFIG.url}/youtube-to-mp4`,
+    languages: {
+      en: `${SITE_CONFIG.url}/youtube-to-mp4`,
+      es: `${SITE_CONFIG.url}/es/youtube-a-mp4`,
+      pt: `${SITE_CONFIG.url}/pt/youtube-para-mp4`,
+      "x-default": `${SITE_CONFIG.url}/youtube-to-mp4`,
+    },
   },
   openGraph: {
     title: "YouTube to MP4 Converter | Download YouTube Videos in 1080p, 2K & 4K HD Free",

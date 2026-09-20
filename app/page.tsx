@@ -117,10 +117,6 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical: SITE_CONFIG.url,
-    languages: {
-      es: `${SITE_CONFIG.url}/es/descargar-reels-instagram`,
-      pt: `${SITE_CONFIG.url}/pt/baixar-reels-instagram`,
-    },
   },
   openGraph: {
     title: `${SITE_CONFIG.name} | Free YouTube, Instagram & Facebook Video & Audio Downloader`,

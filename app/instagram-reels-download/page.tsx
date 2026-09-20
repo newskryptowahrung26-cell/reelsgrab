@@ -66,8 +66,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: `${SITE_CONFIG.url}/instagram-reels-download`,
     languages: {
+      en: `${SITE_CONFIG.url}/instagram-reels-download`,
       es: `${SITE_CONFIG.url}/es/descargar-reels-instagram`,
       pt: `${SITE_CONFIG.url}/pt/baixar-reels-instagram`,
+      "x-default": `${SITE_CONFIG.url}/instagram-reels-download`,
     },
   },
   openGraph: {
