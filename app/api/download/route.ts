@@ -1,6 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
 import { SnapSaver } from "snapsaver-downloader";
 import { Innertube, ClientType } from "youtubei.js";
+import { createDecipheriv } from "crypto";
+import axios from "axios";
 
 // Helper to resolve 301/302 redirects (such as facebook.com/share/r/...)
 async function resolveRedirect(url: string): Promise<string> {
@@ -55,6 +57,180 @@ function isYouTubeUrl(url: string): boolean {
   return url.includes("youtube.com") || url.includes("youtu.be");
 }
 
+// ─── DIRECT SAVETUBE EXTRACTION (NO YOUTUBE SCRAPING / BOT BLOCKS) ───
+const decodeSaveTube = (enc: string) => {
+  const secretKey = "C5D58EF67A7584E4A29F6C35BBC4EB12";
+  const data = Buffer.from(enc, "base64");
+  const iv = data.subarray(0, 16);
+  const content = data.subarray(16);
+  const key = Buffer.from(secretKey, "hex");
+  const decipher = createDecipheriv("aes-128-cbc", key, iv);
+  const decrypted = Buffer.concat([decipher.update(content), decipher.final()]);
+  return JSON.parse(decrypted.toString());
+};
+
+async function fetchSaveTube(videoId: string, mode: "video" | "audio") {
+  const link = `https://www.youtube.com/watch?v=${videoId}`;
+  const cdnRes = await axios.get("https://media.savetube.vip/api/random-cdn", {
+    timeout: 6000,
+  });
+  const cdn = cdnRes.data?.cdn || "cdn405.savetube.vip";
+
+  const infoRes = await axios.post(
+    `https://${cdn}/v2/info`,
+    { url: link },
+    {
+      timeout: 8000,
+      headers: {
+        "User-Agent":
+          "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Mobile Safari/537.36",
+        Referer: "https://save-tube.com/",
+      },
+    }
+  );
+
+  const info = decodeSaveTube(infoRes.data.data);
+  const title = info.title || "YouTube Media";
+  const key = info.key;
+  const preview = `https://i.ytimg.com/vi/${videoId}/hqdefault.jpg`;
+
+  const mediaList: { resolution: string; url: string; type: "video" | "audio" }[] = [];
+
+  if (mode === "audio") {
+    // 320kbps MP3
+    try {
+      const dlRes = await axios.post(
+        `https://${cdn}/download`,
+        { downloadType: "audio", quality: "320", key },
+        {
+          timeout: 10000,
+          headers: {
+            "Content-Type": "application/json",
+            "User-Agent":
+              "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Mobile Safari/537.36",
+            Referer: "https://save-tube.com/",
+          },
+        }
+      );
+      if (dlRes.data?.data?.downloadUrl) {
+        mediaList.push({
+          resolution: "MP3 Audio (320kbps HQ)",
+          url: dlRes.data.data.downloadUrl,
+          type: "audio",
+        });
+      }
+    } catch (e) {
+      console.error("SaveTube 320 audio error:", e);
+    }
+
+    // 128kbps MP3
+    try {
+      const dl128 = await axios.post(
+        `https://${cdn}/download`,
+        { downloadType: "audio", quality: "128", key },
+        {
+          timeout: 10000,
+          headers: {
+            "Content-Type": "application/json",
+            "User-Agent":
+              "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Mobile Safari/537.36",
+            Referer: "https://save-tube.com/",
+          },
+        }
+      );
+      if (dl128.data?.data?.downloadUrl && dl128.data.data.downloadUrl !== mediaList[0]?.url) {
+        mediaList.push({
+          resolution: "MP3 Audio (128kbps)",
+          url: dl128.data.data.downloadUrl,
+          type: "audio",
+        });
+      }
+    } catch (e) {
+      console.error("SaveTube 128 audio error:", e);
+    }
+  } else {
+    // 720p HD MP4
+    try {
+      const dl720 = await axios.post(
+        `https://${cdn}/download`,
+        { downloadType: "video", quality: "720", key },
+        {
+          timeout: 10000,
+          headers: {
+            "Content-Type": "application/json",
+            "User-Agent":
+              "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Mobile Safari/537.36",
+            Referer: "https://save-tube.com/",
+          },
+        }
+      );
+      if (dl720.data?.data?.downloadUrl) {
+        mediaList.push({
+          resolution: "720p (HD MP4 Video)",
+          url: dl720.data.data.downloadUrl,
+          type: "video",
+        });
+      }
+    } catch (e) {
+      console.error("SaveTube 720 video error:", e);
+    }
+
+    // 360p SD MP4
+    try {
+      const dl360 = await axios.post(
+        `https://${cdn}/download`,
+        { downloadType: "video", quality: "360", key },
+        {
+          timeout: 10000,
+          headers: {
+            "Content-Type": "application/json",
+            "User-Agent":
+              "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Mobile Safari/537.36",
+            Referer: "https://save-tube.com/",
+          },
+        }
+      );
+      if (dl360.data?.data?.downloadUrl) {
+        mediaList.push({
+          resolution: "360p (SD MP4 Video)",
+          url: dl360.data.data.downloadUrl,
+          type: "video",
+        });
+      }
+    } catch (e) {
+      console.error("SaveTube 360 video error:", e);
+    }
+
+    // MP3 Audio Option
+    try {
+      const dlAudio = await axios.post(
+        `https://${cdn}/download`,
+        { downloadType: "audio", quality: "320", key },
+        {
+          timeout: 10000,
+          headers: {
+            "Content-Type": "application/json",
+            "User-Agent":
+              "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Mobile Safari/537.36",
+            Referer: "https://save-tube.com/",
+          },
+        }
+      );
+      if (dlAudio.data?.data?.downloadUrl) {
+        mediaList.push({
+          resolution: "MP3 Audio (320kbps)",
+          url: dlAudio.data.data.downloadUrl,
+          type: "audio",
+        });
+      }
+    } catch (e) {
+      console.error("SaveTube audio option error:", e);
+    }
+  }
+
+  return { title, preview, mediaList };
+}
+
 let innertubeInstance: any = null;
 async function getInnertube() {
   if (!innertubeInstance) {
@@ -90,72 +266,20 @@ export async function POST(req: NextRequest) {
         );
       }
 
-      const cleanYouTubeUrl = `https://www.youtube.com/watch?v=${videoId}`;
-      const mediaList: { resolution: string; url: string; type: "video" | "audio" }[] = [];
+      let mediaList: { resolution: string; url: string; type: "video" | "audio" }[] = [];
       let videoTitle = "YouTube Media";
       let previewImg = `https://i.ytimg.com/vi/${videoId}/hqdefault.jpg`;
 
-      // Method 1: High-Speed Scraper (Savetube / Y2Mate CDN)
+      // Method 1: Direct SaveTube CDN with AES Decipher (Bypasses all YouTube bot/429 blocks)
       try {
-        // eslint-disable-next-line @typescript-eslint/no-require-imports
-        const scraper = require("@vreden/youtube_scraper");
-        if (mode === "audio") {
-          const mp3Res = await scraper.ytmp3(cleanYouTubeUrl, "320");
-          if (mp3Res && mp3Res.status && mp3Res.download?.url) {
-            videoTitle = mp3Res.metadata?.title || videoTitle;
-            previewImg = mp3Res.metadata?.image || mp3Res.metadata?.thumbnail || previewImg;
-            mediaList.push({
-              resolution: "MP3 Audio (320kbps HQ)",
-              url: mp3Res.download.url,
-              type: "audio",
-            });
-            try {
-              const mp3_128 = await scraper.ytmp3(cleanYouTubeUrl, "128");
-              if (mp3_128?.download?.url && mp3_128.download.url !== mp3Res.download.url) {
-                mediaList.push({
-                  resolution: "MP3 Audio (128kbps)",
-                  url: mp3_128.download.url,
-                  type: "audio",
-                });
-              }
-            } catch {}
-          }
-        } else {
-          // Video mode: fetch 720p or 1080p MP4
-          const mp4Res = await scraper.ytmp4(cleanYouTubeUrl, "720");
-          if (mp4Res && mp4Res.status && mp4Res.download?.url) {
-            videoTitle = mp4Res.metadata?.title || videoTitle;
-            previewImg = mp4Res.metadata?.image || mp4Res.metadata?.thumbnail || previewImg;
-            mediaList.push({
-              resolution: `${mp4Res.download.quality || "720p"} (HD MP4 Video)`,
-              url: mp4Res.download.url,
-              type: "video",
-            });
-            try {
-              const mp4_360 = await scraper.ytmp4(cleanYouTubeUrl, "360");
-              if (mp4_360?.download?.url && mp4_360.download.url !== mp4Res.download.url) {
-                mediaList.push({
-                  resolution: "360p (SD MP4 Video)",
-                  url: mp4_360.download.url,
-                  type: "video",
-                });
-              }
-            } catch {}
-          }
-          // Also fetch MP3 audio option
-          try {
-            const mp3Res = await scraper.ytmp3(cleanYouTubeUrl, "320");
-            if (mp3Res?.download?.url) {
-              mediaList.push({
-                resolution: "MP3 Audio (320kbps)",
-                url: mp3Res.download.url,
-                type: "audio",
-              });
-            }
-          } catch {}
+        const res = await fetchSaveTube(videoId, mode);
+        if (res && res.mediaList && res.mediaList.length > 0) {
+          mediaList = res.mediaList;
+          videoTitle = res.title;
+          previewImg = res.preview;
         }
-      } catch (scraperErr) {
-        console.error("Scraper method error:", scraperErr);
+      } catch (saveTubeErr) {
+        console.error("SaveTube method error:", saveTubeErr);
       }
 
       // Method 2: Fallback to Innertube (ClientType.ANDROID / MWEB)
@@ -165,8 +289,7 @@ export async function POST(req: NextRequest) {
           const info = await yt.getBasicInfo(videoId);
 
           videoTitle = info.basic_info?.title || videoTitle;
-          previewImg =
-            info.basic_info?.thumbnail?.[0]?.url || previewImg;
+          previewImg = info.basic_info?.thumbnail?.[0]?.url || previewImg;
 
           const formats = info.streaming_data?.formats || [];
           const adaptive = info.streaming_data?.adaptive_formats || [];
@@ -245,7 +368,13 @@ export async function POST(req: NextRequest) {
       console.error("SnapSaver error:", e);
     }
 
-    if (result && result.success && result.data && Array.isArray(result.data.media) && result.data.media.length > 0) {
+    if (
+      result &&
+      result.success &&
+      result.data &&
+      Array.isArray(result.data.media) &&
+      result.data.media.length > 0
+    ) {
       return NextResponse.json({
         success: true,
         title: result.data.description || "Downloaded Video",
