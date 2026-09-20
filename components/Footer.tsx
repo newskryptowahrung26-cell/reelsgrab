@@ -2,6 +2,8 @@ import Link from "next/link";
 import { SITE_CONFIG } from "@/lib/siteConfig";
 
 const tools = [
+  { label: "YouTube to MP3", href: "/youtube-to-mp3" },
+  { label: "YouTube to MP4", href: "/youtube-to-mp4" },
   { label: "Instagram Reels Download", href: "/instagram-reels-download" },
   { label: "Facebook Reels Download", href: "/facebook-reels-download" },
   { label: "Facebook Video Download", href: "/facebook-video-download" },

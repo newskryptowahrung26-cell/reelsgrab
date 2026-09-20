@@ -8,6 +8,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const pages = [
     { url: "/", priority: 1.0, changeFrequency: "daily" as const },
+    { url: "/youtube-to-mp3", priority: 0.95, changeFrequency: "daily" as const },
+    { url: "/youtube-to-mp4", priority: 0.95, changeFrequency: "daily" as const },
     { url: "/instagram-reels-download", priority: 0.95, changeFrequency: "weekly" as const },
     { url: "/facebook-reels-download", priority: 0.95, changeFrequency: "weekly" as const },
     { url: "/facebook-video-download", priority: 0.95, changeFrequency: "weekly" as const },

@@ -9,7 +9,7 @@ interface MediaItem {
 }
 
 interface DownloadToolProps {
-  platform?: "instagram" | "facebook" | "both";
+  platform?: "instagram" | "facebook" | "both" | "youtube" | "all";
   mode?: "video" | "audio";
   placeholder?: string;
   primaryColor?: string;
@@ -17,9 +17,9 @@ interface DownloadToolProps {
 }
 
 export default function DownloadTool({
-  platform = "both",
+  platform = "all",
   mode = "video",
-  placeholder = "Paste Instagram or Facebook Reel URL here...",
+  placeholder = "Paste YouTube, Instagram or Facebook URL here...",
   buttonLabel = "Download Now",
 }: DownloadToolProps) {
   const [url, setUrl] = useState("");
@@ -32,15 +32,32 @@ export default function DownloadTool({
   function isValidUrl(val: string) {
     try {
       const u = new URL(val);
-      if (platform === "instagram")
-        return u.hostname.includes("instagram.com");
-      if (platform === "facebook")
-        return u.hostname.includes("facebook.com") || u.hostname.includes("fb.com") || u.hostname.includes("fb.watch");
+      const host = u.hostname.toLowerCase();
+      if (platform === "youtube") {
+        return host.includes("youtube.com") || host.includes("youtu.be");
+      }
+      if (platform === "instagram") {
+        return host.includes("instagram.com");
+      }
+      if (platform === "facebook") {
+        return host.includes("facebook.com") || host.includes("fb.com") || host.includes("fb.watch");
+      }
+      if (platform === "both") {
+        return (
+          host.includes("instagram.com") ||
+          host.includes("facebook.com") ||
+          host.includes("fb.com") ||
+          host.includes("fb.watch")
+        );
+      }
+      // "all"
       return (
-        u.hostname.includes("instagram.com") ||
-        u.hostname.includes("facebook.com") ||
-        u.hostname.includes("fb.com") ||
-        u.hostname.includes("fb.watch")
+        host.includes("youtube.com") ||
+        host.includes("youtu.be") ||
+        host.includes("instagram.com") ||
+        host.includes("facebook.com") ||
+        host.includes("fb.com") ||
+        host.includes("fb.watch")
       );
     } catch {
       return false;
@@ -55,11 +72,13 @@ export default function DownloadTool({
     }
     if (!isValidUrl(url)) {
       setErrorMsg(
-        platform === "instagram"
+        platform === "youtube"
+          ? "Please enter a valid YouTube URL (youtube.com/... or youtu.be/...)"
+          : platform === "instagram"
           ? "Please enter a valid Instagram URL (instagram.com/...)"
           : platform === "facebook"
           ? "Please enter a valid Facebook URL (facebook.com/... or fb.watch/...)"
-          : "Please enter a valid Instagram or Facebook URL."
+          : "Please enter a valid YouTube, Instagram or Facebook URL."
       );
       setStatus("error");
       return;
@@ -85,7 +104,7 @@ export default function DownloadTool({
         setVideoTitle(data.title || "");
         setStatus("success");
       } else {
-        setErrorMsg(data.message || "Unable to fetch video. Please ensure the link is public.");
+        setErrorMsg(data.message || "Unable to fetch media. Please ensure the link is public.");
         setStatus("error");
       }
     } catch (err: any) {
@@ -96,11 +115,13 @@ export default function DownloadTool({
   }
 
   const platformHint =
-    platform === "instagram"
+    platform === "youtube"
+      ? "Supports: YouTube Videos, Shorts, Music (MP3 & MP4)"
+      : platform === "instagram"
       ? "Supports: Reels, Posts, Stories, IGTV"
       : platform === "facebook"
       ? "Supports: Reels, Videos, Watch, Stories"
-      : "Supports: Instagram Reels, Facebook Reels & Videos";
+      : "Supports: YouTube, Instagram Reels, Facebook Reels & Videos";
 
   return (
     <div className="w-full max-w-2xl mx-auto">
@@ -119,13 +140,17 @@ export default function DownloadTool({
             onKeyDown={(e) => e.key === "Enter" && handleDownload()}
             placeholder={placeholder}
             className="w-full pl-10 pr-4 py-3.5 rounded-xl bg-slate-800 border border-slate-700 text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/20 transition-all text-sm"
-            aria-label="Video URL input"
+            aria-label="Media URL input"
           />
         </div>
         <button
           onClick={handleDownload}
           disabled={status === "loading"}
-          className="flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-indigo-600 hover:bg-indigo-500 disabled:opacity-60 disabled:cursor-not-allowed text-white font-semibold text-sm transition-all whitespace-nowrap shadow-lg shadow-indigo-500/25"
+          className={`flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl text-white font-semibold text-sm transition-all whitespace-nowrap shadow-lg disabled:opacity-60 disabled:cursor-not-allowed ${
+            mode === "audio"
+              ? "bg-purple-600 hover:bg-purple-500 shadow-purple-500/25"
+              : "bg-indigo-600 hover:bg-indigo-500 shadow-indigo-500/25"
+          }`}
           aria-label="Download button"
         >
           {status === "loading" ? (
@@ -176,7 +201,7 @@ export default function DownloadTool({
             )}
             <div className="flex-1 min-w-0">
               {videoTitle && (
-                <p className="text-sm text-slate-200 line-clamp-3 mb-3 font-medium">
+                <p className="text-sm text-slate-200 line-clamp-2 mb-3 font-medium">
                   {videoTitle}
                 </p>
               )}
@@ -189,15 +214,13 @@ export default function DownloadTool({
                     rel="noopener noreferrer"
                     download
                     className={`flex items-center gap-2 px-4 py-2.5 rounded-lg text-white text-sm font-semibold transition-all shadow-md ${
-                      item.resolution.includes("HD") || item.resolution.includes("1080") || item.resolution.includes("720")
-                        ? "bg-indigo-600 hover:bg-indigo-500 shadow-indigo-600/20"
-                        : item.type === "audio"
+                      item.type === "audio"
                         ? "bg-purple-600 hover:bg-purple-500 shadow-purple-600/20"
-                        : "bg-slate-700 hover:bg-slate-600"
+                        : "bg-indigo-600 hover:bg-indigo-500 shadow-indigo-600/20"
                     }`}
                   >
                     {item.type === "audio" ? <Music size={15} /> : <Video size={15} />}
-                    <span>Download {item.resolution || (item.type === "audio" ? "MP3" : "Video")}</span>
+                    <span>Download {item.resolution}</span>
                     <ExternalLink size={13} className="opacity-70" />
                   </a>
                 ))}
@@ -206,7 +229,7 @@ export default function DownloadTool({
           </div>
 
           <p className="text-xs text-slate-400 border-t border-slate-700/60 pt-3">
-            ✅ No watermark · ✅ Original audio preserved · ✅ High Speed
+            ✅ High Speed · ✅ No watermark · ✅ Original quality preserved
           </p>
         </div>
       )}
