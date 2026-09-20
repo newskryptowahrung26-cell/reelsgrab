@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "YouTube to MP4 Converter | Download YouTube Videos in 1080p, 2K & 4K HD Free",
+    title: "YouTube to MP4 Converter in 1080p HD | ReelsGrab",
     description:
       "Convert and download YouTube videos to MP4 in 1080p Full HD, 2K, and 4K quality with crystal-clear audio. Fast, free, online YouTube video downloader for PC, iPhone, Android, and Mac.",
     url: `${SITE_CONFIG.url}/youtube-to-mp4`,
@@ -223,7 +223,7 @@ export default function YouTubeToMp4Page() {
           </div>
 
           <h1 className="text-3xl sm:text-5xl font-extrabold text-white mb-4 tracking-tight leading-tight">
-            YouTube to MP4 Converter | Download HD Videos Free
+            YouTube to MP4 Converter - Download HD Videos Free
           </h1>
           <p className="text-base sm:text-lg text-slate-300 max-w-2xl mx-auto mb-8 leading-relaxed">
             Convert and download your favorite YouTube videos and Shorts into high-quality MP4 files.

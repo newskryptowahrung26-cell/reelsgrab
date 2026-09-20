@@ -56,13 +56,61 @@ export default function DownloadReelsIphonePage() {
           <HowToSteps steps={steps} />
         </div>
 
-        <div className="prose prose-invert max-w-none text-slate-400 text-sm leading-relaxed space-y-4 mb-12">
-          <h2 className="text-xl font-bold text-white">Tips for Best Results on iPhone</h2>
-          <ul className="list-disc list-inside space-y-2">
-            <li><strong className="text-white">Always use Safari</strong> (not Chrome or Firefox) for the smoothest download experience on iOS.</li>
-            <li>If Safari asks to open the file instead of downloading, long-press the Download button and select <em>&quot;Download Linked File&quot;</em>.</li>
-            <li>Downloaded files appear in <strong className="text-white">Files → Downloads</strong> folder.</li>
-            <li>To move to Photos: Open Files app → find the video → tap Share icon → <strong className="text-white">Save Video</strong>.</li>
+        <div className="prose prose-invert max-w-none text-slate-300 text-sm sm:text-base leading-relaxed space-y-6 mb-12">
+          <h2 className="text-xl sm:text-2xl font-bold text-white">Understanding iOS Safari Download Architecture</h2>
+          <p>
+            Apple has historically enforced strict sandboxing rules across iOS. In earlier versions of iOS (iOS 12 and below),
+            users were forced to install heavy third-party file managers like Documents by Readdle or configure complex Siri Shortcuts
+            just to download a basic MP4 video.
+          </p>
+          <p>
+            Starting with iOS 13 and continuing through modern iOS 16, 17, and 18, Safari includes a native, full-featured
+            download manager. When you use ReelsGrab in Safari, your video is fetched directly from Instagram CDN, multiplexed with original
+            audio, and handed to Safari native download daemon.
+          </p>
+
+          <h2 className="text-xl sm:text-2xl font-bold text-white">How to Transfer Downloaded Reels to Your Apple Photos Camera Roll</h2>
+          <p>
+            When Safari finishes downloading a video, it saves it by default into your iCloud Drive or local &quot;On My iPhone → Downloads&quot; folder.
+            To make the video appear in your main Photos timeline and allow sharing to Instagram Stories, TikTok, or WhatsApp:
+          </p>
+          <ol className="list-decimal pl-6 space-y-2 text-slate-300">
+            <li>Tap the blue download icon (a circle with a downward arrow) located on the left or right of your Safari search bar.</li>
+            <li>Tap the downloaded MP4 file to launch the native iOS video preview player.</li>
+            <li>In the bottom-left corner of your screen, tap the official <strong>iOS Share button</strong> (represented by a square with an upward arrow).</li>
+            <li>Scroll down through the share sheet options and tap <strong>&quot;Save Video&quot;</strong>.</li>
+            <li>Open the Apple Photos app. Your downloaded Instagram Reel will appear as the most recent entry in your &quot;Recents&quot; album and &quot;Videos&quot; media type folder.</li>
+          </ol>
+
+          <h2 className="text-xl sm:text-2xl font-bold text-white">Why You Should Avoid App Store &quot;Reels Saver&quot; Apps</h2>
+          <p>
+            The Apple App Store has hundreds of applications promising to download Instagram Reels. However, security researchers
+            consistently advise avoiding them for several reasons:
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 my-4">
+            <div className="p-4 rounded-xl bg-slate-900 border border-slate-800">
+              <h3 className="font-bold text-white text-base mb-1">Predatory Subscriptions</h3>
+              <p className="text-xs text-slate-400">Many apps offer a &quot;free 3-day trial&quot; followed by exorbitant recurring fees ($9.99/week) hidden in fine print.</p>
+            </div>
+            <div className="p-4 rounded-xl bg-slate-900 border border-slate-800">
+              <h3 className="font-bold text-white text-base mb-1">Invasive Tracking SDKs</h3>
+              <p className="text-xs text-slate-400">These apps bundle invasive behavioral trackers, collecting device telemetry and selling advertising profiles.</p>
+            </div>
+            <div className="p-4 rounded-xl bg-slate-900 border border-slate-800">
+              <h3 className="font-bold text-white text-base mb-1">Phishing &amp; Login Requests</h3>
+              <p className="text-xs text-slate-400">Many apps force you to log into Instagram through an unverified webview, exposing your credentials to theft.</p>
+            </div>
+            <div className="p-4 rounded-xl bg-slate-900 border border-slate-800">
+              <h3 className="font-bold text-white text-base mb-1">100% Free Web Advantage</h3>
+              <p className="text-xs text-slate-400">ReelsGrab runs entirely in Safari, never asks for your password, and costs nothing with zero subscriptions.</p>
+            </div>
+          </div>
+
+          <h2 className="text-xl sm:text-2xl font-bold text-white">iPhone Troubleshooting: Fix Common Download Glitches</h2>
+          <ul className="list-disc pl-6 space-y-2 text-slate-300">
+            <li><strong className="text-white">Video Plays in Safari Instead of Downloading:</strong> Long-press the &quot;Download Video HD&quot; button and tap &quot;Download Linked File&quot; from the context popup menu.</li>
+            <li><strong className="text-white">Video Has No Sound on iPhone:</strong> Check your iPhone physical Silent Switch or Action Button. iOS default video preview mutes playback if your device is set to silent mode. Also verify your media volume slider.</li>
+            <li><strong className="text-white">Safari Download Icon Missing:</strong> Go to iPhone Settings → Safari → Downloads, and verify that the download location is set to &quot;On My iPhone&quot;.</li>
           </ul>
         </div>
 

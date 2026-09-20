@@ -40,45 +40,76 @@ export default function FixReelsNoSoundPage() {
           You&apos;re not alone. This is one of the most common complaints about Instagram video downloaders. Here&apos;s exactly why it happens and how to fix it.
         </p>
 
-        <div className="prose prose-invert max-w-none text-slate-400 text-sm leading-relaxed space-y-6 mb-12">
-          <h2 className="text-xl font-bold text-white">The Technical Reason: Instagram Uses DASH Streaming</h2>
+        <div className="prose prose-invert max-w-none text-slate-300 text-sm sm:text-base leading-relaxed space-y-6 mb-12">
+          <h2 className="text-xl sm:text-2xl font-bold text-white">The Technical Reason: Instagram Uses DASH Streaming</h2>
           <p>
-            Instagram (like YouTube) uses <strong className="text-white">DASH (Dynamic Adaptive Streaming over HTTP)</strong> and{" "}
-            <strong className="text-white">HLS (HTTP Live Streaming)</strong> to deliver videos.
-            In DASH/HLS, the <strong className="text-white">video and audio are stored as completely separate files</strong> on Instagram&apos;s CDN servers.
+            Instagram (like YouTube and Facebook) uses <strong className="text-white">DASH (Dynamic Adaptive Streaming over HTTP)</strong> and{" "}
+            <strong className="text-white">HLS (HTTP Live Streaming)</strong> to deliver video streams.
+            Under DASH architecture, the high-definition video track (H.264/AVC) and the audio track (AAC stereo) are stored as
+            two completely separate files on Meta CDN servers (e.g., <code>scontent.cdninstagram.com</code>).
           </p>
           <p>
-            When you watch a Reel on Instagram, the player automatically downloads and merges both streams in real-time.
-            But most simple downloader tools only grab the video stream URL, which has <strong className="text-white">no audio</strong>.
-            Result: silent, muted Reel.
+            When you watch a Reel on Instagram, the app built-in media player automatically requests and synchronizes both streams in real time.
+            However, most basic online downloaders only query the video manifest URL. Because they lack server-side multiplexing engines,
+            they download only the video track, resulting in a completely muted MP4 file.
           </p>
 
-          <div className="p-4 rounded-xl bg-red-500/10 border border-red-500/20 text-red-300 text-sm">
-            <strong>The Problem:</strong> Cheap downloaders fetch only the video stream → muted/silent Reel downloaded.
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 my-4">
+            <div className="p-4 rounded-xl bg-red-500/10 border border-red-500/20 text-slate-300 text-xs sm:text-sm">
+              <strong className="text-red-400 block mb-1">The Competitor Flaw</strong>
+              Cheap downloaders query only the isolated video URL stream, leaving you with a silent, useless video file.
+            </div>
+            <div className="p-4 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-slate-300 text-xs sm:text-sm">
+              <strong className="text-emerald-400 block mb-1">The ReelsGrab Solution</strong>
+              Our cloud engine queries both the video and audio streams, muxing them with FFmpeg into a complete MP4 with full stereo sound.
+            </div>
           </div>
-          <div className="p-4 rounded-xl bg-green-500/10 border border-green-500/20 text-green-300 text-sm">
-            <strong>The Fix:</strong> ReelsGrab fetches both video + audio streams and merges them using FFmpeg → Full audio Reel downloaded.
+
+          <h2 className="text-xl sm:text-2xl font-bold text-white">The Music Licensing Restriction: Why Instagram App Saves Mute Audio</h2>
+          <p>
+            Many creators ask: <em>&quot;Why does Instagram official in-app save button remove the music?&quot;</em>
+          </p>
+          <p>
+            When you save a Reel to your camera roll from within the Instagram app story editor or post menu, Instagram
+            deliberately removes copyrighted music. Meta agreements with major music labels (Sony Music, Universal Music Group, Warner)
+            permit music streaming within the Instagram app, but strictly forbid users from exporting master audio recordings to their personal devices.
+          </p>
+          <p>
+            ReelsGrab operates as an independent web utility that captures the live public broadcast stream as rendered to web clients,
+            preserving the full background soundtrack, licensed song, or viral voiceover without artificial audio muting.
+          </p>
+
+          <h2 className="text-xl sm:text-2xl font-bold text-white">4 Actionable Steps to Fix Silent Downloaded Reels</h2>
+          <div className="space-y-4">
+            <div className="p-4 rounded-xl bg-slate-900 border border-slate-800">
+              <h3 className="font-bold text-white text-base mb-1">1. Redownload via ReelsGrab</h3>
+              <p className="text-slate-400 text-sm">
+                Paste the Reel URL into <a href="/instagram-reels-download" className="text-indigo-400 hover:underline">ReelsGrab Instagram Downloader</a>.
+                Our cloud workers automatically multiplex the 320kbps AAC audio track into the MP4 container before delivering it to your browser.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-slate-900 border border-slate-800">
+              <h3 className="font-bold text-white text-base mb-1">2. Extract Pure MP3 Audio</h3>
+              <p className="text-slate-400 text-sm">
+                If you only want the trending sound or music track, use our dedicated{" "}
+                <a href="/reels-to-mp3" className="text-indigo-400 hover:underline">Reels to MP3 converter</a> to save a standalone 320kbps audio file.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-slate-900 border border-slate-800">
+              <h3 className="font-bold text-white text-base mb-1">3. Check Physical Mute Switches &amp; Media Volume</h3>
+              <p className="text-slate-400 text-sm">
+                On iPhone, ensure the physical Ring/Silent switch or Action Button is not set to silent mode. On Android, verify that Media volume
+                (not just Ringtone volume) is turned up.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-slate-900 border border-slate-800">
+              <h3 className="font-bold text-white text-base mb-1">4. Use Codec-Universal Media Players</h3>
+              <p className="text-slate-400 text-sm">
+                Legacy desktop players like old Windows Media Player sometimes lack native AAC/Opus audio decoders. Test playing the video in
+                modern browsers (Chrome, Edge) or install the free, open-source <strong>VLC Media Player</strong>.
+              </p>
+            </div>
           </div>
-
-          <h2 className="text-xl font-bold text-white">Fix 1: Use ReelsGrab (Recommended)</h2>
-          <p>
-            <a href="/instagram-reels-download" className="text-indigo-400 hover:underline">ReelsGrab&apos;s Instagram Reels Downloader</a> properly
-            handles DASH streams. We fetch both the video and audio tracks and merge them server-side using FFmpeg before delivering you the final MP4 file.
-            <strong className="text-white"> Result: Full audio, original music, no silence.</strong>
-          </p>
-
-          <h2 className="text-xl font-bold text-white">Fix 2: Extract Audio Separately</h2>
-          <p>
-            If you only need the audio/music from the Reel, use our{" "}
-            <a href="/reels-to-mp3" className="text-indigo-400 hover:underline">Reels to MP3 converter</a>{" "}
-            to extract just the audio track as an MP3 file, perfect for ringtones or saving the music.
-          </p>
-
-          <h2 className="text-xl font-bold text-white">Fix 3: Check Your Video Player</h2>
-          <p>
-            Sometimes the video file has audio but your player doesn&apos;t support the audio codec (AAC).
-            Try opening the file with <strong className="text-white">VLC Media Player</strong> (free, all platforms) which supports all codecs.
-          </p>
         </div>
 
         <div className="mb-10">

@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "YouTube to MP3 Converter | Free High Quality 320kbps Audio Downloader",
+    title: "YouTube to MP3 Converter 320kbps | ReelsGrab",
     description:
       "Convert and download YouTube videos to MP3 in high quality 320kbps, 256kbps, and 128kbps audio. Free online YouTube MP3 converter with no popups.",
     url: `${SITE_CONFIG.url}/youtube-to-mp3`,
@@ -540,28 +540,28 @@ export default function YouTubeToMp3Page() {
             </p>
             <div className="space-y-4 my-4">
               <div className="p-4 rounded-xl bg-slate-900 border border-slate-800">
-                <h4 className="font-bold text-white mb-1">1. Private or Unlisted Videos with Restrictions</h4>
+                <h3 className="font-bold text-white mb-1">1. Private or Unlisted Videos with Restrictions</h3>
                 <p className="text-slate-400 text-sm">
                   Our cloud server can only access publicly indexable YouTube content. Videos set to private or restricted
                   by geographic copyright blocks cannot be parsed.
                 </p>
               </div>
               <div className="p-4 rounded-xl bg-slate-900 border border-slate-800">
-                <h4 className="font-bold text-white mb-1">2. Ongoing Live Streams</h4>
+                <h3 className="font-bold text-white mb-1">2. Ongoing Live Streams</h3>
                 <p className="text-slate-400 text-sm">
                   Live streams cannot be converted into an MP3 file until the broadcast has fully ended and YouTube has
                   processed the archive into a static VOD (Video on Demand).
                 </p>
               </div>
               <div className="p-4 rounded-xl bg-slate-900 border border-slate-800">
-                <h4 className="font-bold text-white mb-1">3. Video Length Exceeding 2 Hours</h4>
+                <h3 className="font-bold text-white mb-1">3. Video Length Exceeding 2 Hours</h3>
                 <p className="text-slate-400 text-sm">
                   Very long media files (such as 10-hour white noise clips or full audiobook series) can exceed browser buffer
                   limits. For best performance, convert videos under 2 hours in duration.
                 </p>
               </div>
               <div className="p-4 rounded-xl bg-slate-900 border border-slate-800">
-                <h4 className="font-bold text-white mb-1">4. Age-Restricted Content</h4>
+                <h3 className="font-bold text-white mb-1">4. Age-Restricted Content</h3>
                 <p className="text-slate-400 text-sm">
                   Content requiring YouTube age verification requires an authenticated user session, which automated
                   scrapers cannot bypass without login credentials.

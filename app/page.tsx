@@ -29,9 +29,11 @@ import {
 } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: `${SITE_CONFIG.name} | Free YouTube, Instagram & Facebook Video & Audio Downloader`,
+  title: {
+    absolute: "ReelsGrab - Free Video & Audio Downloader HD",
+  },
   description:
-    "Download YouTube videos, Shorts, MP3 audio, Instagram Reels, and Facebook Videos in HD 1080p, 4K & 320kbps, no watermark, 100% free, no login required.",
+    "Download YouTube videos, Shorts, MP3 audio, Instagram Reels, and Facebook Videos in HD 1080p, 4K and 320kbps, no watermark, 100% free, no login required.",
   keywords: [
     // YouTube to MP4 & Video Downloader
     "youtube to mp4",
@@ -119,9 +121,9 @@ export const metadata: Metadata = {
     canonical: SITE_CONFIG.url,
   },
   openGraph: {
-    title: `${SITE_CONFIG.name} | Free YouTube, Instagram & Facebook Video & Audio Downloader`,
+    title: "ReelsGrab - Free Video & Audio Downloader HD",
     description:
-      "Download YouTube videos, Shorts, MP3 audio, Instagram Reels, and Facebook Videos in HD 1080p, 4K & 320kbps, no watermark, 100% free.",
+      "Download YouTube videos, Shorts, MP3 audio, Instagram Reels, and Facebook Videos in HD 1080p, 4K and 320kbps, no watermark, 100% free.",
     url: SITE_CONFIG.url,
     type: "website",
   },
@@ -521,6 +523,95 @@ export default function HomePage() {
               <span>Zero Popunders, Adware, or Hidden Fees</span>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* IN-DEPTH EDITORIAL & ARCHITECTURE GUIDE */}
+      <section className="max-w-4xl mx-auto px-4 sm:px-6 py-16 border-t border-slate-800">
+        <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">
+          Complete Social Media Video and Audio Extraction Architecture
+        </h2>
+        <div className="prose prose-invert max-w-none text-slate-300 text-sm sm:text-base leading-relaxed space-y-6">
+          <p>
+            Digital media sharing has shifted toward dynamic streaming delivery across Instagram, Facebook, and
+            YouTube. Understanding how modern video delivery works clarifies why conventional downloaders fail and
+            how ReelsGrab provides reliable, high-resolution media preservation without compromising user privacy.
+          </p>
+
+          <h3 className="text-xl font-bold text-white mt-8 mb-3">
+            Direct CDN Stream Demuxing vs Browser Re-encoding
+          </h3>
+          <p>
+            When you watch a video on Instagram Reels or YouTube, your device does not receive a single unified MP4
+            file. Instead, content delivery networks (CDNs) stream media using adaptive protocols such as Dynamic
+            Adaptive Streaming over HTTP (DASH) and HTTP Live Streaming (HLS). Under these protocols, the video track
+            and audio track are served from separate cloud endpoints to adjust bitrate dynamically according to network
+            bandwidth.
+          </p>
+          <p>
+            Most legacy online converters attempt to capture streaming buffers inside client-side virtual browsers or
+            re-encode video feeds through lossy compression steps. This approach introduces compression artifacts,
+            causes frame drops, dulls high dynamic range colors, and frequently generates silent videos with missing
+            soundtracks. ReelsGrab utilizes an edge-based demuxing pipeline. Our system locates the original,
+            uncompressed video manifest on the platform CDN, retrieves the pristine 1080p or 4K video payload alongside
+            the highest-fidelity AAC audio channel, and multiplexes them cleanly into a compliant MP4 container without
+            re-encoding.
+          </p>
+
+          <h3 className="text-xl font-bold text-white mt-8 mb-3">
+            Acoustic Fidelity and 320kbps MP3 Audio Extraction
+          </h3>
+          <p>
+            Audio fidelity is often overlooked by generic web utilities. When creators publish music reels, acoustic
+            performances, or podcasts, the audio stream is compressed into AAC or Opus formats. Many converter websites
+            decode these streams into muddy 96kbps or 128kbps MP3 files, cutting off frequencies above 15 kHz and
+            introducing audible distortion.
+          </p>
+          <p>
+            ReelsGrab maintains full acoustic integrity. Our audio extraction pipeline reads original audio streams directly
+            from host CDNs and performs clean transcoding to constant bitrate (CBR) 320kbps MP3. This process retains the
+            full 20 Hz to 20 kHz acoustic spectrum, preserving punchy bass, crisp highs, and natural vocal timbre. Whether
+            you are archiving sample loops, study lectures, or viral background music, your downloads match studio clarity.
+          </p>
+
+          <h3 className="text-xl font-bold text-white mt-8 mb-3">
+            Watermark-Free Workflow Across Mobile and Desktop Platforms
+          </h3>
+          <p>
+            Native applications frequently penalize off-platform sharing by appending invasive watermark overlays,
+            bouncing creator handles across the screen, or suppressing downloads altogether. ReelsGrab provides direct
+            access to source video streams before platform watermark rendering occurs:
+          </p>
+          <ul className="list-disc pl-6 space-y-2 text-slate-300">
+            <li>
+              <strong className="text-white">Apple iOS (iPhone and iPad):</strong> Process any video link via mobile
+              Safari, tap download, and save the resulting MP4 directly to your native Camera Roll without requiring
+              external utility apps.
+            </li>
+            <li>
+              <strong className="text-white">Android Devices:</strong> Enjoy rapid, direct downloads to your Files or
+              Gallery folder with hardware-accelerated playback compatibility.
+            </li>
+            <li>
+              <strong className="text-white">macOS, Windows, and Linux:</strong> Save Full HD and 4K files directly to
+              your local storage drive for offline editing in software like Premiere Pro, DaVinci Resolve, or Final Cut.
+            </li>
+          </ul>
+
+          <h3 className="text-xl font-bold text-white mt-8 mb-3">
+            Zero-Log Privacy Architecture and Creator Copyright Ethics
+          </h3>
+          <p>
+            User privacy is fundamental to our infrastructure. ReelsGrab processes all media requests in memory without
+            retaining user IP addresses, submitted links, or generated media files. No account registration, password
+            entry, or tracking cookies are ever required.
+          </p>
+          <p>
+            We encourage all users to practice ethical digital archiving. ReelsGrab is engineered for personal offline
+            reference, educational research, and content backup. Please respect original intellectual property rights,
+            honor Creative Commons licensing terms, and obtain creator permission before re-sharing or commercializing
+            archived media.
+          </p>
         </div>
       </section>
 

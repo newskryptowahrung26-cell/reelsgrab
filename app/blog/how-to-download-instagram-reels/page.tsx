@@ -59,35 +59,66 @@ export default function HowToDownloadInstagramReelsPage() {
           <HowToSteps steps={steps} />
         </div>
 
-        <div className="prose prose-invert max-w-none text-slate-400 text-sm leading-relaxed space-y-6 mb-12">
-          <h2 className="text-xl font-bold text-white">Method 1: Using ReelsGrab (Easiest, No App)</h2>
+        <div className="prose prose-invert max-w-none text-slate-300 text-sm sm:text-base leading-relaxed space-y-6 mb-12">
+          <h2 className="text-xl sm:text-2xl font-bold text-white">Method 1: Using ReelsGrab (Easiest, 100% Free &amp; No App Needed)</h2>
           <p>
-            The easiest way to download Instagram Reels is using <a href="/" className="text-indigo-400 hover:underline">ReelsGrab.net</a>, a free web-based tool that works on all devices.
-            No installation needed. Just paste the Reel URL and download.
+            The fastest and safest method to download any Instagram Reel is using <a href="/" className="text-indigo-400 hover:underline">ReelsGrab.net</a>.
+            Because it is completely web-based, it works across iOS Safari, Android Chrome, Windows, Mac, and Linux without installing third-party APKs
+            or suspicious software:
           </p>
-          <p>
-            Benefits: <strong className="text-white">No watermark</strong>, <strong className="text-white">original audio</strong>,{" "}
-            <strong className="text-white">HD 1080p quality</strong>, and <strong className="text-white">MP3 extraction</strong>.
-          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 my-4">
+            <div className="p-4 rounded-xl bg-slate-900 border border-slate-800">
+              <h3 className="font-bold text-white text-base mb-1">True 1080p Full HD</h3>
+              <p className="text-xs text-slate-400">Direct CDN extraction preserves maximum upload bitrate (up to 1080x1920 at 60fps) with crisp visual fidelity.</p>
+            </div>
+            <div className="p-4 rounded-xl bg-slate-900 border border-slate-800">
+              <h3 className="font-bold text-white text-base mb-1">Zero Watermarks</h3>
+              <p className="text-xs text-slate-400">Download clean source video with zero Instagram logos, overlay handles, or promotional stamps.</p>
+            </div>
+            <div className="p-4 rounded-xl bg-slate-900 border border-slate-800">
+              <h3 className="font-bold text-white text-base mb-1">Full Audio Preservation</h3>
+              <p className="text-xs text-slate-400">Our cloud muxer recombines the DASH video and AAC audio tracks so your video is never muted.</p>
+            </div>
+            <div className="p-4 rounded-xl bg-slate-900 border border-slate-800">
+              <h3 className="font-bold text-white text-base mb-1">Instant MP3 Conversion</h3>
+              <p className="text-xs text-slate-400">Extract trending background music, sound effects, or voiceovers directly into high-bitrate 320kbps MP3 audio.</p>
+            </div>
+          </div>
 
-          <h2 className="text-xl font-bold text-white">Method 2: Instagram's Built-In Save (Watermark Added)</h2>
+          <h2 className="text-xl sm:text-2xl font-bold text-white">Method 2: Instagram In-App Save (Bookmarking vs True Downloading)</h2>
           <p>
-            Instagram has a native "Save" feature (the bookmark icon), but it only saves the video to your{" "}
-            <em>Instagram Saved collection</em>, not to your phone's gallery. You can't share or view it offline.
-            The in-app "Send to" option adds a watermark.
+            Instagram provides a native &quot;Save&quot; icon (the bookmark symbol below the post). However, it is essential to understand
+            the distinction between bookmarking and true file downloading:
           </p>
+          <ul className="list-disc pl-6 space-y-2 text-slate-300">
+            <li><strong className="text-white">In-App Bookmark:</strong> The video remains stored on Meta cloud servers and is indexed inside your personal profile. You cannot watch it without an active internet connection, you cannot export it to messaging apps, and if the creator deletes the post, you lose access forever.</li>
+            <li><strong className="text-white">Story Editor Export:</strong> If you try sharing the Reel to your Story and tapping &quot;Save&quot;, Instagram burns a large bouncing watermark onto the video and automatically strips all copyrighted music, leaving you with a silent file.</li>
+          </ul>
 
-          <h2 className="text-xl font-bold text-white">How to Download Instagram Reels Without Watermark</h2>
+          <h2 className="text-xl sm:text-2xl font-bold text-white">How to Download Instagram Reels Across Different Operating Systems</h2>
           <p>
-            Using <a href="/instagram-reels-download" className="text-indigo-400 hover:underline">ReelsGrab's Instagram Reels Downloader</a>, you get the original video file without any watermark.
-            For a detailed guide on this specific topic, see: <a href="/blog/download-reels-without-watermark" className="text-indigo-400 hover:underline">How to Download Instagram Reels Without Watermark</a>.
+            Depending on your device, follow these streamlined steps:
           </p>
-
-          <h2 className="text-xl font-bold text-white">Download Instagram Reels on iPhone</h2>
-          <p>
-            iPhone users can download Reels using ReelsGrab in Safari. The video saves to your Files app, and you can move it to Photos.
-            For detailed steps: <a href="/blog/download-reels-iphone" className="text-indigo-400 hover:underline">How to Download Instagram Reels on iPhone</a>.
-          </p>
+          <div className="space-y-4">
+            <div className="p-4 rounded-xl bg-slate-900 border border-slate-800">
+              <h3 className="font-bold text-white text-base mb-1">On iPhone &amp; iPad (iOS 15+)</h3>
+              <p className="text-slate-400 text-sm">
+                Open Instagram → Copy Link → Open Safari → visit ReelsGrab → Paste Link → tap Download → tap the Safari download circle → tap Share icon → select &quot;Save Video&quot; to send it directly to your Photos Camera Roll.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-slate-900 border border-slate-800">
+              <h3 className="font-bold text-white text-base mb-1">On Android (Samsung, Pixel, Xiaomi)</h3>
+              <p className="text-slate-400 text-sm">
+                Copy the Reel link in the Instagram app → Open Chrome → visit ReelsGrab → Paste URL → tap Download. The MP4 file downloads immediately into your internal Downloads folder and appears instantly in Google Photos and Gallery.
+              </p>
+            </div>
+            <div className="p-4 rounded-xl bg-slate-900 border border-slate-800">
+              <h3 className="font-bold text-white text-base mb-1">On PC &amp; Mac Desktops</h3>
+              <p className="text-slate-400 text-sm">
+                Navigate to instagram.com in any web browser → copy the URL from the address bar → paste into ReelsGrab → click Download HD MP4. The file saves directly to your computer Downloads directory, ready for editing in Premiere Pro or CapCut.
+              </p>
+            </div>
+          </div>
         </div>
 
         <div className="mb-10">

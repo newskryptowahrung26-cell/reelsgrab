@@ -73,7 +73,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Instagram Reels Download | Free HD 1080p No Watermark (With Audio)",
+    title: "Instagram Reels Download Free in HD | ReelsGrab",
     description:
       "Download Instagram Reels in HD 1080p without watermark, with original audio and music. Free online IG Reels downloader with no app or registration required.",
     url: `${SITE_CONFIG.url}/instagram-reels-download`,
@@ -502,9 +502,9 @@ export default function InstagramReelsDownloadPage() {
               <div className="p-2.5 rounded-xl bg-pink-500/10 text-pink-400 border border-pink-500/20">
                 <Music size={22} />
               </div>
-              <h3 className="text-xl sm:text-2xl font-bold text-white">
+              <h2 className="text-xl sm:text-2xl font-bold text-white">
                 The Audio Mystery Solved: Why Do Downloaded Reels Have No Sound?
-              </h3>
+              </h2>
             </div>
             <p>
               One of the most frequently asked questions on Google, Reddit, and tech forums is:{" "}
@@ -542,9 +542,9 @@ export default function InstagramReelsDownloadPage() {
 
           {/* SECTION 3: Competitor Comparison Matrix */}
           <div>
-            <h3 className="text-xl sm:text-2xl font-bold text-white mb-4">
+            <h2 className="text-xl sm:text-2xl font-bold text-white mb-4">
               Feature Comparison: ReelsGrab vs. Leading Competitors
-            </h3>
+            </h2>
             <p className="mb-6">
               The internet is flooded with legacy Instagram downloader websites such as SnapInsta, FastDL, SaveInsta, and
               Inflact. While these tools paved the way, many have deteriorated into ad-bloated traps that redirect users to
@@ -589,9 +589,9 @@ export default function InstagramReelsDownloadPage() {
 
           {/* SECTION 4: Comprehensive Device-by-Device Tutorials */}
           <div>
-            <h3 className="text-xl sm:text-2xl font-bold text-white mb-6">
+            <h2 className="text-xl sm:text-2xl font-bold text-white mb-6">
               Step-by-Step Masterclass: How to Save Instagram Reels on Any Device
-            </h3>
+            </h2>
             <p>
               Different operating systems handle file downloads and media permissions differently. Below, you will find
               meticulously documented, step-by-step instructions tailored specifically for your device:
@@ -603,9 +603,9 @@ export default function InstagramReelsDownloadPage() {
                 <div className="p-2.5 rounded-xl bg-blue-500/10 text-blue-400 border border-blue-500/20">
                   <Smartphone size={20} />
                 </div>
-                <h4 className="text-lg sm:text-xl font-bold text-white">
+                <h3 className="text-lg sm:text-xl font-bold text-white">
                   How to Download Instagram Reels on iPhone &amp; iPad (iOS 15, 16, 17, 18+)
-                </h4>
+                </h3>
               </div>
               <p className="mb-4">
                 Due to Apple&apos;s strict sandbox security protocols, downloading media directly to the Camera Roll (Photos
@@ -647,9 +647,9 @@ export default function InstagramReelsDownloadPage() {
                 <div className="p-2.5 rounded-xl bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
                   <Smartphone size={20} />
                 </div>
-                <h4 className="text-lg sm:text-xl font-bold text-white">
+                <h3 className="text-lg sm:text-xl font-bold text-white">
                   How to Download Instagram Reels on Android (Samsung, Google Pixel, Xiaomi, OnePlus)
-                </h4>
+                </h3>
               </div>
               <p className="mb-4">
                 Android allows direct filesystem access, making the download process exceptionally straightforward:
@@ -681,9 +681,9 @@ export default function InstagramReelsDownloadPage() {
                 <div className="p-2.5 rounded-xl bg-purple-500/10 text-purple-400 border border-purple-500/20">
                   <Laptop size={20} />
                 </div>
-                <h4 className="text-lg sm:text-xl font-bold text-white">
+                <h3 className="text-lg sm:text-xl font-bold text-white">
                   How to Download Instagram Reels on PC &amp; Mac (Windows 11/10, macOS)
-                </h4>
+                </h3>
               </div>
               <p className="mb-4">
                 For video editors, content creators, and marketing professionals who work on desktop machines, ReelsGrab
@@ -713,9 +713,9 @@ export default function InstagramReelsDownloadPage() {
 
           {/* SECTION 5: Video Resolutions & Quality Matrix */}
           <div>
-            <h3 className="text-xl sm:text-2xl font-bold text-white mb-4">
+            <h2 className="text-xl sm:text-2xl font-bold text-white mb-4">
               Understanding Instagram Video Resolutions, Aspect Ratios &amp; Bitrates
-            </h3>
+            </h2>
             <p>
               Instagram Reels are designed primarily for modern smartphone screens, adhering to a strict{" "}
               <strong>9:16 vertical portrait aspect ratio</strong>. When creators record and upload their footage,
@@ -761,9 +761,9 @@ export default function InstagramReelsDownloadPage() {
 
           {/* SECTION 6: Supported Media Types */}
           <div>
-            <h3 className="text-xl sm:text-2xl font-bold text-white mb-4">
+            <h2 className="text-xl sm:text-2xl font-bold text-white mb-4">
               All Instagram Media Types Supported by ReelsGrab
-            </h3>
+            </h2>
             <p>
               While Reels are the primary focus of this tool, ReelsGrab&apos;s sophisticated extraction engine can process
               virtually any public media format published across the Instagram ecosystem:
@@ -810,9 +810,9 @@ export default function InstagramReelsDownloadPage() {
               <div className="p-2.5 rounded-xl bg-amber-500/10 text-amber-400 border border-amber-500/20">
                 <AlertTriangle size={22} />
               </div>
-              <h3 className="text-xl sm:text-2xl font-bold text-white">
+              <h2 className="text-xl sm:text-2xl font-bold text-white">
                 Troubleshooting Common Instagram Download Errors &amp; Fixes
-              </h3>
+              </h2>
             </div>
             <p className="mb-6">
               If you experience an issue when attempting to download an Instagram Reel, consult our diagnostic checklist below:
@@ -820,9 +820,9 @@ export default function InstagramReelsDownloadPage() {
 
             <div className="space-y-6">
               <div className="border-l-2 border-amber-500/60 pl-4">
-                <h4 className="font-semibold text-white mb-1">
+                <h3 className="font-semibold text-white mb-1">
                   1. &quot;Invalid URL&quot; or &quot;Video Not Found&quot; Error
-                </h4>
+                </h3>
                 <p className="text-sm text-slate-400">
                   Ensure the URL you copied is a direct link to an Instagram post or Reel. Valid formats include:
                   <br />
@@ -835,9 +835,9 @@ export default function InstagramReelsDownloadPage() {
               </div>
 
               <div className="border-l-2 border-amber-500/60 pl-4">
-                <h4 className="font-semibold text-white mb-1">
+                <h3 className="font-semibold text-white mb-1">
                   2. &quot;Private Account / Restricted Content&quot; Error
-                </h4>
+                </h3>
                 <p className="text-sm text-slate-400">
                   ReelsGrab respects user privacy and complies with Instagram&apos;s API policies. We cannot access or download
                   Reels from private accounts. To verify, open the Reel link in an incognito/private browser window. If
@@ -846,9 +846,9 @@ export default function InstagramReelsDownloadPage() {
               </div>
 
               <div className="border-l-2 border-amber-500/60 pl-4">
-                <h4 className="font-semibold text-white mb-1">
+                <h3 className="font-semibold text-white mb-1">
                   3. The Video Downloads, but There Is No Audio on My Phone
-                </h4>
+                </h3>
                 <p className="text-sm text-slate-400">
                   On iPhones, check whether your physical Silent Switch (or Action Button) is activated. iOS often mutes video
                   previews when the phone is in silent mode. Additionally, tap the speaker icon on your device&apos;s media
@@ -857,9 +857,9 @@ export default function InstagramReelsDownloadPage() {
               </div>
 
               <div className="border-l-2 border-amber-500/60 pl-4">
-                <h4 className="font-semibold text-white mb-1">
+                <h3 className="font-semibold text-white mb-1">
                   4. Download Button Does Not Trigger a Save on Safari (iPhone)
-                </h4>
+                </h3>
                 <p className="text-sm text-slate-400">
                   If tapping &quot;Download&quot; opens the video in a new browser tab instead of prompting a file download,
                   simply long-press the <strong>Download Video HD</strong> button and choose{" "}
@@ -871,9 +871,9 @@ export default function InstagramReelsDownloadPage() {
 
           {/* SECTION 8: Repurposing Content For Creators */}
           <div>
-            <h3 className="text-xl sm:text-2xl font-bold text-white mb-4">
+            <h2 className="text-xl sm:text-2xl font-bold text-white mb-4">
               Content Repurposing Strategies: How Creators 10x Their Reach
-            </h3>
+            </h2>
             <p>
               For digital marketers, influencers, and brand managers, creating original high-quality video content requires
               immense time and creative energy. Maximizing your return on investment requires{" "}
@@ -887,9 +887,9 @@ export default function InstagramReelsDownloadPage() {
               and drastically restrict your video&apos;s reach on the &quot;For You&quot; page (FYP).
             </p>
             <div className="p-6 rounded-2xl bg-slate-900/50 border border-slate-800 my-6">
-              <h4 className="text-white font-semibold mb-3 flex items-center gap-2">
+              <h3 className="text-white font-semibold mb-3 flex items-center gap-2">
                 <Share2 size={18} className="text-indigo-400" /> The Optimal Multi-Platform Distribution Workflow:
-              </h4>
+              </h3>
               <ul className="list-disc pl-6 space-y-2 text-sm text-slate-300">
                 <li>
                   <strong>Step 1:</strong> Record, edit, and publish your primary Reel on Instagram using Instagram&apos;s
@@ -916,9 +916,9 @@ export default function InstagramReelsDownloadPage() {
 
           {/* SECTION 9: Legal, Fair Use & Creator Ethics */}
           <div>
-            <h3 className="text-xl sm:text-2xl font-bold text-white mb-4">
+            <h2 className="text-xl sm:text-2xl font-bold text-white mb-4">
               Legal Guidelines, Copyright &amp; Fair Use Ethics
-            </h3>
+            </h2>
             <p>
               When using online media downloaders, it is important to respect intellectual property rights and follow ethical
               content usage:

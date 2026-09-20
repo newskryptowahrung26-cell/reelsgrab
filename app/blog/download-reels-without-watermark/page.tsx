@@ -66,7 +66,7 @@ export default function DownloadWithoutWatermarkPage() {
             Not recommended: use ReelsGrab instead.
           </p>
 
-          <h2 className="text-xl font-bold text-white">Why Instagram Adds Watermarks vs How Clean Extraction Works</h2>
+          <h2 className="text-xl sm:text-2xl font-bold text-white">Why Instagram Adds Watermarks vs How Clean Extraction Works</h2>
           <p>
             When you use Instagram&apos;s native in-app sharing tools, the Instagram client renders an animated overlay
             onto the bottom corner and final frames of the video containing the creator&apos;s username and the Instagram logo.
@@ -79,11 +79,31 @@ export default function DownloadWithoutWatermarkPage() {
             you receive the untouched, crystal-clear MP4 file exactly as the creator filmed it.
           </p>
 
-          <h2 className="text-xl font-bold text-white">How to Download YOUR OWN Instagram Reels Without Watermark</h2>
+          <h2 className="text-xl sm:text-2xl font-bold text-white">Why Watermark Removal Is Critical for Cross-Platform Repurposing</h2>
           <p>
-            For your own Reels: go to your Reel → tap the three-dot menu → <strong className="text-white">Save</strong> or{" "}
-            <strong className="text-white">Save to Device</strong>. This saves without watermark.
-            Alternatively, use ReelsGrab for the highest quality version.
+            Short-form video platforms like TikTok, YouTube Shorts, and Facebook Reels actively compete for viewer attention.
+            Engineers at TikTok and YouTube have confirmed that their recommendation algorithms employ automated computer vision
+            models that detect rival brand logos and animated watermarks stamped on uploaded videos.
+          </p>
+          <p>
+            If your video contains a visible Instagram logo or username watermark:
+          </p>
+          <ul className="list-disc pl-6 space-y-2 text-slate-300">
+            <li><strong className="text-white">Algorithmic Reach Penalty:</strong> TikTok and YouTube Shorts deliberately limit the video distribution on their &quot;For You&quot; and &quot;Shorts Feed&quot; recommendation feeds.</li>
+            <li><strong className="text-white">Unprofessional Aesthetics:</strong> Bouncing watermarks cover critical lower-third captions, titles, or facial expressions, reducing viewer watch time.</li>
+            <li><strong className="text-white">Compression Artifacts:</strong> Recompressing a video that already has baked-in logos degrades pixel quality and causes visible blurring around high-contrast edges.</li>
+          </ul>
+
+          <h2 className="text-xl sm:text-2xl font-bold text-white">How to Download YOUR OWN Instagram Reels Without Watermark</h2>
+          <p>
+            If you are downloading your own published Reels, open the Reel in your profile, tap the three-dot menu (···),
+            and select &quot;Save to Camera Roll&quot;. However, note that Instagram will still strip any commercial music or licensed
+            tracks you added from the Instagram music library.
+          </p>
+          <p>
+            To download your own Reel with the full music and sound effects intact, simply copy the public post link,
+            paste it into <a href="/instagram-reels-download" className="text-indigo-400 hover:underline">ReelsGrab</a>, and download
+            the complete 1080p MP4 file with zero watermarks and full audio synchronization.
           </p>
         </div>
 

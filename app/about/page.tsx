@@ -20,7 +20,7 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: `About Us | ${SITE_CONFIG.name} | The Clean, Safe Media Downloader`,
+  title: "About Us",
   description: `Learn about ${SITE_CONFIG.name}, our engineering mission, and our suite of free online tools for Instagram Reels, Facebook Videos, and YouTube to MP3 & MP4. The trusted, clean alternative to SnapInsta, FDown, and YTMP3.`,
   keywords: [
     "about reelsgrab",
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: `${SITE_CONFIG.url}/about` },
   openGraph: {
-    title: `About Us | ${SITE_CONFIG.name} | Safe & Watermark-Free Downloader`,
+    title: "About ReelsGrab | Free Media Downloader",
     description: `Discover how ${SITE_CONFIG.name} is redefining social media downloading with zero popunder ads, full audio preservation, and true 1080p HD quality.`,
     url: `${SITE_CONFIG.url}/about`,
   },
@@ -320,6 +320,28 @@ export default function AboutPage() {
               <p className="text-slate-400 text-sm leading-relaxed">
                 Our edge network communicates directly with global content delivery networks across Meta and YouTube, ensuring
                 maximum download bandwidth regardless of whether you are located in the Americas, Europe, Asia, or Africa.
+              </p>
+            </div>
+
+            <div className="p-6 rounded-2xl bg-slate-900/50 border border-slate-800">
+              <h3 className="text-lg font-bold text-white mb-2 flex items-center gap-2">
+                <Layers className="text-cyan-400" size={18} /> Dynamic Token Resolution
+              </h3>
+              <p className="text-slate-400 text-sm leading-relaxed">
+                Platform CDNs protect video fragments behind short-lived query signatures and expiring authentication tokens.
+                Our distributed resolver engine extracts and refreshes signed URLs in real time, preventing token expiration
+                and eliminating connection timeouts mid-download.
+              </p>
+            </div>
+
+            <div className="p-6 rounded-2xl bg-slate-900/50 border border-slate-800">
+              <h3 className="text-lg font-bold text-white mb-2 flex items-center gap-2">
+                <Sparkles className="text-emerald-400" size={18} /> Format Normalization
+              </h3>
+              <p className="text-slate-400 text-sm leading-relaxed">
+                Different mobile devices and desktop operating systems support different playback profiles. ReelsGrab
+                normalizes video streams to baseline H.264 video with AAC-LC audio inside standard MP4 containers, guaranteeing
+                instant hardware-accelerated playback on iOS, Android, Mac, and Windows without codec plugins.
               </p>
             </div>
           </div>
