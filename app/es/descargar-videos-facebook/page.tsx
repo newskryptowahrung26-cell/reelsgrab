@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Link from "next/link";
 import DownloadTool from "@/components/DownloadTool";
 import FeaturesGrid from "@/components/FeaturesGrid";
 import HowToSteps from "@/components/HowToSteps";
@@ -438,7 +439,7 @@ export default function DescargarVideosFacebookPage() {
               o el autor borra el video, no podrás volver a verlo.
             </p>
             <p>
-              <strong>ReelsGrab</strong> te brinda una solución moderna, limpia y potente para descargar cualquier video de Facebook en
+              <strong>ReelsGrab</strong> te brinda una solución moderna, limpia y potente para descargar cualquier <Link href="/es/descargar-reels-facebook" className="text-indigo-400 hover:underline">video de Facebook</Link> en
               <strong>resolución original 1080p Full HD y 4K</strong>, <strong>sin marcas de agua</strong> y con <strong>audio completo</strong>.
             </p>
           </div>

@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Link from "next/link";
 import DownloadTool from "@/components/DownloadTool";
 import FeaturesGrid from "@/components/FeaturesGrid";
 import HowToSteps from "@/components/HowToSteps";
@@ -252,18 +253,18 @@ export default function YouTubeAMp4Page() {
           />
 
           <div className="mt-6 flex flex-wrap justify-center gap-3 text-xs">
-            <a href="/es/youtube-a-mp3" className="px-3 py-1.5 rounded-full bg-slate-800 text-slate-300 hover:bg-slate-700">
+            <Link href="/es/youtube-a-mp3" className="px-3 py-1.5 rounded-full bg-slate-800 text-slate-300 hover:bg-slate-700">
               🎵 YouTube a MP3 (ES)
-            </a>
-            <a href="/es/descargar-reels-instagram" className="px-3 py-1.5 rounded-full bg-slate-800 text-slate-300 hover:bg-slate-700">
+            </Link>
+            <Link href="/es/descargar-reels-instagram" className="px-3 py-1.5 rounded-full bg-slate-800 text-slate-300 hover:bg-slate-700">
               📸 Descargar Reels Instagram
-            </a>
-            <a href="/es/descargar-videos-facebook" className="px-3 py-1.5 rounded-full bg-slate-800 text-slate-300 hover:bg-slate-700">
+            </Link>
+            <Link href="/es/descargar-videos-facebook" className="px-3 py-1.5 rounded-full bg-slate-800 text-slate-300 hover:bg-slate-700">
               📹 Descargar Videos Facebook
-            </a>
-            <a href="/youtube-to-mp4" className="px-3 py-1.5 rounded-full bg-slate-800 text-slate-300 hover:bg-slate-700">
+            </Link>
+            <Link href="/youtube-to-mp4" className="px-3 py-1.5 rounded-full bg-slate-800 text-slate-300 hover:bg-slate-700">
               🇬🇧 English Version
-            </a>
+            </Link>
           </div>
         </div>
       </section>
@@ -312,7 +313,7 @@ export default function YouTubeAMp4Page() {
             </h2>
             <p>
               YouTube contiene la mayor variedad de contenidos audiovisuales del mundo: tutoriales, cursos educativos,
-              entrevistas, documentales, música y entretenimiento. Sin embargo, ver videos en YouTube requiere una conexión
+              entrevistas, documentales, <Link href="/es/youtube-a-mp3" className="text-indigo-400 hover:underline">música</Link> y entretenimiento. Sin embargo, ver videos en YouTube requiere una conexión
               continua a internet y puede consumir rápidamente los datos móviles de tu celular.
             </p>
             <p>

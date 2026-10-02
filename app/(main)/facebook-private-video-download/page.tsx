@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Link from "next/link";
 import { Shield, Lock, Eye, AlertCircle, CheckCircle, Video, Zap, HelpCircle } from "lucide-react";
 import DownloadTool from "@/components/DownloadTool";
 import FeaturesGrid from "@/components/FeaturesGrid";
@@ -133,7 +134,7 @@ export default function PrivateFacebookVideoPage() {
               exclusively with personal friends, posted inside closed or secret Facebook groups, or restricted to members-only communities.
             </p>
             <p>
-              Standard video downloaders fail completely when processing these links because they rely on anonymous server scrapers
+              Standard video downloaders for <Link href="/facebook-video-download" className="text-indigo-400 hover:underline">Facebook videos</Link> and <Link href="/facebook-reels-download" className="text-indigo-400 hover:underline">Facebook Reels</Link> fail completely when processing these links because they rely on anonymous server scrapers
               that lack authenticated access to the private stream. When an anonymous server attempts to fetch a private Facebook video
               URL, Facebook servers return an HTTP 403 Forbidden or redirect to a login prompt.
             </p>
@@ -190,7 +191,7 @@ export default function PrivateFacebookVideoPage() {
                   <li>Navigate to the private post, Reel, or closed group video you wish to save. Verify that the video plays smoothly on your screen.</li>
                   <li>Copy the complete URL directly from your browser address bar (e.g., <code>https://www.facebook.com/reel/1234567890</code> or <code>https://www.facebook.com/groups/12345/posts/67890/</code>).</li>
                   <li>Paste the URL into the ReelsGrab Private Downloader input box above and click &quot;Download Private Video&quot;.</li>
-                  <li>Select your preferred quality (Full HD 1080p, 720p HD, or MP3 audio) and save the file directly to your device storage.</li>
+                  <li>Select your preferred quality (Full HD 1080p, 720p HD, or <Link href="/reels-to-mp3" className="text-indigo-400 hover:underline">MP3 audio</Link>) and save the file directly to your device storage.</li>
                 </ol>
               </div>
 
@@ -219,7 +220,7 @@ export default function PrivateFacebookVideoPage() {
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="p-5 rounded-xl bg-slate-900 border border-slate-800">
-                <h3 className="text-base font-bold text-white mb-2">iPhone &amp; iPad (iOS 15+)</h3>
+                <h3 className="text-base font-bold text-white mb-2"><Link href="/blog/download-reels-iphone" className="text-white hover:text-indigo-300 underline decoration-indigo-500/50">iPhone &amp; iPad (iOS 15+)</Link></h3>
                 <ol className="list-decimal pl-5 space-y-2 text-xs sm:text-sm text-slate-300">
                   <li>Open Safari and log into Facebook Web (not the Facebook native app).</li>
                   <li>Navigate to the private video or group post.</li>

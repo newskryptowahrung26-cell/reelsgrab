@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Link from "next/link";
 import DownloadTool from "@/components/DownloadTool";
 import HowToSteps from "@/components/HowToSteps";
 import FaqSection from "@/components/FaqSection";
@@ -137,7 +138,7 @@ export default function DescargarReelsFacebookPage() {
               impone limitaciones estrictas a la hora de guardar estos videos en el almacenamiento interno de tu telefono o computadora.
             </p>
             <p>
-              Cuando intentas guardar un Reel utilizando la opcion oficial de la aplicacion de Facebook, el video unicamente se guarda en tu
+              Cuando intentas guardar un Reel o <Link href="/es/descargar-videos-facebook" className="text-indigo-400 hover:underline">video de Facebook</Link> utilizando la opcion oficial de la aplicacion de Facebook, el video unicamente se guarda en tu
               seccion de marcadores guardados dentro de tu perfil. Esto significa que no puedes compartirlo directamente por WhatsApp o
               Telegram, no puedes editarlo en programas como CapCut o Premiere Pro, y si el creador original borra la publicacion, el video
               desaparece para siempre.
@@ -218,7 +219,7 @@ export default function DescargarReelsFacebookPage() {
                     <td className="p-3.5 text-slate-400">Solo marcadores</td>
                   </tr>
                   <tr className="bg-slate-950/40">
-                    <td className="p-3.5 font-medium text-white">Extraccion a MP3</td>
+                    <td className="p-3.5 font-medium text-white"><Link href="/es/youtube-a-mp3" className="text-indigo-400 hover:underline">Extraccion a MP3</Link></td>
                     <td className="p-3.5 text-emerald-400 font-semibold">Incluida (320kbps)</td>
                     <td className="p-3.5 text-red-400">No disponible</td>
                     <td className="p-3.5 text-red-400">No disponible</td>

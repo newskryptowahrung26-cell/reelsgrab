@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Link from "next/link";
 import FaqSection from "@/components/FaqSection";
 import { SITE_CONFIG } from "@/lib/siteConfig";
 import { faqSchema, breadcrumbSchema } from "@/lib/schema";
@@ -51,7 +52,7 @@ export default function FixReelsNoSoundPage() {
         <div className="prose prose-invert max-w-none text-slate-300 text-sm sm:text-base leading-relaxed space-y-6 mb-12">
           <h2 className="text-xl sm:text-2xl font-bold text-white">The Technical Reason: Instagram Uses DASH Streaming</h2>
           <p>
-            Instagram (like YouTube and Facebook) uses <strong className="text-white">DASH (Dynamic Adaptive Streaming over HTTP)</strong> and{" "}
+            Instagram (like <Link href="/youtube-to-mp4" className="text-indigo-400 hover:underline">YouTube</Link> and <Link href="/facebook-video-download" className="text-indigo-400 hover:underline">Facebook</Link>) uses <strong className="text-white">DASH (Dynamic Adaptive Streaming over HTTP)</strong> and{" "}
             <strong className="text-white">HLS (HTTP Live Streaming)</strong> to deliver video streams.
             Under DASH architecture, the high-definition video track (H.264/AVC) and the audio track (AAC stereo) are stored as
             two completely separate files on Meta CDN servers (e.g., <code>scontent.cdninstagram.com</code>).
@@ -78,7 +79,7 @@ export default function FixReelsNoSoundPage() {
             Many creators ask: <em>&quot;Why does Instagram official in-app save button remove the music?&quot;</em>
           </p>
           <p>
-            When you save a Reel to your camera roll from within the Instagram app story editor or post menu, Instagram
+            When you save a Reel to your <Link href="/blog/download-reels-iphone" className="text-indigo-400 hover:underline">camera roll</Link> from within the Instagram app story editor or post menu, Instagram
             deliberately removes copyrighted music. Meta agreements with major music labels (Sony Music, Universal Music Group, Warner)
             permit music streaming within the Instagram app, but strictly forbid users from exporting master audio recordings to their personal devices.
           </p>
@@ -92,7 +93,7 @@ export default function FixReelsNoSoundPage() {
             <div className="p-4 rounded-xl bg-slate-900 border border-slate-800">
               <h3 className="font-bold text-white text-base mb-1">1. Redownload via ReelsGrab</h3>
               <p className="text-slate-400 text-sm">
-                Paste the Reel URL into <a href="/instagram-reels-download" className="text-indigo-400 hover:underline">ReelsGrab Instagram Downloader</a>.
+                Paste the Reel URL into <Link href="/instagram-reels-download" className="text-indigo-400 hover:underline">ReelsGrab Instagram Downloader</Link>.
                 Our cloud workers automatically multiplex the 320kbps AAC audio track into the MP4 container before delivering it to your browser.
               </p>
             </div>
@@ -100,7 +101,7 @@ export default function FixReelsNoSoundPage() {
               <h3 className="font-bold text-white text-base mb-1">2. Extract Pure MP3 Audio</h3>
               <p className="text-slate-400 text-sm">
                 If you only want the trending sound or music track, use our dedicated{" "}
-                <a href="/reels-to-mp3" className="text-indigo-400 hover:underline">Reels to MP3 converter</a> to save a standalone 320kbps audio file.
+                <Link href="/reels-to-mp3" className="text-indigo-400 hover:underline">Reels to MP3 converter</Link> to save a standalone 320kbps audio file.
               </p>
             </div>
             <div className="p-4 rounded-xl bg-slate-900 border border-slate-800">

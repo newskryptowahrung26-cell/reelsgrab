@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Link from "next/link";
 import DownloadTool from "@/components/DownloadTool";
 import FeaturesGrid from "@/components/FeaturesGrid";
 import HowToSteps from "@/components/HowToSteps";
@@ -265,18 +266,18 @@ export default function YouTubeParaMp3Page() {
           />
 
           <div className="mt-6 flex flex-wrap justify-center gap-3 text-xs">
-            <a href="/pt/youtube-para-mp4" className="px-3 py-1.5 rounded-full bg-slate-800 text-slate-300 hover:bg-slate-700">
+            <Link href="/pt/youtube-para-mp4" className="px-3 py-1.5 rounded-full bg-slate-800 text-slate-300 hover:bg-slate-700">
               🎬 YouTube para MP4 (PT)
-            </a>
-            <a href="/pt/baixar-reels-instagram" className="px-3 py-1.5 rounded-full bg-slate-800 text-slate-300 hover:bg-slate-700">
+            </Link>
+            <Link href="/pt/baixar-reels-instagram" className="px-3 py-1.5 rounded-full bg-slate-800 text-slate-300 hover:bg-slate-700">
               📸 Baixar Reels Instagram
-            </a>
-            <a href="/pt/baixar-video-facebook" className="px-3 py-1.5 rounded-full bg-slate-800 text-slate-300 hover:bg-slate-700">
+            </Link>
+            <Link href="/pt/baixar-video-facebook" className="px-3 py-1.5 rounded-full bg-slate-800 text-slate-300 hover:bg-slate-700">
               📹 Baixar Vídeo Facebook
-            </a>
-            <a href="/youtube-to-mp3" className="px-3 py-1.5 rounded-full bg-slate-800 text-slate-300 hover:bg-slate-700">
+            </Link>
+            <Link href="/youtube-to-mp3" className="px-3 py-1.5 rounded-full bg-slate-800 text-slate-300 hover:bg-slate-700">
               🇬🇧 English Version
-            </a>
+            </Link>
           </div>
         </div>
       </section>
@@ -330,8 +331,7 @@ export default function YouTubeParaMp3Page() {
               tenha uma assinatura paga.
             </p>
             <p>
-              Com o <strong>ReelsGrab YouTube para MP3</strong>, você extrai a trilha sonora de qualquer vídeo ou Short do YouTube
-              e a salva em formato MP3 padrão a <strong>320kbps de altíssima qualidade</strong>. Sem precisar instalar programas
+              Com o <strong>ReelsGrab YouTube para MP3</strong>, você extrai a trilha sonora de qualquer vídeo ou <Link href="/pt/youtube-para-mp4" className="text-indigo-400 hover:underline">Short do YouTube</Link> e a salva em formato MP3 padrão a <strong>320kbps de altíssima qualidade</strong>. Sem precisar instalar programas
               pesados, sem cadastro e sem anúncios popunder invasivos.
             </p>
           </div>

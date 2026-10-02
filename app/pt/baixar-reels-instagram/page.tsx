@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Link from "next/link";
 import DownloadTool from "@/components/DownloadTool";
 import FeaturesGrid from "@/components/FeaturesGrid";
 import HowToSteps from "@/components/HowToSteps";
@@ -209,7 +210,11 @@ const videoResolutions = [
     aspectRatio: "9:16 Vertical",
     fps: "30 / 60 fps",
     bitrate: "3.500 - 6.000 kbps",
-    bestFor: "Republicar no TikTok, YouTube Shorts, telas 4K e arquivo pessoal",
+    bestFor: (
+      <>
+        Republicar no TikTok, <Link href="/pt/youtube-para-mp4" className="text-indigo-400 hover:underline">YouTube Shorts</Link>, telas 4K e arquivo pessoal
+      </>
+    ),
   },
   {
     resolution: "720p HD (720x1280)",
@@ -353,18 +358,18 @@ export default function BaixarReelsInstagramPage() {
           />
 
           <div className="mt-6 flex flex-wrap justify-center gap-3 text-xs">
-            <a href="/pt/youtube-para-mp3" className="px-3 py-1.5 rounded-full bg-slate-800 text-slate-300 hover:bg-slate-700">
+            <Link href="/pt/youtube-para-mp3" className="px-3 py-1.5 rounded-full bg-slate-800 text-slate-300 hover:bg-slate-700">
               🎵 YouTube para MP3 (PT)
-            </a>
-            <a href="/pt/youtube-para-mp4" className="px-3 py-1.5 rounded-full bg-slate-800 text-slate-300 hover:bg-slate-700">
+            </Link>
+            <Link href="/pt/youtube-para-mp4" className="px-3 py-1.5 rounded-full bg-slate-800 text-slate-300 hover:bg-slate-700">
               🎬 YouTube para MP4 (PT)
-            </a>
-            <a href="/pt/baixar-video-facebook" className="px-3 py-1.5 rounded-full bg-slate-800 text-slate-300 hover:bg-slate-700">
+            </Link>
+            <Link href="/pt/baixar-video-facebook" className="px-3 py-1.5 rounded-full bg-slate-800 text-slate-300 hover:bg-slate-700">
               📹 Baixar Vídeo Facebook
-            </a>
-            <a href="/instagram-reels-download" className="px-3 py-1.5 rounded-full bg-slate-800 text-slate-300 hover:bg-slate-700">
+            </Link>
+            <Link href="/instagram-reels-download" className="px-3 py-1.5 rounded-full bg-slate-800 text-slate-300 hover:bg-slate-700">
               🇬🇧 English Version
-            </a>
+            </Link>
           </div>
         </div>
       </section>
@@ -425,7 +430,7 @@ export default function BaixarReelsInstagramPage() {
             <p>
               O <strong>ReelsGrab</strong> resolve isso com perfeição. É uma ferramenta online e gratuita que permite baixar qualquer Reel
               público em <strong>resolução original Full HD 1080p</strong>, totalmente <strong>livre de marcas d&apos;água</strong> e com o{" "}
-              <strong>áudio e música 100% preservados</strong>.
+              <strong><Link href="/reels-to-mp3" className="text-indigo-400 hover:underline">áudio e música</Link> 100% preservados</strong>.
             </p>
           </div>
 

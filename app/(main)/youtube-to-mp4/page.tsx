@@ -555,9 +555,11 @@ export default function YouTubeToMp4Page() {
                 Zero Watermark Guarantee
               </h3>
               <p className="text-xs text-slate-400 leading-relaxed">
-                When creators download their own videos through official social apps like TikTok or Instagram, the platform frequently embeds
+                When creators download their own videos through official social apps like TikTok or{" "}
+                <a href="/instagram-reels-download" className="text-indigo-400 hover:underline">Instagram</a>, the platform frequently embeds
                 a bouncing animated watermark. ReelsGrab extracts the original raw YouTube Shorts stream directly from YouTube's CDN,
-                delivering a clean, pristine MP4 file with absolutely no overlay logos, watermarks, or branding.
+                delivering a clean, pristine MP4 file with{" "}
+                <a href="/blog/download-reels-without-watermark" className="text-indigo-400 hover:underline">absolutely no overlay logos, watermarks, or branding</a>.
               </p>
             </div>
 
@@ -583,8 +585,9 @@ export default function YouTubeToMp4Page() {
           </h2>
           <p className="text-slate-300">
             Many users wonder how much storage space an MP4 video will consume before initiating a download. Because digital video files
-            consist of both a video stream and an audio stream, the total file size is strictly determined by the combined bitrates of both streams
-            multiplied by the video duration.
+            consist of both a video stream and an audio stream (if you only require audio, try our{" "}
+            <a href="/youtube-to-mp3" className="text-indigo-400 hover:underline">YouTube to MP3 converter</a>),
+            the total file size is strictly determined by the combined bitrates of both streams multiplied by the video duration.
           </p>
 
           <div className="bg-slate-900/80 border border-indigo-500/30 p-6 rounded-2xl space-y-3">
@@ -664,7 +667,8 @@ export default function YouTubeToMp4Page() {
           </h2>
           <p className="text-slate-300">
             ReelsGrab is completely device-agnostic and functions directly within any standards-compliant web browser.
-            Here is the step-by-step procedure for every major operating system:
+            Here is the step-by-step procedure for every major operating system (for detailed iOS instructions, see our{" "}
+            <a href="/blog/download-reels-iphone" className="text-indigo-400 hover:underline">iPhone video download guide</a>):
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

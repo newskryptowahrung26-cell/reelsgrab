@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Link from "next/link";
 import DownloadTool from "@/components/DownloadTool";
 import FeaturesGrid from "@/components/FeaturesGrid";
 import HowToSteps from "@/components/HowToSteps";
@@ -330,8 +331,7 @@ export default function YouTubeAMp3Page() {
               y datos móviles si no se cuenta con una suscripción prémium.
             </p>
             <p>
-              Con <strong>ReelsGrab YouTube a MP3</strong>, puedes extraer la pista de audio de cualquier video o Short de YouTube
-              y guardarla en formato MP3 estándar a <strong>320kbps de máxima calidad</strong>. No necesitas descargar programas
+              Con <strong>ReelsGrab YouTube a MP3</strong>, puedes extraer la pista de audio de cualquier video o <Link href="/es/youtube-a-mp4" className="text-indigo-400 hover:underline">Short de YouTube</Link> y guardarla en formato MP3 estándar a <strong>320kbps de máxima calidad</strong>. No necesitas descargar programas
               pesados, registrarte ni soportar ventanas emergentes de publicidad invasiva.
             </p>
           </div>

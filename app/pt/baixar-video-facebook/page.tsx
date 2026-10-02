@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Link from "next/link";
 import DownloadTool from "@/components/DownloadTool";
 import FeaturesGrid from "@/components/FeaturesGrid";
 import HowToSteps from "@/components/HowToSteps";
@@ -219,7 +220,11 @@ const videoResolutions = [
     aspectRatio: "16:9 Panorâmico / 9:16 Vertical",
     fps: "30 / 60 fps",
     bitrate: "3.500 - 6.500 kbps",
-    bestFor: "Republicar no YouTube, Instagram, monitores de computador",
+    bestFor: (
+      <>
+        Republicar no <Link href="/pt/youtube-para-mp4" className="text-indigo-400 hover:underline">YouTube</Link>, <Link href="/pt/baixar-reels-instagram" className="text-indigo-400 hover:underline">Instagram</Link>, monitores de computador
+      </>
+    ),
   },
   {
     resolution: "720p HD (1280x720 / 720x1280)",
@@ -354,7 +359,7 @@ export default function BaixarVideoFacebookPage() {
 
           <p className="text-slate-300 text-lg max-w-2xl mx-auto mb-8 leading-relaxed">
             Baixe qualquer vídeo do Facebook em <strong className="text-white">HD 1080p e 4K</strong> grátis:
-            vídeos do feed, Facebook Watch, Reels e reprises de transmissões ao vivo. Sem programas, sem login e com áudio original completo.
+            vídeos do feed, Facebook Watch, <Link href="/pt/baixar-reels-instagram" className="text-indigo-400 hover:underline">Reels</Link> e reprises de transmissões ao vivo. Sem programas, sem login e com áudio original completo.
           </p>
 
           <DownloadTool
@@ -364,18 +369,18 @@ export default function BaixarVideoFacebookPage() {
           />
 
           <div className="mt-6 flex flex-wrap justify-center gap-3 text-xs">
-            <a href="/pt/baixar-reels-instagram" className="px-3 py-1.5 rounded-full bg-slate-800 text-slate-300 hover:bg-slate-700">
+            <Link href="/pt/baixar-reels-instagram" className="px-3 py-1.5 rounded-full bg-slate-800 text-slate-300 hover:bg-slate-700">
               📸 Baixar Reels Instagram
-            </a>
-            <a href="/pt/youtube-para-mp3" className="px-3 py-1.5 rounded-full bg-slate-800 text-slate-300 hover:bg-slate-700">
+            </Link>
+            <Link href="/pt/youtube-para-mp3" className="px-3 py-1.5 rounded-full bg-slate-800 text-slate-300 hover:bg-slate-700">
               🎵 YouTube para MP3 (PT)
-            </a>
-            <a href="/pt/youtube-para-mp4" className="px-3 py-1.5 rounded-full bg-slate-800 text-slate-300 hover:bg-slate-700">
+            </Link>
+            <Link href="/pt/youtube-para-mp4" className="px-3 py-1.5 rounded-full bg-slate-800 text-slate-300 hover:bg-slate-700">
               🎬 YouTube para MP4 (PT)
-            </a>
-            <a href="/facebook-video-download" className="px-3 py-1.5 rounded-full bg-slate-800 text-slate-300 hover:bg-slate-700">
+            </Link>
+            <Link href="/facebook-video-download" className="px-3 py-1.5 rounded-full bg-slate-800 text-slate-300 hover:bg-slate-700">
               🇬🇧 English Version
-            </a>
+            </Link>
           </div>
         </div>
       </section>
@@ -456,7 +461,7 @@ export default function BaixarVideoFacebookPage() {
               A maioria dos baixadores gratuitos da internet não tem servidores capazes de unir esses dois arquivos em tempo real,
               entregando um vídeo mudo ao usuário.
               No <strong>ReelsGrab</strong>, nossos servidores em nuvem unem automaticamente o vídeo em 1080p/4K com o áudio AAC
-              original em menos de 3 segundos, entregando um arquivo MP4 perfeitamente sincronizado e com som de alta fidelidade.
+              original em menos de 3 segundos, entregando um arquivo <Link href="/pt/youtube-para-mp4" className="text-indigo-400 hover:underline">MP4</Link> perfeitamente sincronizado e com som de alta fidelidade.
             </p>
           </div>
 

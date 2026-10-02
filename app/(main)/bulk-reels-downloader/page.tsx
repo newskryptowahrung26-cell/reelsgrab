@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Link from "next/link";
 import { Package, Users, Link2, Zap, Download, Archive, Globe, CheckCircle } from "lucide-react";
 import DownloadTool from "@/components/DownloadTool";
 import FeaturesGrid from "@/components/FeaturesGrid";
@@ -132,7 +133,7 @@ export default function BulkReelsDownloaderPage() {
         <article className="prose prose-invert max-w-none text-slate-300 text-sm sm:text-base leading-relaxed space-y-12">
           <div>
             <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4">
-              The Complete Guide to Bulk Downloading Instagram Reels from Any Profile
+              The Complete Guide to Bulk Downloading <Link href="/instagram-reels-download" className="text-white hover:text-indigo-300 underline decoration-indigo-500/50">Instagram Reels</Link> from Any Profile
             </h2>
             <p>
               Short-form video has become the backbone of modern digital communication. Digital content creators, social media
@@ -166,7 +167,7 @@ export default function BulkReelsDownloaderPage() {
               </li>
               <li>
                 <strong className="text-white">Omnichannel Repurposing:</strong> Top creators publish content across multiple short-form ecosystems,
-                including TikTok, YouTube Shorts, Pinterest Idea Pins, and Snapchat Spotlight. Bulk downloading clean, watermark-free Reels allows
+                including TikTok, <Link href="/youtube-to-mp4" className="text-indigo-400 hover:underline">YouTube Shorts</Link>, Pinterest Idea Pins, and Snapchat Spotlight. Bulk downloading clean, <Link href="/blog/download-reels-without-watermark" className="text-indigo-400 hover:underline">watermark-free Reels</Link> allows
                 video editors to batch-schedule content across every platform simultaneously.
               </li>
               <li>
@@ -260,7 +261,7 @@ export default function BulkReelsDownloaderPage() {
               </div>
 
               <div className="p-5 rounded-xl bg-slate-900 border border-slate-800">
-                <h3 className="text-lg font-bold text-white mb-2">iPhone &amp; iPad (iOS 15+)</h3>
+                <h3 className="text-lg font-bold text-white mb-2"><Link href="/blog/download-reels-iphone" className="text-white hover:text-indigo-300 underline decoration-indigo-500/50">iPhone &amp; iPad (iOS 15+)</Link></h3>
                 <p className="text-slate-400 text-sm mb-3">
                   Apple native Files app includes built-in ZIP archive extraction with zero extra apps required:
                 </p>

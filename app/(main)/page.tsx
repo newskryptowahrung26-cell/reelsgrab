@@ -534,8 +534,11 @@ export default function HomePage() {
         </h2>
         <div className="prose prose-invert max-w-none text-slate-300 text-sm sm:text-base leading-relaxed space-y-6">
           <p>
-            Digital media sharing has shifted toward dynamic streaming delivery across Instagram, Facebook, and
-            YouTube. Understanding how modern video delivery works clarifies why conventional downloaders fail and
+            Digital media sharing has shifted toward dynamic streaming delivery across{" "}
+            <a href="/instagram-reels-download" className="text-indigo-400 hover:underline">Instagram Reels</a>,{" "}
+            <a href="/facebook-video-download" className="text-indigo-400 hover:underline">Facebook</a>, and{" "}
+            <a href="/youtube-to-mp4" className="text-indigo-400 hover:underline">YouTube</a>.
+            Understanding how modern video delivery works clarifies why conventional downloaders fail and
             how ReelsGrab provides reliable, high-resolution media preservation without compromising user privacy.
           </p>
 
@@ -543,9 +546,12 @@ export default function HomePage() {
             Direct CDN Stream Demuxing vs Browser Re-encoding
           </h3>
           <p>
-            When you watch a video on Instagram Reels or YouTube, your device does not receive a single unified MP4
-            file. Instead, content delivery networks (CDNs) stream media using adaptive protocols such as Dynamic
-            Adaptive Streaming over HTTP (DASH) and HTTP Live Streaming (HLS). Under these protocols, the video track
+            When you watch a video on{" "}
+            <a href="/blog/how-to-download-instagram-reels" className="text-indigo-400 hover:underline">Instagram Reels</a>{" "}
+            or YouTube, your device does not receive a single unified MP4
+            file. Instead, content delivery networks (CDNs) stream media using adaptive protocols such as{" "}
+            <a href="/blog/fix-reels-no-sound" className="text-indigo-400 hover:underline">Dynamic Adaptive Streaming over HTTP (DASH)</a>{" "}
+            and HTTP Live Streaming (HLS). Under these protocols, the video track
             and audio track are served from separate cloud endpoints to adjust bitrate dynamically according to network
             bandwidth.
           </p>
@@ -554,8 +560,9 @@ export default function HomePage() {
             re-encode video feeds through lossy compression steps. This approach introduces compression artifacts,
             causes frame drops, dulls high dynamic range colors, and frequently generates silent videos with missing
             soundtracks. ReelsGrab utilizes an edge-based demuxing pipeline. Our system locates the original,
-            uncompressed video manifest on the platform CDN, retrieves the pristine 1080p or 4K video payload alongside
-            the highest-fidelity AAC audio channel, and multiplexes them cleanly into a compliant MP4 container without
+            uncompressed video manifest on the platform CDN, retrieves the pristine{" "}
+            <a href="/youtube-to-mp4" className="text-indigo-400 hover:underline">1080p or 4K video</a>{" "}
+            payload alongside the highest-fidelity AAC audio channel, and multiplexes them cleanly into a compliant MP4 container without
             re-encoding.
           </p>
 
@@ -570,24 +577,28 @@ export default function HomePage() {
           </p>
           <p>
             ReelsGrab maintains full acoustic integrity. Our audio extraction pipeline reads original audio streams directly
-            from host CDNs and performs clean transcoding to constant bitrate (CBR) 320kbps MP3. This process retains the
-            full 20 Hz to 20 kHz acoustic spectrum, preserving punchy bass, crisp highs, and natural vocal timbre. Whether
-            you are archiving sample loops, study lectures, or viral background music, your downloads match studio clarity.
+            from host CDNs and performs clean transcoding to constant bitrate (CBR){" "}
+            <a href="/youtube-to-mp3" className="text-indigo-400 hover:underline">320kbps MP3</a>.
+            This process retains the full 20 Hz to 20 kHz acoustic spectrum, preserving punchy bass, crisp highs, and natural vocal timbre. Whether
+            you are archiving sample loops, study lectures, or viral background music, your downloads match studio clarity with our{" "}
+            <a href="/reels-to-mp3" className="text-indigo-400 hover:underline">Reels to MP3 audio downloader</a>.
           </p>
 
           <h3 className="text-xl font-bold text-white mt-8 mb-3">
             Watermark-Free Workflow Across Mobile and Desktop Platforms
           </h3>
           <p>
-            Native applications frequently penalize off-platform sharing by appending invasive watermark overlays,
+            Native applications frequently penalize off-platform sharing by appending{" "}
+            <a href="/blog/download-reels-without-watermark" className="text-indigo-400 hover:underline">invasive watermark overlays</a>,
             bouncing creator handles across the screen, or suppressing downloads altogether. ReelsGrab provides direct
             access to source video streams before platform watermark rendering occurs:
           </p>
           <ul className="list-disc pl-6 space-y-2 text-slate-300">
             <li>
               <strong className="text-white">Apple iOS (iPhone and iPad):</strong> Process any video link via mobile
-              Safari, tap download, and save the resulting MP4 directly to your native Camera Roll without requiring
-              external utility apps.
+              Safari, tap download, and save the resulting MP4 directly to your native Camera Roll following our{" "}
+              <a href="/blog/download-reels-iphone" className="text-indigo-400 hover:underline">iPhone download guide</a>{" "}
+              without requiring external utility apps.
             </li>
             <li>
               <strong className="text-white">Android Devices:</strong> Enjoy rapid, direct downloads to your Files or
@@ -595,7 +606,9 @@ export default function HomePage() {
             </li>
             <li>
               <strong className="text-white">macOS, Windows, and Linux:</strong> Save Full HD and 4K files directly to
-              your local storage drive for offline editing in software like Premiere Pro, DaVinci Resolve, or Final Cut.
+              your local storage drive for offline editing in software like Premiere Pro, DaVinci Resolve, or Final Cut, or use our{" "}
+              <a href="/bulk-reels-downloader" className="text-indigo-400 hover:underline">Bulk Reels Downloader</a>{" "}
+              to archive multiple clips simultaneously.
             </li>
           </ul>
 

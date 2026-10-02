@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Link from "next/link";
 import HowToSteps from "@/components/HowToSteps";
 import FaqSection from "@/components/FaqSection";
 import { SITE_CONFIG } from "@/lib/siteConfig";
@@ -59,7 +60,7 @@ export default function HowToDownloadInstagramReelsPage() {
         </h1>
         <p className="text-slate-300 text-base leading-relaxed mb-10">
           Want to save Instagram Reels to your phone or PC? This step-by-step guide shows you exactly how
-          to download any Instagram Reel for free in HD quality on iPhone, Android, and desktop, without watermark and with original audio.
+          to download any Instagram Reel for free in HD quality on iPhone, Android, and desktop, <Link href="/blog/download-reels-without-watermark" className="text-indigo-400 hover:underline">without watermark</Link> and with original audio.
         </p>
 
         <div className="mb-12">
@@ -70,7 +71,7 @@ export default function HowToDownloadInstagramReelsPage() {
         <div className="prose prose-invert max-w-none text-slate-300 text-sm sm:text-base leading-relaxed space-y-6 mb-12">
           <h2 className="text-xl sm:text-2xl font-bold text-white">Method 1: Using ReelsGrab (Easiest, 100% Free &amp; No App Needed)</h2>
           <p>
-            The fastest and safest method to download any Instagram Reel is using <a href="/" className="text-indigo-400 hover:underline">ReelsGrab.net</a>.
+            The fastest and safest method to download any Instagram Reel is using <Link href="/instagram-reels-download" className="text-indigo-400 hover:underline">ReelsGrab.net</Link>.
             Because it is completely web-based, it works across iOS Safari, Android Chrome, Windows, Mac, and Linux without installing third-party APKs
             or suspicious software:
           </p>
@@ -88,7 +89,7 @@ export default function HowToDownloadInstagramReelsPage() {
               <p className="text-xs text-slate-400">Our cloud muxer recombines the DASH video and AAC audio tracks so your video is never muted.</p>
             </div>
             <div className="p-4 rounded-xl bg-slate-900 border border-slate-800">
-              <h3 className="font-bold text-white text-base mb-1">Instant MP3 Conversion</h3>
+              <h3 className="font-bold text-white text-base mb-1"><Link href="/reels-to-mp3" className="hover:underline">Instant MP3 Conversion</Link></h3>
               <p className="text-xs text-slate-400">Extract trending background music, sound effects, or voiceovers directly into high-bitrate 320kbps MP3 audio.</p>
             </div>
           </div>
@@ -109,7 +110,7 @@ export default function HowToDownloadInstagramReelsPage() {
           </p>
           <div className="space-y-4">
             <div className="p-4 rounded-xl bg-slate-900 border border-slate-800">
-              <h3 className="font-bold text-white text-base mb-1">On iPhone &amp; iPad (iOS 15+)</h3>
+              <h3 className="font-bold text-white text-base mb-1"><Link href="/blog/download-reels-iphone" className="hover:underline">On iPhone &amp; iPad (iOS 15+)</Link></h3>
               <p className="text-slate-400 text-sm">
                 Open Instagram → Copy Link → Open Safari → visit ReelsGrab → Paste Link → tap Download → tap the Safari download circle → tap Share icon → select &quot;Save Video&quot; to send it directly to your Photos Camera Roll.
               </p>

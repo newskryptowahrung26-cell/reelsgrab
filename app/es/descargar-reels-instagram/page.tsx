@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Link from "next/link";
 import DownloadTool from "@/components/DownloadTool";
 import FeaturesGrid from "@/components/FeaturesGrid";
 import HowToSteps from "@/components/HowToSteps";
@@ -594,13 +595,13 @@ export default function DescargarReelsInstagramPage() {
               Estrategia de Reutilización de Contenido para Creadores
             </h3>
             <p>
-              Los algoritmos de TikTok y YouTube Shorts penalizan activamente los videos que contienen logotipos o marcas de agua
+              Los algoritmos de TikTok y <Link href="/es/youtube-a-mp4" className="text-indigo-400 hover:underline">YouTube Shorts</Link> penalizan activamente los videos que contienen logotipos o marcas de agua
               visibles de plataformas competidoras. Si descargas un Reel con el logotipo de Instagram y lo subes a TikTok, tu video
               recibirá muchas menos impresiones en la página &quot;Para Ti&quot;.
             </p>
             <p>
               Con ReelsGrab, obtienes el video original completamente limpio, lo que te permite redistribuir tu contenido
-              en TikTok, Shorts y Facebook Reels manteniendo el máximo potencial de alcance orgánico.
+              en TikTok, Shorts y <Link href="/es/descargar-reels-facebook" className="text-indigo-400 hover:underline">Facebook Reels</Link> manteniendo el máximo potencial de alcance orgánico.
             </p>
           </div>
 

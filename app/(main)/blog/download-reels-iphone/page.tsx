@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Link from "next/link";
 import { SITE_CONFIG } from "@/lib/siteConfig";
 import { breadcrumbSchema, faqSchema } from "@/lib/schema";
 import FaqSection from "@/components/FaqSection";
@@ -73,14 +74,13 @@ export default function DownloadReelsIphonePage() {
           </p>
           <p>
             Starting with iOS 13 and continuing through modern iOS 16, 17, and 18, Safari includes a native, full-featured
-            download manager. When you use ReelsGrab in Safari, your video is fetched directly from Instagram CDN, multiplexed with original
-            audio, and handed to Safari native download daemon.
+            download manager. When you use <Link href="/instagram-reels-download" className="text-indigo-400 hover:underline">ReelsGrab</Link> in Safari, your video is fetched directly from Instagram CDN, multiplexed with <Link href="/blog/fix-reels-no-sound" className="text-indigo-400 hover:underline">original audio</Link>, and handed to Safari native download daemon.
           </p>
 
           <h2 className="text-xl sm:text-2xl font-bold text-white">How to Transfer Downloaded Reels to Your Apple Photos Camera Roll</h2>
           <p>
             When Safari finishes downloading a video, it saves it by default into your iCloud Drive or local &quot;On My iPhone → Downloads&quot; folder.
-            To make the video appear in your main Photos timeline and allow sharing to Instagram Stories, TikTok, or WhatsApp:
+            To make the video appear in your main Photos timeline and allow sharing to Instagram Stories, TikTok, or <Link href="/facebook-reels-download" className="text-indigo-400 hover:underline">Facebook</Link>:
           </p>
           <ol className="list-decimal pl-6 space-y-2 text-slate-300">
             <li>Tap the blue download icon (a circle with a downward arrow) located on the left or right of your Safari search bar.</li>
@@ -117,7 +117,7 @@ export default function DownloadReelsIphonePage() {
           <h2 className="text-xl sm:text-2xl font-bold text-white">iPhone Troubleshooting: Fix Common Download Glitches</h2>
           <ul className="list-disc pl-6 space-y-2 text-slate-300">
             <li><strong className="text-white">Video Plays in Safari Instead of Downloading:</strong> Long-press the &quot;Download Video HD&quot; button and tap &quot;Download Linked File&quot; from the context popup menu.</li>
-            <li><strong className="text-white">Video Has No Sound on iPhone:</strong> Check your iPhone physical Silent Switch or Action Button. iOS default video preview mutes playback if your device is set to silent mode. Also verify your media volume slider.</li>
+            <li><strong className="text-white">Video Has No Sound on iPhone:</strong> Check your iPhone physical Silent Switch or Action Button. iOS default video preview mutes playback if your device is set to silent mode. Also verify your media volume slider (or see our <Link href="/blog/fix-reels-no-sound" className="text-indigo-400 hover:underline">sound troubleshooting guide</Link>).</li>
             <li><strong className="text-white">Safari Download Icon Missing:</strong> Go to iPhone Settings → Safari → Downloads, and verify that the download location is set to &quot;On My iPhone&quot;.</li>
           </ul>
         </div>
