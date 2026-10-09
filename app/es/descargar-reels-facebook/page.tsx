@@ -21,6 +21,7 @@ export const metadata: Metadata = {
     languages: {
       en: `${SITE_CONFIG.url}/facebook-reels-download`,
       es: `${SITE_CONFIG.url}/es/descargar-reels-facebook`,
+      pt: `${SITE_CONFIG.url}/pt/baixar-reels-facebook`,
       "x-default": `${SITE_CONFIG.url}/facebook-reels-download`,
     },
   },

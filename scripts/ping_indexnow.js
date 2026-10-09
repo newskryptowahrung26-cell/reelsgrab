@@ -21,6 +21,7 @@ const URL_LIST = [
   `https://${HOST}/pt/youtube-para-mp4`,
   `https://${HOST}/pt/baixar-video-facebook`,
   `https://${HOST}/pt/baixar-reels-instagram`,
+  `https://${HOST}/pt/baixar-reels-facebook`,
   `https://${HOST}/blog`,
   `https://${HOST}/blog/how-to-download-instagram-reels`,
   `https://${HOST}/blog/download-reels-without-watermark`,

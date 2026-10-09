@@ -10,21 +10,27 @@ import { SITE_CONFIG } from "@/lib/siteConfig";
 import { faqSchema, howToSchema, softwareSchema, breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Private Facebook Video Downloader",
+  title: "Private Facebook Video Downloader (HD 1080p, No Login)",
   description:
-    "Download private Facebook videos and reels online for free. Step-by-step guide to save private FB videos without losing quality. No login, no app required.",
+    "Download private Facebook videos and Reels online in Full HD 1080p. 100% safe client-side extraction: save private FB group videos without passwords or apps.",
   keywords: [
-    "download private facebook video", "facebook private video downloader",
-    "download private facebook reels", "private facebook reels downloader",
-    "download private fb video online", "how to download private facebook video",
-    "facebook private video download", "download fb group private video",
+    "download private facebook video",
+    "facebook private video downloader",
+    "how to download private facebook video",
+    "download private facebook reels",
+    "download facebook group private video",
+    "private facebook reels downloader",
+    "download private fb video online",
+    "facebook private video download",
     "save private facebook video",
+    "fb private video downloader 1080p",
+    "download private fb group video hd",
   ],
   alternates: { canonical: `${SITE_CONFIG.url}/facebook-private-video-download` },
   openGraph: {
-    title: "Private Facebook Video Downloader | ReelsGrab",
+    title: "Private Facebook Video Downloader (HD 1080p, No Login) | ReelsGrab",
     description:
-      "Download private Facebook videos and reels online for free. Step-by-step guide to save private FB videos without losing quality. No login, no app required.",
+      "Download private Facebook videos and Reels online in Full HD 1080p. 100% safe client-side extraction: save private FB group videos without passwords or apps.",
     url: `${SITE_CONFIG.url}/facebook-private-video-download`,
     type: "website",
     images: [{ url: "/og-default.png", width: 1200, height: 630 }],
@@ -60,6 +66,7 @@ const faqs = [
 const relatedTools = [
   { emoji: "📘", label: "Facebook Reels Download", href: "/facebook-reels-download", description: "Download public FB Reels in HD" },
   { emoji: "📹", label: "Facebook Video Download", href: "/facebook-video-download", description: "Download any public Facebook video" },
+  { emoji: "⚡", label: "Best FDown Alternative", href: "/blog/fdown-alternative", description: "Clean alternative to FDown & FBDown" },
   { emoji: "📸", label: "Instagram Reels Download", href: "/instagram-reels-download", description: "Download IG Reels without watermark" },
   { emoji: "🎵", label: "Reels to MP3", href: "/reels-to-mp3", description: "Extract audio from any Reel" },
   { emoji: "📦", label: "Bulk Reels Downloader", href: "/bulk-reels-downloader", description: "Download all reels from a profile" },

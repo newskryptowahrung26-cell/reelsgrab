@@ -27,6 +27,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: "/pt/youtube-para-mp4", priority: 0.90, changeFrequency: "weekly" as const },
     { url: "/pt/baixar-video-facebook", priority: 0.90, changeFrequency: "weekly" as const },
     { url: "/pt/baixar-reels-instagram", priority: 0.90, changeFrequency: "weekly" as const },
+    { url: "/pt/baixar-reels-facebook", priority: 0.85, changeFrequency: "weekly" as const },
     // Blog
     { url: "/blog", priority: 0.80, changeFrequency: "daily" as const },
     { url: "/blog/how-to-download-instagram-reels", priority: 0.80, changeFrequency: "monthly" as const },

@@ -21,6 +21,7 @@ const languages = [
   { label: "YouTube para MP3 (PT)", href: "/pt/youtube-para-mp3" },
   { label: "YouTube para MP4 (PT)", href: "/pt/youtube-para-mp4" },
   { label: "Baixar Reels Instagram (PT)", href: "/pt/baixar-reels-instagram" },
+  { label: "Baixar Reels Facebook (PT)", href: "/pt/baixar-reels-facebook" },
   { label: "Baixar Video Facebook (PT)", href: "/pt/baixar-video-facebook" },
 ];
 
